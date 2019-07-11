@@ -1,5 +1,5 @@
 # carmirasdeli.github.io
-Car-Mira's Deli external facing website and development assets
+Car-Mira's Deli external facing website and development assets.
 
 ## User aggreement
 This website is for public usage.
