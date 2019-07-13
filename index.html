@@ -43,7 +43,18 @@
   </header>
   <main>
       <div class="content">
-          <div class="contentBox" style="height:600px;background-image: url('images/cbs.jpg');">
+          <div class="contentBox" id="sandwiches" style="height:600px;">
+            <script type="text/javascript">
+            var imgCount = 4;
+            var dir = 'images/';
+            var randomCount = Math.round(Math.random() * (imgCount - 1)) + 1;
+            var images = new Array
+                    images[1] = "authentic.jpg",
+                    images[2] = "cbs.jpg",
+                    images[3] = "italian.jpg",
+                    images[4] = "chicken.jpg"
+            document.getElementById("sandwiches").style.backgroundImage = "url(" + dir + images[randomCount] + ")";
+       </script>
             <div class="news" style="float:left;text-align:left;margin:0 auto;">
               <div class="news-title"><h2>Famous Classic and Specialty Hoagies!</h2></div>
             </div>
