@@ -50,7 +50,8 @@ img.logo {
   text-decoration: none;
   font-size: small;
   font-weight: bold;
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
 }
 
 .topnav a:hover {
@@ -152,22 +153,22 @@ div.split .half {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 div.split .split3 {
   vertical-align:top;
   display:inline-block;
   width:200px;
-  height:100px;
+  height:200px;
   margin:10px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
 }
 .split h1 {
-  font-weight: bolder:400;
-  font-family: 'Archivo Black', sans-serif;
-  text-shadow: 2px 2px 4px black;
-  color:white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  text-transform: uppercase;
 }
 a {
   color:white;
@@ -219,7 +220,7 @@ iframe{
   border:solid 1px;
   width:100%;
 }
-li#inf {font-size:}
+li#inf {padding-left: 15px;}
 li#inf a {  color:blue;}
 li#inf a:hover {text-decoration: underline;color:gray;}
 .news {
