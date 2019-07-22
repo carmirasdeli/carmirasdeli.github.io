@@ -48,9 +48,7 @@ img.logo {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: small;
-  font-weight: bold;
-  font-family: 'Montserrat', sans-serif;
+  font-family: Helvetica, Arial, Sans-Serif;
   text-transform: uppercase;
 }
 
@@ -212,7 +210,10 @@ ul#inf {
   padding-left: 0px;
   list-style-type: none;
   text-align: left;
-  color:black;
+  color:white;
+  font-family: 'Staatliches', cursive;
+  text-shadow: 2px 2px 4px black;
+
 }
 iframe{
   border:solid 1px;
@@ -227,6 +228,13 @@ li#inf a:hover {text-decoration: underline;color:gray;}
 	padding: 0px 7px;
 	position: relative;
 }
+table {
+  color:white;
+  font-family: 'Staatliches', cursive;
+  text-shadow: 2px 2px 4px black;
+  font-size: large;
+}
+
 .news .news-title {
 	float: left;
 	position: relative;
