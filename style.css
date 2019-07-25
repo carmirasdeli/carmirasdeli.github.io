@@ -18,7 +18,7 @@ header {
   height:auto;
 }
 body, html {
-  font-family: sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 18px;
   color: black;
   letter-spacing: 1px;
@@ -48,7 +48,7 @@ img.logo {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-family: Helvetica, Arial, Sans-Serif;
+  font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
 }
 
@@ -163,7 +163,7 @@ div.split .split3 {
   background-size: contain;
 }
 .split h1 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-weight: 200;
   text-transform: uppercase;
 }
