@@ -13,9 +13,10 @@ header {
   left:0;
   right:0;
   position: relative;
-  padding:10px 20px 0px 20px;
+  padding:20px 40px 10px 40px;
   background-color: white;
   height:auto;
+  z-index: 150;
 }
 body, html {
   font-family: 'Oswald', sans-serif;
@@ -33,7 +34,7 @@ body {
 img.logo {
   margin:0;
   display: block;
-  height:60px;
+  height:90px;
   float:left;
 }
 
@@ -183,26 +184,10 @@ footer {
   width:100%;
   font-size: 12px;
   background-color: white;
+  padding: 10px;
 }
-footer ul {
-  vertical-align: top;
-  display: inline-block;
-  margin: 10px 40px;
-  padding: 0;
-  list-style-type: none;
-  text-align: left;
-  top:0px;
+footer a {
   color:black;
-}
-footer li {
-  color:gray;
-}
-footer li a{
-  color:gray;
-  text-decoration: none;
-}
-footer li a:hover{
-  text-decoration: underline;
 }
 ul#inf {
   vertical-align: top;
