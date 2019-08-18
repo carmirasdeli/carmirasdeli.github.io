@@ -35,10 +35,6 @@
       var now = new Date()
       if (day === weekIndex[now.getDay()]) {
         dayDiv.style["font-weight"] = "bold"
-        dayDiv.style["color"] = "lightblue"
-        dayDiv.style["font-style"] = "italic"
-
-
       }
     }
 
