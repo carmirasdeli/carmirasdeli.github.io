@@ -27,15 +27,24 @@ body, html {
   margin: 0 auto;
   width: 100%;
   overflow-x: hidden;
+
 }
 body {
-  background-color: #FDFDFD;
+  /*background-color: #FDFDFD;*/
+  background-color: white;
 }
 img.logo {
   margin:0;
   display: block;
   height:90px;
   float:left;
+}
+img.logomobile {
+  margin:0;
+  display: block;
+  height:40px;
+  float:left;
+  display:none;
 }
 
 .topnav {
@@ -67,10 +76,9 @@ color: white;
 display: none;
 }
 #open-hours{
-  padding:10px;
   margin:auto;
-  width: 100%;
 }
+
 main {
   margin: 0 auto;
   display: block;
@@ -108,9 +116,9 @@ svg#sm {
   display: block;
   margin: 10px 10px;
   display: block;
-  background-color: rgba(255,0,0,.7);
-  border-radius: 50%;
-  padding:10px;
+  background-color: rgba(255,0,0,.8);
+  border-radius: 25%;
+  padding:15px;
 }
 svg#sm:hover {
   background-color:red;
@@ -173,21 +181,23 @@ a {
   text-decoration: underline;
 }
 div.info {
-  margin: 0 auto;
   vertical-align: top;
+  margin: 20px auto;
   display: inline-block;
-  width: 100%;
 }
 footer {
-  display: inline-block;
-  color:black;
+  font-family: sans-serif;
+  background-color: #FdFdFd;
+  display: block;
+  color:#E3E3E3;
   width:100%;
-  font-size: 12px;
-  background-color: white;
-  padding: 10px;
+  font-size: 10px;
+  margin: 0 auto;
+  padding:10px;
+  border-top: 1px solid #F0F0F0;
 }
-footer a {
-  color:black;
+footer a{
+  color:#E3E3E3;
 }
 ul#inf {
   vertical-align: top;
@@ -195,14 +205,18 @@ ul#inf {
   padding-left: 0px;
   list-style-type: none;
   text-align: left;
-  color:white;
-  font-family: 'Staatliches', cursive;
-  text-shadow: 2px 2px 4px black;
+  color:black;
+  font-family: sans-serif;
+  /*text-shadow: 2px 2px 4px black;*/
 
 }
-iframe{
-  border:solid 1px;
+iframe#menu{
   width:100%;
+  height: 800px;
+}
+iframe#map{
+  width:100%;
+  height: 300px;
 }
 li#inf {padding-left: 15px;}
 li#inf a {  color:blue;}
@@ -214,10 +228,8 @@ li#inf a:hover {text-decoration: underline;color:gray;}
 	position: relative;
 }
 table {
-  color:white;
-  font-family: 'Staatliches', cursive;
-  text-shadow: 2px 2px 4px black;
-  font-size: large;
+  color:black;
+  font-family: sans-serif;
 }
 
 .news .news-title {
@@ -259,18 +271,7 @@ h2 {
   line-height: 2.1;
 }
 button {
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  display: none;
-}
-button:hover {
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  margin: 10px;
 }
 div.menu table, div.menu td, div.menu th {
   border: 1px solid #ddd;
@@ -304,19 +305,20 @@ div.menu tr:hover {background-color: #FF383830;}
 
 /*---------------------------------------------------------------------------------------------------------------------------------------*/
 @media screen and (max-width:600px) {
-  img.logo {width:100%;height: auto;padding: 0;float:none;}
-  div.main {margin: 0;}
+  img.logo {height:55px;padding: 0;float:left;}
+  main {margin-top:80px;}
   footer {padding-bottom:100px;}
   footer ul{text-align:left;vertical-align:top;width:20%;}
-  body, html {  background-image: url();}
+  body, html {background-image: url();}
   div.content {padding: 0;}
   div.split .half {width:200px;height:200px;}
   div.info {margin: 0;}
+  header{padding:10px 10px;margin: 0;position: fixed;box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24);}
 }
 @media screen and (max-width: 600px) {
   .topnav a {display: none;}
   .topnav a.icon {
-    float: none;
+    float: right;
     display: block;
   }
 }
@@ -328,11 +330,11 @@ div.menu tr:hover {background-color: #FF383830;}
     position: relative;
     top: 0;
     display:block;
-    text-align:center;
+    text-align:right;
   }
   .topnav.responsive a {
     float: none;
     display: block;
-    text-align: center;
+    text-align: right;
   }
 }
