@@ -27,7 +27,6 @@ body, html {
   margin: 0 auto;
   width: 100%;
   overflow-x: hidden;
-
 }
 body {
   /*background-color: #FDFDFD;*/
@@ -46,7 +45,42 @@ img.logomobile {
   float:left;
   display:none;
 }
+h4 {
+  max-width: 800px;
+  margin:0 auto;
+  font-size: 4em;
+  font-size: 4vw;
+  text-align: center;
+  margin-bottom: 0;
+  font-family: 'Oswald', sans-serif;
 
+}
+hr {
+  margin-bottom: 100px;
+}
+p#headerscript {
+  max-width: 400px;
+  text-align: center;
+  margin:0 auto;
+  margin-bottom: 10px;
+  margin-top:10px;
+  font-size: 1em;
+}
+div.contentSmall {
+  border-radius: 5px;
+  vertical-align: top;
+  display:inline-block;
+  background-image:linear-gradient(to top left, white, white);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width:49%;
+}
+.contentSmallImage {
+  width:100%;
+  transition: .5s;
+  border-radius: 5px;
+  height: auto;
+}
 .topnav {
   overflow: hidden;
   background-color: inherit;
@@ -82,7 +116,6 @@ display: none;
 main {
   margin: 0 auto;
   display: block;
-  background-color: #FDFDFD;
 }
 div.bg {
   display: block;
@@ -134,26 +167,27 @@ div.sm {
 div.content {
   margin: 0 auto;
   overflow: auto;
-  margin-bottom: 10px;
+  margin-bottom: 80px;
 }
 div.contentBox {
   background-size:cover;
   background-position: center;
   background-repeat: no-repeat;
   display: block;
+  margin-bottom:100px;
 }
 div.split {
-  width:100%;margin:10px auto;align:center;text-align:center;
+  width:100%;margin:10px auto;align:center;text-align:center;background-color:white;
 }
 div.split .enclosure {
   display: inline-block;width:100%;height:auto;padding:20px;
 }
 div.split .half {
-  border-radius: 50%;
+  border-radius:;
   vertical-align:top;
   display:inline-block;
-  width:300px;
-  height:300px;
+  width:12vw;
+  height:12vw;
   margin:20px;
   padding:30px;
   background-repeat: no-repeat;
@@ -161,6 +195,10 @@ div.split .half {
   background-size: contain;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
+div.split .half:hover {
+  box-shadow: none;
+}
+
 div.split .split3 {
   vertical-align:top;
   display:inline-block;
@@ -172,7 +210,6 @@ div.split .split3 {
   background-size: contain;
 }
 .split h1 {
-  font-family: 'Oswald', sans-serif;
   font-weight: 200;
   text-transform: uppercase;
 }
@@ -181,9 +218,10 @@ a {
   text-decoration: underline;
 }
 div.info {
+  background-color: #FdFdFd;
   vertical-align: top;
   margin: 20px auto;
-  display: inline-block;
+  padding-left: 10px;
 }
 footer {
   font-family: sans-serif;
@@ -229,7 +267,16 @@ li#inf a:hover {text-decoration: underline;color:gray;}
 }
 table {
   color:black;
-  font-family: sans-serif;
+  font-family: 'Oswald', sans-serif;
+}
+#externalLinks{
+  transition: .2s;
+    opacity:.4;
+}
+#externalLinks:hover{
+  transition: .2s;
+  opacity:1;
+
 }
 
 .news .news-title {
@@ -242,7 +289,7 @@ table {
 .news .news-title h2 {
 	color: #FFF;
   font-weight: bolder:400;
-  font-family: 'Archivo Black', sans-serif;
+  font-family: sans-serif;
   text-shadow: 2px 2px 4px black;
   font-size: 40px;
 	padding: 10px;
@@ -253,9 +300,8 @@ table {
 h2 {
   color: #FFF;
   font-weight: bolder:400;
-  font-family: 'Archivo Black', sans-serif;
   text-shadow: 2px 2px 4px black;
-  font-size: 40px;
+  font-size: 30px;
   padding: 10px;
   display: inline;
   word-wrap: break-word;
@@ -263,7 +309,6 @@ h2 {
 }
 .news .news-title h3 {
 	color: #FFF;
-  font-family: 'Fredericka the Great', cursive;
   font-size: 30px;
 	padding: 10px;
 	display: inline;
@@ -312,8 +357,12 @@ div.menu tr:hover {background-color: #FF383830;}
   body, html {background-image: url();}
   div.content {padding: 0;}
   div.split .half {width:200px;height:200px;}
+  div.split .split3 {
+    width:100px;height:80px;
+  }
   div.info {margin: 0;}
-  header{padding:10px 10px;margin: 0;box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24);}
+  header{padding:10px 10px;margin: 0;}
+  h4 {padding-left: 10px;padding-right: 10px;}
 }
 @media screen and (max-width: 600px) {
   .topnav a {display: none;}
