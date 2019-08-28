@@ -45,7 +45,7 @@
       <div class="content">
       <div class="split" id="brands">
         <div class="contentBox" style="height:600px;background-image: url('images/deli.jpg');">
-          <div style="background-color:#FF383880;width:200px;height:200px;margin:auto;;position: relative;
+          <div style="background-color:#FF383880;width:200px;height:200px;margin:auto;position: relative;
      top: 50%;
      transform: perspective(1px) translateY(-50%);">
             <img src="images/headerlogotrans.png" style="width:200px;border-radius:5px;">
@@ -64,7 +64,6 @@
     <div class="split" id="onlineOrdering" style="background-color:#FF3838;padding-top:80px;padding-bottom:100px;">
       <h4 style="color:white;">Online Ordering</h4>
       <p style="color:white;"id="headerscript">Delivery now available through Doordash and UberEats!</p>
-
       <div class="enclosure">
         <a href="https://www.doordash.com/store/car-mira-s-deli-marcus-hook-304941/" target="_blank">
           <div class="half" style="background-image: url('https://foodtechconnect.com/wp-content/uploads/2015/05/DoorDash-Logo.jpg')"></div></a>
@@ -72,11 +71,31 @@
           <div class="half" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/2/23/Uber_eats_logo_2017_06_22.jpg');"></div></a>
       </div>
     </div>
+    <div class="content">
+      <h4 style="margin-top:80px;">Famous Hoagies and Specialty Sandwiches</h4>
+      <p id="headerscript">Served everyday until we run out of rolls. Get in before they're gone!</p>
+      <div style="margin: 80px auto;width:100%;text-align:center;">
+        <a href="menu.pdf" id="btn1">View Menu</a><a href="tel:610-494-9799" id="btn2">Call Now</a>
+      </div>
+      <div class="contentBox" id="sandwiches" style="margin:0 auto;height:300px;">
+          <script type="text/javascript">
+          var imgCount = 5;
+          var dir = 'images/';
+          var randomCount = Math.round(Math.random() * (imgCount - 1)) + 1;
+          var images = new Array
+                  images[1] = "authentic.jpg",
+                  images[2] = "cbs.jpg",
+                  images[3] = "italian.jpg",
+                  images[4] = "rb.jpg",
+                  images[5] = "chicken.jpg"
+          document.getElementById("sandwiches").style.backgroundImage = "url(" + dir + images[randomCount] + ")";
+     </script>
+        </div>
+    </div>
       <div class="content">
         <div style="margin:0 auto;">
         <div class="info">
           <h4 id="hours">Hours</h4>
-
           <div id="open-hours"></div>
           <script src="./open-hours.js" charset="utf-8"></script>
           <script>
@@ -101,7 +120,6 @@
             <li id="inf">3240 Chichester Ave <br>Boothwyn, PA</li>
             <li id="inf"><a href="https://goo.gl/maps/L3sKB4PUo332" target="_blank">Directions</a></li>
             <li id="inf"><a href="tel:610-494-9799">610-494-9799</a></li>
-
           </ul>
           <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d3063.731796154875!2d-75.4453712!3d39.8354306!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x89c6e5d3092d2f0d%3A0x6b492252d0bf8850!2sCar-Mira&#39;s+Deli%2C+3240+Chichester+Ave%2C+Boothwyn%2C+PA+19061!3m2!1d39.835430599999995!2d-75.44318249999999!5e0!3m2!1sen!2sus!4v1562453820281!5m2!1sen!2sus" width="200" height="300" frameborder="0" style="border:1" allowfullscreen></iframe>
         </div>
