@@ -369,7 +369,7 @@ div.menu tr:hover {background-color: #FF383830;}
   }
   div.info {margin: 0;}
   header{padding:10px 10px;margin: 0;}
-  h4 {padding-left: 10px;padding-right: 10px;}
+  h4 {padding-left: 10px;padding-right: 10px;font-size:28px;}
 }
 @media screen and (max-width: 600px) {
   .topnav a {display: none;}
