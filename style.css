@@ -19,10 +19,8 @@ header {
   z-index: 150;
 }
 body, html {
-  font-family: 'Oswald', sans-serif;
-  font-size: 18px;
+  font-family: sans-serif;
   color: black;
-  letter-spacing: 1px;
   font-size: 1em;
   margin: 0 auto;
   width: 100%;
@@ -31,6 +29,8 @@ body, html {
 body {
   /*background-color: #FDFDFD;*/
   background-color: white;
+}
+p {
 }
 img.logo {
   margin:0;
@@ -45,18 +45,21 @@ img.logomobile {
   float:left;
   display:none;
 }
-h4 {
+h1 {
   max-width: 800px;
   margin:0 auto;
-  font-size: 4em;
   font-size: 4vw;
   text-align: center;
   margin-bottom: 0;
   font-family: 'Oswald', sans-serif;
-
+}
+h2 {
+  font-family: 'Oswald', sans-serif;
+  background-color: #F3F3F3;
+  padding-top:10px;
 }
 hr {
-  margin-bottom: 100px;
+  margin-bottom: 40px;
 }
 p#headerscript {
   max-width: 400px;
@@ -65,6 +68,7 @@ p#headerscript {
   margin-bottom: 10px;
   margin-top:10px;
   font-size: 1em;
+  font-family: 'Oswald', sans-serif;
 }
 div.contentSmall {
   vertical-align: top;
@@ -94,6 +98,7 @@ div.contentSmall {
   padding: 14px 16px;
   text-decoration: none;
   font-family: 'Oswald', sans-serif;
+  letter-spacing: 1px;
   text-transform: uppercase;
 }
 
@@ -124,7 +129,6 @@ div.bg {
   margin: 20px auto;
   height: 200px;
   max-width: 700px;
-  /*background-image: url("../images/banner.jpg"); in html file*/
   background-position: top;
   background-attachment: scroll;
   background-size: cover;
@@ -212,10 +216,9 @@ div.split .split3 {
 }
 .split h1 {
   font-weight: 200;
-  text-transform: uppercase;
 }
 a {
-  color:white;
+  color:black;
   text-decoration: underline;
 }
 div.info {
@@ -225,8 +228,8 @@ div.info {
   padding-left: 10px;
   padding-top:80px;
 }
-a#btn1 {font-weight: medium;font-family: sans-serif;margin:10px;font-size: 16px;border-radius: 5px;padding:15px;border:1px solid #0066ff;background-color: #0066ff;text-decoration: none;}
-a#btn2 {font-weight: medium;font-family: sans-serif;margin:10px;font-size: 16px;border-radius: 5px;padding:15px; color:black; border:1px solid #c1c1c1;text-decoration: none;}
+a#btn1 {font-weight: medium;font-family: sans-serif;margin:10px;border-radius: 5px;padding:10px;border:1px solid #0066ff;background-color: #0066ff;text-decoration: none;}
+a#btn2 {font-weight: medium;font-family: sans-serif;margin:10px;border-radius: 5px;padding:10px; color:black; border:1px solid #c1c1c1;text-decoration: none;}
 a#btn1:hover {background-color: #0055E6;}
 a#btn2:hover {background-color: #f8f9fa;}
 
@@ -234,15 +237,18 @@ footer {
   font-family: sans-serif;
   background-color: #FdFdFd;
   display: block;
-  color:#E3E3E3;
+  color:#858585;
   width:100%;
-  font-size: 10px;
+  font-size: .7em;
   margin: 0 auto;
   padding:10px;
   border-top: 1px solid #F0F0F0;
+  min-height: 200px;
 }
 footer a{
-  color:#E3E3E3;
+  color:#858585;
+}footer a:hover{
+  color:#FF3838;
 }
 ul#inf {
   vertical-align: top;
@@ -251,7 +257,6 @@ ul#inf {
   list-style-type: none;
   text-align: left;
   color:black;
-  font-family: sans-serif;
   /*text-shadow: 2px 2px 4px black;*/
 
 }
@@ -274,7 +279,6 @@ li#inf a:hover {text-decoration: underline;color:gray;}
 }
 table {
   color:black;
-  font-family: 'Oswald', sans-serif;
 }
 #externalLinks{
   transition: .2s;
@@ -293,27 +297,7 @@ table {
 	margin: 10px 20px;
 	padding: 10px;
 }
-.news .news-title h2 {
-	color: #FFF;
-  font-weight: bolder:400;
-  font-family: sans-serif;
-  text-shadow: 2px 2px 4px black;
-  font-size: 40px;
-	padding: 10px;
-	display: inline;
-	word-wrap: break-word;
-  line-height: 2.1;
-}
-h2 {
-  color: #FFF;
-  font-weight: bolder:400;
-  text-shadow: 2px 2px 4px black;
-  font-size: 30px;
-  padding: 10px;
-  display: inline;
-  word-wrap: break-word;
-  line-height: 2.1;
-}
+
 .news .news-title h3 {
 	color: #FFF;
   font-size: 30px;
@@ -369,7 +353,7 @@ div.menu tr:hover {background-color: #FF383830;}
   }
   div.info {margin: 0;}
   header{padding:10px 10px;margin: 0;}
-  h4 {padding-left: 10px;padding-right: 10px;font-size:28px;}
+  h1 {padding-left: 10px;padding-right: 10px;}
 }
 @media screen and (max-width: 600px) {
   .topnav a {display: none;}
