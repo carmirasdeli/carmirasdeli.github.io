@@ -17,6 +17,7 @@ header {
   background-color: white;
   height:auto;
   z-index: 150;
+  vertical-align: middle;
 }
 body, html {
   font-family: Helvetica, sans-serif;
@@ -92,7 +93,6 @@ div.contentSmall {
   background-color: inherit;
 }
 .topnav a {
-  display: block;
   float: right;
   color: black;
   text-align: center;
@@ -221,7 +221,6 @@ a {
   text-decoration: underline;
 }
 div.info {
-  background-color: #F5F5F5;
   vertical-align: top;
   margin: 0 auto;
   padding-left: 10px;
