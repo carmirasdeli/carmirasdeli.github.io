@@ -7,6 +7,8 @@ Color Assets: red #FF3838
   transition-duration: inherit;
   transition-timing-function: inherit;
   transition-delay: inherit;
+
+  /*border:solid 1px;*/
 }
 header {
   top:0;
@@ -31,6 +33,7 @@ body {
   background-color: white;
 }
 p {
+  text-align: center;
 }
 img.logo {
   margin:0;
@@ -44,6 +47,12 @@ img.logomobile {
   height:40px;
   float:left;
   display:none;
+}
+img.centered {
+  display: block;
+  margin:0 auto;
+  max-width:100%;
+  max-height: 400px;
 }
 h1 {
   max-width: 800px;
@@ -69,7 +78,10 @@ p#headerscript {
   margin-bottom: 10px;
   margin-top:10px;
   font-size: 1em;
+  font-weight: 500;
   font-family: Helvetica, sans-serif;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 div.contentSmall {
   vertical-align: top;
@@ -173,7 +185,8 @@ div.sm {
 div.content {
   margin: 0 auto;
   overflow: auto;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
+  overflow: hidden;
 }
 div.contentBox {
   background-size:cover;
@@ -221,14 +234,17 @@ a {
   text-decoration: underline;
 }
 div.info {
+  max-width: 500px;
+  text-align: center;
   background-color:;
   vertical-align: top;
   margin: 0 auto;
   padding-left: 10px;
+  padding-right: 10px;
   padding-top:80px;
 }
-a#btn1 {color:white;font-weight: medium;font-family: Helvetica, sans-serif;margin:10px;border-radius: 5px;padding:10px;border:1px solid #0066ff;background-color: #0066ff;text-decoration: none;}
-a#btn2 {font-weight: medium;font-family: Helvetica, sans-serif;margin:10px;border-radius: 5px;padding:10px; color:black; border:1px solid black;text-decoration: none;background-color: white;}
+a#btn1 {display: inline-block;color:white;font-weight: medium;font-family: Helvetica, sans-serif;margin:10px;border-radius: 5px;padding:10px;border:1px solid #0066ff;background-color: #0066ff;text-decoration: none;}
+a#btn2 {display: inline-block;font-weight: medium;font-family: Helvetica, sans-serif;margin:10px;border-radius: 5px;padding:10px; color:black; border:1px solid black;text-decoration: none;background-color: white;}
 a#btn1:hover {background-color: #0055E6;}
 a#btn2:hover {background-color: #f8f9fa;}
 
