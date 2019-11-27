@@ -194,6 +194,7 @@ div.content {
   overflow: auto;
   margin-bottom: 40px;
   overflow: hidden;
+  background-attachment: fixed;
 }
 div.contentBox {
   background-size:cover;
@@ -390,6 +391,11 @@ div.menu tr:hover {background-color: #FF383830;}
 @media screen and (max-width: 600px) {
   h1 {font-size:30px;padding-left: 10px;padding-right: 10px;}
 }
+/*Turn off Parralax for mobile*/
+@media screen and (max-width: 900px) {
+  div.content {background-attachment: scroll;}
+}
+
 /*Navigation Behavior*/
 @media screen and (max-width: 600px) {
   .topnav.responsive {position: relative;}
