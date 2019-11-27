@@ -194,7 +194,6 @@ div.content {
   overflow: auto;
   margin-bottom: 40px;
   overflow: hidden;
-  background-attachment: fixed;
 }
 div.contentBox {
   background-size:cover;
