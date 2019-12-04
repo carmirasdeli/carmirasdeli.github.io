@@ -158,8 +158,8 @@
       <div class="content">
         <div style="margin:0 auto;">
         <div class="info">
-          <h1 id="hours">Hours</h1>
-          <div id="open-hours"></div>
+          <h1 class="" id="hours">Hours</h1>
+          <div class="inf-container"><div id="open-hours"></div></div>
           <script src="./open-hours.js" charset="utf-8"></script>
           <script>
             const hours = {
@@ -178,13 +178,16 @@
         </div>
         <br>
         <div class="info">
-          <h1 id="location">Location</h1>
-          <ul id="inf">
-            <li id="inf">3240 Chichester Ave <br>Boothwyn, PA</li>
-            <li id="inf"><a href="https://goo.gl/maps/L3sKB4PUo332" target="_blank">Directions</a></li>
-            <li id="inf"><a href="tel:610-494-9799">610-494-9799</a></li>
-          </ul>
-          <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d3063.731796154875!2d-75.4453712!3d39.8354306!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x89c6e5d3092d2f0d%3A0x6b492252d0bf8850!2sCar-Mira&#39;s+Deli%2C+3240+Chichester+Ave%2C+Boothwyn%2C+PA+19061!3m2!1d39.835430599999995!2d-75.44318249999999!5e0!3m2!1sen!2sus!4v1562453820281!5m2!1sen!2sus" width="200" height="300" frameborder="0" style="border:1" allowfullscreen></iframe>
+          <h1 class="" id="location">Location</h1>
+          <div class="inf-container">
+            <div style="display:inline-block;height:200px;width:200px;"><img id="storefront" src="images/storefront.jpg"></div>
+            <ul id="inf" style="display:inline-block;">
+              <li id="inf">3240 Chichester Ave <br>Boothwyn, PA</li>
+              <li id="inf"><a href="https://goo.gl/maps/L3sKB4PUo332" target="_blank">Directions</a></li>
+              <li id="inf"><a href="tel:610-494-9799">610-494-9799</a></li>
+            </ul>
+          </div>
+          <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d3063.731796154875!2d-75.4453712!3d39.8354306!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x89c6e5d3092d2f0d%3A0x6b492252d0bf8850!2sCar-Mira&#39;s+Deli%2C+3240+Chichester+Ave%2C+Boothwyn%2C+PA+19061!3m2!1d39.835430599999995!2d-75.44318249999999!5e0!3m2!1sen!2sus!4v1562453820281!5m2!1sen!2sus" width="200" height="300" frameborder="0" style="display:none;border:1" allowfullscreen></iframe>
         </div>
       </div>
     </div>
