@@ -15,19 +15,21 @@
     <header>
       <div style="z-index: 150;margin:0 auto;display:inline-block;width:100%;">
         <a href="index.html"><img src="images/headerlogo.png" class="logo"></a>
-        <div class="topnav" id="myTopnav" style="">
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-          </a>
-          <a href="tel:610-494-9799">610-494-9799</a>
-          <!--<a href="#hoagiebar">Hoagie Bar</a>-->
-          <!--<a href="#catering">Catering</a>-->
-          <!--<a href="#onthego">On The Go</a>-->
-          <!--<a href="#onlineOrdering">Online Ordering</a>-->
-          <a href="#hours">Hours</a>
-          <a href="#location">Location</a>
-          <a href="Menu.pdf">Menu</a>
-        </div>
+        <nav>
+          <div class="topnav" id="myTopnav" style="">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+            <a href="tel:610-494-9799">610-494-9799</a>
+            <!--<a href="#hoagiebar">Hoagie Bar</a>-->
+            <!--<a href="#catering">Catering</a>-->
+            <!--<a href="#onthego">On The Go</a>-->
+            <!--<a href="#onlineOrdering">Online Ordering</a>-->
+            <a href="#hours">Hours</a>
+            <a href="#location">Location</a>
+            <a href="Menu.pdf">Menu</a>
+          </div>
+        </nav>
       <script>
       function myFunction() {
         var x = document.getElementById("myTopnav");
@@ -42,23 +44,43 @@
   </header>
   <main>
       <div class="content">
-      <div class="split" id="brands">
-        <div class="contentBox" style="height:600px;background-image: url('images/deli.jpg');">
-          <div style="background-color:#FF383880;width:200px;height:200px;margin:auto;position: relative;
-     top: 50%;
-     transform: perspective(1px) translateY(-50%);">
+        <div class="contentBox" id="head" style="margin:0 auto;height:600px;">
+          <div style="box-shadow: 0 2px 4px 0 rgba(0,0,0,0.24);background-color:#FF383880;width:200px;height:200px;margin:auto;position: relative;top: 50%;transform: perspective(1px) translateY(-50%);">
             <img src="images/headerlogotrans.png" style="width:200px;border-radius:5px;">
           </div>
+            <script type="text/javascript">
+            var imgCount = 7;
+            var dir = 'images/';
+            var randomCount = Math.round(Math.random() * (imgCount - 1)) + 1;
+            var images = new Array
+                    images[1] = "authentic.jpg",
+                    images[2] = "cbs.jpg",
+                    images[3] = "italian.jpg",
+                    images[4] = "rb.jpg",
+                    images[5] = "chicken.jpg",
+                    images[6] = "deli.jpg",
+                    images[7] = "window.jpg"
+            document.getElementById("head").style.backgroundImage = "url(" + dir + images[randomCount] + ")";
+            </script>
+          </div>
+<!--
+          <div class="contentBox" style="height:600px;background-image: url('images/deli.jpg');">
+            <div style="background-color:#FF383880;width:200px;height:200px;margin:auto;position: relative;
+       top: 50%;
+       transform: perspective(1px) translateY(-50%);">
+              <img src="images/headerlogotrans.png" style="width:200px;border-radius:5px;">
+            </div>-->
+          </div>
+          <div class="split" id="brands">
+          <h1>Proudly Serving the Best Meats and Cheeses available</h1>
+          <p id="headerscript">We've been slicing quality meats and cheeses, just how you like them, for over 40 years!</p>
+          <div class="enclosure">
+              <div class="split3" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Dietz_%26_Watson_distressed_logo.png/1200px-Dietz_%26_Watson_distressed_logo.png')"></div>
+              <div class="split3" style="background-image: url('https://www.rochebros.com/wp-content/uploads/2014/02/thumanns-582x291.jpg');"></div>
+              <div class="split3" style="background-image: url('https://tvinacard.com/wp-content/uploads/2017/06/Boars_Head_logo.png');"></div>
+              <div class="split3" style="background-image: url('https://pbs.twimg.com/profile_images/1221136516/Daniele_Foods_Inc.jpg');"></div>
+          </div>
         </div>
-        <h1>Proudly Serving the Best Meats and Cheeses available</h1>
-        <p id="headerscript">We've been slicing quality meats and cheeses, just how you like them, for over 40 years!</p>
-        <div class="enclosure">
-            <div class="split3" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Dietz_%26_Watson_distressed_logo.png/1200px-Dietz_%26_Watson_distressed_logo.png')"></div>
-            <div class="split3" style="background-image: url('https://www.rochebros.com/wp-content/uploads/2014/02/thumanns-582x291.jpg');"></div>
-            <div class="split3" style="background-image: url('https://www.cheersliquormart.com/library/images/Items_that_Stay_on_website/Boars_Head_logo.png');"></div>
-            <div class="split3" style="background-image: url('https://pbs.twimg.com/profile_images/1221136516/Daniele_Foods_Inc.jpg');"></div>
-        </div>
-      </div>
     </div>
     <!--
     <div class="split" id="onlineOrdering" style="background-color:#FF3838;padding-top:80px;padding-bottom:100px;">
@@ -86,7 +108,7 @@
 -->
       </div>
     </div>
-    <div class="content" style="margin:0;background-repeat: no-repeat;background-size: cover;background-position: center;">
+    <div class="content">
       <h1 style="margin-top:80px;">Gift Cards Available!</h1>
       <p id="headerscript" style="">Give the gift of great food with a Car-Mira's Gift Card. NO fees, NO expiration!</p>
       <img class="centered" src="images/gift-card.png">
@@ -97,18 +119,6 @@
       <div style="margin: 80px auto;width:100%;text-align:center;">
         <a href="Menu.pdf" id="btn1">View Menu</a><a href="Menu_PF.pdf" id="btn2">Printer Friendly Menu</a>
         <br>
-<!--
-        <a href="Menu.pdf"><img class="centered-shadow" src="images/cat1.png"></a>
-        <a href="Menu.pdf"><img class="centered-shadow" src="images/cat2.png"></a>
-        <a href="Menu.pdf"><img class="centered-shadow" src="images/cat3.png"></a>
-        <a href="Menu.pdf"><img class="centered-shadow" src="images/cat4.png"></a>
-        <a href="Menu.pdf"><img class="centered-shadow" src="images/cat5.png"></a>
-        <a href="Menu.pdf"><img class="centered-shadow" src="images/cat6.png"></a>
-        <a href="Menu.pdf"><img class="centered-shadow" src="images/cat7.png"></a>
-        <a href="Menu.pdf"><img class="centered-shadow" src="images/cat8.png"></a>
-        <a href="Menu.pdf"><img class="centered-shadow" src="images/cat9.png"></a>
-        <a href="Menu.pdf"><img class="centered-shadow" src="images/cat10.png"></a>
--->
       </div>
     </div>
     <div class="content" style=";background-image: url('');background-repeat: no-repeat;background-size: cover;background-position: center;">
@@ -149,7 +159,7 @@
           document.getElementById("sandwiches").style.backgroundImage = "url(" + dir + images[randomCount] + ")";
      </script>
         </div>
-      -->
+-->
       <div class="content">
         <div style="margin:0 auto;">
         <div class="info">
