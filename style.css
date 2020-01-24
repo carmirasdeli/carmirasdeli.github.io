@@ -1,6 +1,16 @@
 /*
 Color Assets: red #FF3838
 */
+@font-face {
+  font-family: BebasNeue;
+  src: url(BebasNeue-Bold.otf);
+  font-weight: bold;
+}
+@font-face {
+  font-family: BebasNeue;
+  src: url(BebasNeue-Light.otf);
+  font-weight: light;
+}
 * {
   box-sizing: border-box;
   transition-property: inherit;
@@ -62,13 +72,34 @@ img.centered-shadow {
   padding: 4px;
   vertical-align: top;
 }
+div.header-oval {
+  width: 350px;
+  height: 175px;
+  border-radius: 175px / 85px;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.24);
+  background-color:#FF383890;
+  top: 50%;
+  transform: perspective(1px) translateY(-50%);
+  margin:auto;
+  position: relative;
+  text-align: center;
+  border:2px solid white;
+}
+div.header-oval img {
+  width:290px;
+  margin:0 auto;
+  position:relative;
+  margin-top: 27px;
+}
 h1 {
   max-width: 800px;
   margin:0 auto;
-  font-size: 4vw;
+  font-size: 4em;
   text-align: center;
   margin-bottom: 40px;
   font-family: Helvetica, sans-serif;
+  font-family: BebasNeue;
+
 }
 
 h2 {
@@ -94,9 +125,10 @@ p#headerscript {
   margin:0 auto;
   margin-bottom: 10px;
   margin-top:10px;
-  font-size: 1em;
-  font-weight: 500;
+  font-size: 1.5em;
+  font-weight: light;
   font-family: Helvetica, sans-serif;
+  font-family: 'Playfair Display', serif;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -128,7 +160,8 @@ div.contentSmall {
   padding: 16px 0px 14px 30px;
   text-decoration: none;
   font-family: sans-serif;
-  letter-spacing: 1px;
+  font-family: BebasNeue;
+  font-weight: bold;
   text-transform: uppercase;
 }
 
@@ -407,6 +440,8 @@ div.menu tr:hover {background-color: #FF383830;}
   div.info {margin: 0;}
   header{padding-left:;margin: 0;}
   img.centered-shadow {width: 100%;}
+  div.header-oval {width: 250px;height: 125px;border-radius: 125px / 62.5px;}
+  div.header-oval img {width:200px;margin-top:20px;}
 }
 /*Text - Mobile*/
 @media screen and (max-width: 600px) {
