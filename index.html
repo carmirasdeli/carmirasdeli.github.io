@@ -50,18 +50,13 @@
             <img src="images/headerlogotrans2.png">
           </div>
             <script type="text/javascript">
-            var imgCount = 8;
+            var imgCount = 3;
             var dir = 'images/';
             var randomCount = Math.round(Math.random() * (imgCount - 1)) + 1;
             var images = new Array
-                    images[1] = "authentic.jpg",
-                    images[2] = "cbs.jpg",
-                    images[3] = "italian.jpg",
-                    images[4] = "rb.jpg",
-                    images[5] = "chicken.jpg",
-                    images[6] = "deli.jpg",
-                    images[7] = "window.jpg",
-                    images[8] = "sandwiches.jpg"
+                    images[1] = "deli.jpg",
+                    images[2] = "window.jpg",
+                    images[3] = "bar.jpg"
             document.getElementById("head").style.backgroundImage = "url(" + dir + images[randomCount] + ")";
             </script>
           </div>
@@ -97,7 +92,7 @@
     </div>
 
   -->
-    <div id="hoagiebar" class="content" style="background-color:#FF3838;background-image: url('images/chickenbg.jpg');background-repeat: no-repeat;background-size: cover;background-position: center;">
+    <div id="hoagiebar" class="content" style="background-image: url('images/chickenbg.jpg');">
       <h1 style="margin-top:80px;color:white;">Famous Hoagies and Specialty Sandwiches</h1>
       <p id="headerscript" style="color:white;">Sliced fresh everyday until we run out of rolls. Get in before they're gone!</p>
       <div style="margin: 80px auto;width:100%;text-align:center;">
@@ -110,12 +105,12 @@
 -->
       </div>
     </div>
-    <div class="content">
+    <div class="content" style="background-image: url('')">
       <h1 style="margin-top:80px;">Gift Cards Available!</h1>
       <p id="headerscript" style="">Give the gift of great food with a Car-Mira's Gift Card. NO fees, NO expiration!</p>
       <img class="centered" src="images/gift-card.png">
     </div>
-    <div id="catering" class="content" style="background-color:#FF3838;background-image: url('images/traybg.jpg');background-repeat: no-repeat;background-size: cover;background-position: center;">
+    <div id="catering" class="content" style="background-image: url('images/traybg.jpg');">
       <h1 style="margin-top:80px;color:white;">Catering for any party or event</h1>
       <p id="headerscript" style="color:white;">You've got plenty to worry about. Let us do the cooking!</p>
       <div style="margin: 80px auto;width:100%;text-align:center;">
@@ -184,6 +179,7 @@
           <p>Call for special holiday closures information.</p>
         </div>
         <br>
+        <div class="content" style="">
         <div class="info">
           <h1 class="" id="location">Location</h1>
           <div class="inf-container">
@@ -198,6 +194,7 @@
           </div>
           <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d3063.731796154875!2d-75.4453712!3d39.8354306!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x89c6e5d3092d2f0d%3A0x6b492252d0bf8850!2sCar-Mira&#39;s+Deli%2C+3240+Chichester+Ave%2C+Boothwyn%2C+PA+19061!3m2!1d39.835430599999995!2d-75.44318249999999!5e0!3m2!1sen!2sus!4v1562453820281!5m2!1sen!2sus" width="200" height="300" frameborder="0" style="display:none;border:1" allowfullscreen></iframe>
         </div>
+      </div>
       </div>
     </div>
     </main>
