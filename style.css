@@ -1,16 +1,6 @@
 /*
 Color Assets: red #FF3838
 */
-@font-face {
-  font-family: BebasNeue;
-  src: url(BebasNeue-Bold.otf);
-  font-weight: bold;
-}
-@font-face {
-  font-family: BebasNeue;
-  src: url(BebasNeue-Light.otf);
-  font-weight: light;
-}
 * {
   box-sizing: border-box;
   transition-property: inherit;
@@ -23,17 +13,16 @@ header {
   top:0;
   left:0;
   right:0;
-  position: relative;
-  padding:5px 20px 5px 20px;
   background-color: white;
   background: -webkit-linear-gradient(to right, #ffffff, #ece9e6);
   background: linear-gradient(to right, #ffffff, #ece9e6);
   height:auto;
   z-index: 150;
   margin:0 auto;
+  position: fixed;
 }
 body, html {
-  font-family: Helvetica, sans-serif;
+  font-family: "Lato", sans-serif;
   color: black;
   font-size: 1em;
   margin: 0 auto;
@@ -47,11 +36,9 @@ p {
   text-align: center;
 }
 img.logo {
+  padding-top: 10px;
   margin:0;
-  display: flex;
-  height:45px;
-  float:left;
-  padding-top: 4px;
+  height:75px;
 }
 img.logomobile {
   margin:0;
@@ -62,7 +49,7 @@ img.logomobile {
 }
 img.centered {
   display: block;
-  margin:80px auto;
+  margin:0 auto;
   max-width:100%;
   max-height: 400px;
 }
@@ -73,12 +60,16 @@ img.centered-shadow {
   padding: 4px;
   vertical-align: top;
 }
+div.head {
+  margin: auto;
+  height:auto;
+}
 div.header-oval {
   width: 350px;
   height: 175px;
   border-radius: 175px / 85px;
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.24);
-  background-color:#FF383890;
+  background-color:#FF3838;
   top: 50%;
   transform: perspective(1px) translateY(-50%);
   margin:auto;
@@ -98,17 +89,15 @@ h1 {
   font-size: 4em;
   text-align: center;
   margin-bottom: 40px;
-  font-family: Helvetica, sans-serif;
-  font-family: BebasNeue;
-
+  font-family: "Lato", sans-serif;
 }
 
 h2 {
-  font-family: Helvetica, sans-serif;
+  font-family: "Lato", sans-serif;
   background-color: #F3F3F3;
   padding-top:10px;
 }
-h3 {font-family: Helvetica, sans-serif;}
+h3 {font-family: "Lato", sans-serif;}
 hr {
   margin-bottom: 40px;
 }
@@ -118,6 +107,7 @@ hr {
   max-width:100%;
   filter: contrast(180%);}
 .inf-container {
+  margin: 0 auto;
   border:1px solid #F0F0F0;padding:10px;
 }
 p#headerscript {
@@ -128,10 +118,16 @@ p#headerscript {
   margin-top:10px;
   font-size: 1.5em;
   font-weight: light;
-  font-family: Helvetica, sans-serif;
-  font-family: 'Playfair Display', serif;
+  font-family: "Lato", sans-serif;
+  font-family: serif;
   padding-left: 10px;
   padding-right: 10px;
+}
+div.info-block {
+  display:inline-block;
+  margin: 0 auto;
+  vertical-align: top;
+  width:100%;
 }
 div.contentSmall {
   vertical-align: top;
@@ -149,25 +145,54 @@ div.contentSmall {
   transition: .5s;
   object-fit: cover;
 }
-.topnav {
-  overflow: hidden;
-  background-color: inherit;
-}
-.topnav a {
-  display: block;
-  float: right;
-  color: black;
-  text-align: center;
-  padding: 16px 0px 14px 30px;
-  text-decoration: none;
-  font-family: sans-serif;
-  font-family: BebasNeue;
-  font-weight: bold;
-  text-transform: uppercase;
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
 }
 
-.topnav a:hover {
-  color: #FF3838;
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
 }
 
 .active {
@@ -233,12 +258,15 @@ div.sm {
   margin: 0 auto;
 }
 div.content {
-  margin: 0px auto;
+  margin: 100px auto 0 auto;
   overflow: auto;
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-color: hsla(0,0%,100%,0.1);
+  background-blend-mode: overlay;
+
 }
 div.contentBox {
   margin: 0;
@@ -246,7 +274,8 @@ div.contentBox {
   background-position: center;
   background-repeat: no-repeat;
   display: block;
-  margin-bottom:100px;
+  background-color: hsla(0,0%,100%,0.40);
+  background-blend-mode: overlay;
 }
 div.split {
   width:100%;margin:0 auto;align:center;text-align:center;background-color:white;
@@ -296,13 +325,13 @@ div.info {
   padding-right: 10px;
   padding-top:80px;
 }
-a#btn1 {display: inline-block;color:white;width:200px;font-weight: medium;font-family: Helvetica, sans-serif;margin:10px;border-top-right-radius: 50px;border-bottom-right-radius: 50px; border-top-left-radius: 50px;border-bottom-left-radius: 50px;padding:10px;background-color: #FF3838;text-decoration: none;}
-a#btn2 {display: inline-block;width:200px;border-top-right-radius: 50px;border-bottom-right-radius: 50px;border-top-left-radius: 50px;border-bottom-left-radius: 50px;font-weight: medium;font-family: Helvetica, sans-serif;margin:10px;padding:10px; color:black;text-decoration: none;background-color: white;}
+a#btn1 {display: inline-block;color:white;width:200px;font-weight: medium;font-family: "Lato", sans-serif;margin:10px;border-top-right-radius: 50px;border-bottom-right-radius: 50px; border-top-left-radius: 50px;border-bottom-left-radius: 50px;padding:10px;background-color: #FF3838;text-decoration: none;}
+a#btn2 {display: inline-block;width:200px;border-top-right-radius: 50px;border-bottom-right-radius: 50px;border-top-left-radius: 50px;border-bottom-left-radius: 50px;font-weight: medium;font-family: "Lato", sans-serif;margin:10px;padding:10px; color:black;text-decoration: none;background-color: white;}
 a#btn1:hover {background-color: red;}
 a#btn2:hover {background-color: #f8f9fa;}
 
 footer {
-  font-family: Helvetica, sans-serif;
+  font-family: "Lato", sans-serif;
   background-image: linear-gradient(to bottom right, #ECE9E6,#FFFFFF);
   display: block;
   width:100%;
@@ -372,64 +401,29 @@ table {
 td, th {
 }
 tr:hover {background-color: #F9F9F9;cursor: default;}
-
-#externalLinks{
-  transition: .2s;
-    opacity:.4;
-}
-#externalLinks:hover{
-  transition: .2s;
-  opacity:1;
-
-}
-
-.news .news-title {
-	float: left;
-	position: relative;
-	z-index: 10;
-	margin: 10px 20px;
-	padding: 10px;
-}
-
-.news .news-title h3 {
-	color: #FFF;
-  font-size: 30px;
-	padding: 10px;
-	display: inline;
-	word-wrap: break-word;
-  line-height: 2.1;
-}
 button {
   margin: 10px;
 }
-div.menu table, div.menu td, div.menu th {
-  border: 1px solid #ddd;
-  text-align: left;
-}
-div.menu table {
-  border-collapse: collapse;
-  empty-cells: hide;
-  table-layout: fixed;
-  width: 100%;
-  margin-bottom: 100px;
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-}
-div.menu h2 {
-  color:#FF3838;
-}
-div.menu th, div.menu td {
-  padding: 15px;
-}
-td {
-  padding:0 20px;
-}
-div.menu th {
-  background-color: #4CAF50;
-  color: white;
-}
-div.menu tr:nth-child(even) {background-color: #f2f2f2;}
-div.menu tr:hover {background-color: #FF383830;}
+nav {
 
+}
+
+span#menu {
+  float: right;
+  color: black;
+  padding-top: 10px;
+}
+div#menu:hover {
+  opacity: 1;
+}
+div#menu {
+  z-index: 150;
+  margin: 10px;
+  opacity: 1;
+  font-size: 40px;
+  padding-left:40px;
+  padding-right:40px;
+}
 /*Layout - Mobile style Width Constraints*/
 @media screen and (max-width:600px) {
   img.logo {margin-left: 0;}
@@ -446,14 +440,11 @@ div.menu tr:hover {background-color: #FF383830;}
   img.centered-shadow {width: 100%;}
   div.header-oval {width: 250px;height: 125px;border-radius: 125px / 62.5px;}
   div.header-oval img {width:200px;margin-top:20px;}
+  div#menu {padding-right: 0;padding-left: 0;}
 }
 /*Text - Mobile*/
 @media screen and (max-width: 600px) {
   h1 {font-size:30px;padding-left: 10px;padding-right: 10px;}
-}
-/*Turn off Parralax for mobile*/
-@media screen and (max-width: 1024px) {
-  div.content {background-attachment: scroll;}
 }
 
 /*Navigation Behavior*/
@@ -476,7 +467,4 @@ div.menu tr:hover {background-color: #FF383830;}
     float: right;
     display: block;
   }
-}
-@media (prefers-color-scheme: dark) {
-
 }
