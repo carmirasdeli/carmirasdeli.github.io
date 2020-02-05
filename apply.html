@@ -2,11 +2,8 @@
 <html oncontextmenu="return false" ondragstart="return false" >
   <head>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <meta name="description" content="Car-Mira's Deli Boothwyn, PA. Famous Sandwiches, hoagies and catering since 1975.">
@@ -17,91 +14,73 @@
   </head>
   <body>
     <header>
-      <div style="z-index: 150;margin:0 auto;display:inline-block;width:100%;">
-        <a href="index.html"><img src="images/headerlogo.png" class="logo"></a>
-        <div class="topnav" id="myTopnav" style="">
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-          </a>
-          <a href="tel:610-494-9799">610-494-9799</a>
-          <!--<a href="index.html#onlineOrdering">Online Ordering</a>-->
-          <a href="index.html#hours">Hours</a>
-          <a href="index.html#location">Location</a>
-          <a href="Menu.pdf">Menu</a>
-        </div>
-      <script>
-      function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-          x.className += " responsive";
-        } else {
-          x.className = "topnav";
-        }
-      }
-      </script>
-    </div>
+        <div class="" id="head" style="">
+          <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav();init()">&times;</a>
+            <div class="overlay-content">
+              <a href="Menu.pdf" onclick="closeNav()&init()">Menu</a>
+              <a href="index.html#hours" onclick="closeNav()&init()">Hours</a>
+              <a href="index.html#location" onclick="closeNav()&init()">Location</a>
+              <a href="tel:610-494-9799" onclick="closeNav()">610-494-9799</a>
+            </div>
+          </div>
+          <div id="menu">
+            <a href="index.html"><img src="images/headerlogo.png" class="logo"></a>
+            <span id="menu" style="cursor:pointer;" onclick="openNav()">&#9776;</span>
+          </div>
+          <script>
+            function openNav() {
+              document.getElementById("myNav").style.display = "block";
+              document.getElementById("*").style = "initial";
+              }
+              function closeNav() {
+                document.getElementById("myNav").style.display = "none";
+              }
+              function init() {
+                document.getElementById("*").style = "initial";
+              }
+          </script>
+          </div>
   </header>
   <main>
-      <div class="content">
-      <div class="split" id="brands">
+    <div class="content">
+      <h1 style="margin-top:30px;">Employment Opportunities</h1>
 
-        <h1>Job Openings</h1>
-      </div>
-      <div style="padding:10px;max-width:800px;margin:0 auto;background-color:#fdfdfd;">
-        <hr>
-        <h2>Deli Clerk</h2>
-        <h3>Job Summary</h3>
-        <p style="text-align:left;">This position represents an opportunity to be part of a team in a company serving its local community for over 44 years. We strive to offer the best customer experience and quality food available and maintain a lively and professional work environment. This position is communicates effectively with customers, working the deli counter and works under operating shift manager and owners in a demanding, fast paced foodservice environment. </p>
-        <h3>Job Responsibilities</h3>
-        <ul>
-        <li>Welcome and address customers in friendly and courteous manner.</li>
-        <li>Present a neat and clean personal appearance.</li>
-        <li>Manage high volume of customers in courteous manner.</li>
-        <li>Respond to customer’s queries promptly and accurately.</li>
-        <li>Perform slicing, cutting, weighing and pricing the products.</li>
-        <li>Perform stocking of deli products.</li>
-        <li>Label products with appropriate dates and prices.</li>
-        <li>Manage product maintenance and rotation to avoid damages or spoilages.</li>
-        <li>Work deli counter to ensure prompt services to customers.</li>
-        <li>Provide assistance to staff on preparation, packaging, and preparation of deli products.</li>
-        <li>Maintain the store facility in a clean, neat and orderly fashion.</li>
-        <li>Stock and display products as per merchandising standards.</li>
-        <li>Observe sanitation and safety procedures to offer quality services.</li>
-        <li>Transport products to preparation or storage areas when needed.</li>
-        <li>Keep the store shelves loaded with product all the times.</li>
-        <li>Remove outdated and damaged products from shelves and storage areas.</li>
-      </ul>
-        <h3>Directions</h3>
-        <p style="text-align:left;">Download and complete application form electronically. Attach form to email addressed to <a href="mailto:carmirasdeli+jobs@gmail.com?subject=Deli%20Clerk%20Job%20Application">carmirasdeli+jobs@gmail.com</a> or print and complete manually to drop off in person.</p>
-        <a href="Application.pdf" id="btn1">Apply Now</a>
-      </div>
+    <div class="split" id="brands">
     </div>
-    </main>
-    <div class="sm">
-      <a href="tel:610-494-9799"><svg id="sm" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-width="30" height="30"
-viewBox="0 0 172 172"
-style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><path d="M86,172c-47.49649,0 -86,-38.50351 -86,-86v0c0,-47.49649 38.50351,-86 86,-86v0c47.49649,0 86,38.50351 86,86v0c0,47.49649 -38.50351,86 -86,86z" fill="none"></path><path d="M86,168.56c-45.59663,0 -82.56,-36.96337 -82.56,-82.56v0c0,-45.59663 36.96337,-82.56 82.56,-82.56v0c45.59663,0 82.56,36.96337 82.56,82.56v0c0,45.59663 -36.96337,82.56 -82.56,82.56z" fill="none"></path><g fill="#ffffff"><path d="M121.69,102.5636c-2.32773,-1.36453 -5.18867,-1.33587 -7.50493,0.04013l-11.7304,6.98893c-2.62587,1.5652 -5.90533,1.38173 -8.31333,-0.4988c-4.1624,-3.2508 -10.86467,-8.7204 -16.69547,-14.5512c-5.8308,-5.8308 -11.3004,-12.53307 -14.5512,-16.69547c-1.88053,-2.408 -2.064,-5.68747 -0.4988,-8.31333l6.98893,-11.7304c1.38173,-2.31627 1.3932,-5.20013 0.02867,-7.52787l-17.21147,-29.40053c-1.6684,-2.84373 -4.98227,-4.24267 -8.1872,-3.4572c-3.1132,0.7568 -7.1552,2.60293 -11.39213,6.8456c-13.26693,13.26693 -20.3132,35.64413 29.57827,85.5356c49.89147,49.89147 72.26293,42.85093 85.5356,29.57827c4.2484,-4.2484 6.0888,-8.29613 6.85133,-11.41507c0.774,-3.1992 -0.602,-6.49013 -3.44,-8.1528c-7.0864,-4.1452 -22.37147,-13.09493 -29.45787,-17.24587z"></path></g></g></svg></a>
-      <a href="https://goo.gl/maps/L3sKB4PUo332" target="_blank"><svg id="sm" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-width="30" height="30"
-viewBox="0 0 172 172"
-style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M86,11.46667c-34.83,0 -63.06667,28.23667 -63.06667,63.06667c0,41.47493 41.0048,61.32947 46.14187,65.95053c5.246,4.71853 9.5804,15.29653 11.32907,21.2936c0.84853,2.91253 3.2336,4.386 5.59573,4.44907c2.36787,-0.0688 4.7472,-1.54227 5.59573,-4.44907c1.74867,-5.99707 6.08307,-16.56933 11.32907,-21.2936c5.13707,-4.62107 46.14187,-24.4756 46.14187,-65.95053c0,-34.83 -28.23667,-63.06667 -63.06667,-63.06667zM86,91.73333c-9.50013,0 -17.2,-7.69987 -17.2,-17.2c0,-9.50013 7.69987,-17.2 17.2,-17.2c9.50013,0 17.2,7.69987 17.2,17.2c0,9.50013 -7.69987,17.2 -17.2,17.2z"></path></g></g></svg></a>
-      <a href="https://www.facebook.com/CarMirasDeli/" target="_blank"><svg id="sm" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-width="30" height="30"
-viewBox="0 0 172 172"
-style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M86,17.2c-37.9948,0 -68.8,30.8052 -68.8,68.8c0,34.49173 25.41013,62.97493 58.5144,67.95147v-49.71947h-17.02227v-18.08293h17.02227v-12.03427c0,-19.92333 9.70653,-28.66667 26.2644,-28.66667c7.9292,0 12.126,0.59053 14.10973,0.85427v15.78387h-11.29467c-7.02907,0 -9.48293,6.66787 -9.48293,14.17853v9.88427h20.59987l-2.79213,18.08293h-17.80773v49.8628c33.58013,-4.55227 59.48907,-33.2648 59.48907,-68.0948c0,-37.9948 -30.8052,-68.8 -68.8,-68.8z"></path></g></g></svg></a>
-      <a href="menu.pdf"></a>
+    <div style="padding:10px;max-width:800px;margin:0 auto;">
+      <h2>Deli Clerk</h2>
+      <h3>Job Summary</h3>
+      <p style="text-align:left;">This position represents an opportunity to be part of a team in a company serving its local community for over 44 years. We strive to offer the best customer experience and quality food available and maintain a lively and professional work environment. This position is communicates effectively with customers, working the deli counter and works under operating shift manager and owners in a demanding, fast paced foodservice environment. </p>
+      <h3>Job Responsibilities</h3>
+      <ul>
+      <li>Welcome and address customers in friendly and courteous manner.</li>
+      <li>Present a neat and clean personal appearance.</li>
+      <li>Manage high volume of customers in courteous manner.</li>
+      <li>Respond to customer’s queries promptly and accurately.</li>
+      <li>Perform slicing, cutting, weighing and pricing the products.</li>
+      <li>Perform stocking of deli products.</li>
+      <li>Label products with appropriate dates and prices.</li>
+      <li>Manage product maintenance and rotation to avoid damages or spoilages.</li>
+      <li>Work deli counter to ensure prompt services to customers.</li>
+      <li>Provide assistance to staff on preparation, packaging, and preparation of deli products.</li>
+      <li>Maintain the store facility in a clean, neat and orderly fashion.</li>
+      <li>Stock and display products as per merchandising standards.</li>
+      <li>Observe sanitation and safety procedures to offer quality services.</li>
+      <li>Transport products to preparation or storage areas when needed.</li>
+      <li>Keep the store shelves loaded with product all the times.</li>
+      <li>Remove outdated and damaged products from shelves and storage areas.</li>
+    </ul>
+      <h3>Directions</h3>
+      <p style="text-align:left;">Download and complete application form electronically. Attach form to email addressed to <a href="mailto:carmirasdeli+jobs@gmail.com?subject=Deli%20Clerk%20Job%20Application">carmirasdeli+jobs@gmail.com</a> or print and complete manually to drop off in person.</p>
+      <a href="Application.pdf" id="btn1">Apply Now</a>
+    </div>
+  </div>
+  </main>
 
-    </div>
   </body>
   <footer align="center">
-    <!--
-    <div id="externalLinks" align="center" style="background-color:white;">
-      <a href="https://www.ubereats.com/en-US/philadelphia/food-delivery/car-miras-deli/Vidht_TuQimzyjQeHhA2eQ/" target="_blank"><img class="ex" src="images/ubereats.png" style="width:100px;"></a>
-      <a href="https://www.doordash.com/store/car-mira-s-deli-marcus-hook-304941/" target="_blank"><img class="ex" src="images/doordash.png" style="width:100px;"></a>
-      <a href="https://www.facebook.com/CarMirasDeli/" target="_blank"><img class="ex" src="images/facebook.png" style="width:100px;"></a>
-    </div>
-  -->
+
     <div id="footer-container">
       <ul>Contact
         <li><a href="tel:610-494-9799">610-494-9799</a></li>
@@ -118,11 +97,8 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
         <li><a href="apply.html">Job Openings</a></li>
       </ul>
     </div>
-    <br>
       <div style="">
         ® 2019 Car-Mira's Inc
-      </div>
-      <div style="">
         <a href="https://brandonmarcelle.com">bm</a>
       </div>
   </footer>
