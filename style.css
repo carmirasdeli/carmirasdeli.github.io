@@ -14,8 +14,10 @@ header {
   left:0;
   right:0;
   background-color: white;
+  /*
   background: -webkit-linear-gradient(to right, #ffffff, #ece9e6);
   background: linear-gradient(to right, #ffffff, #ece9e6);
+  */
   height:auto;
   z-index: 150;
   margin:0 auto;
@@ -240,22 +242,24 @@ div.bg p {
 svg#sm {
   box-sizing: content-box;
   display: block;
-  display: none;
   margin: 10px 10px;
-  background-color: rgba(255,0,0,.8);
-  border-radius: 25%;
+  background-color: rgba(255,0,0,.5);
+  border-radius: ;
   padding:15px;
 }
 svg#sm:hover {
   background-color:red;
 }
 div.sm {
-  z-index: 150;
+  z-index: 120;
   background-color: transparent;
   display: block;
   position: fixed;
   bottom: 0;
   margin: 0 auto;
+}
+#myNav {
+  z-index: 150;
 }
 div.content {
   margin: 100px auto 0 auto;
