@@ -113,6 +113,10 @@ hr {
   padding:10px;
   /* background-color: #f3f3f380; */
 }
+div#currentStatus{
+  padding:10px;
+  font-weight: bold;
+}
 p#headerscript {
   max-width: 800px;
   text-align: center;
