@@ -1,7 +1,7 @@
 function status() {
   var today = new Date(),
       open = "We're currently open!",
-      closed = "Sorry, we're closed.",
+      closed = "Sorry, we're currently closed.",
       display = document.getElementById('currentStatus'),
       time = today.getHours();
   if (today.getDay() == 0 && time >= 9 && time < 16) {
@@ -21,6 +21,5 @@ function status() {
   }
   else {
       display.innerHTML = closed;
-      display.style["background-color"] = "#FF3838"
   }
 }
