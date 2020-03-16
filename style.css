@@ -63,6 +63,17 @@ img.centered-shadow {
   padding: 4px;
   vertical-align: top;
 }
+div#alert{
+  height:auto;
+  text-align:center;
+  background: #ff6e7f;
+  background: -webkit-linear-gradient(to right, #bfe9ff, #ff6e7f);
+  background: linear-gradient(to right, #bfe9ff, #f1f1f1);
+  padding:40px 0;
+}
+div#alert p {
+  font-size: small;
+}
 div.head {
   margin: auto;
   height:auto;
@@ -382,6 +393,11 @@ div.info {
 .buttonS2:active {
 	position:relative;
 	top:1px;
+}
+
+button.close {
+    color: black;
+
 }
 footer {
   font-family: "Lato", sans-serif;
