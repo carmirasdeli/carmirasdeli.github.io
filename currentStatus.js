@@ -12,11 +12,11 @@ function status() {
       display.innerHTML = open;
   } else if (today.getDay() == 3 && time >= 8 && time < 18) {
       display.innerHTML = open;
-  } else if (today.getDay() == 4 && time >= 8 && time < 20) {
+  } else if (today.getDay() == 4 && time >= 8 && time < 18) {
       display.innerHTML = open;
-  } else if (today.getDay() == 5 && time >= 8 && time < 20) {
+  } else if (today.getDay() == 5 && time >= 8 && time < 18) {
       display.innerHTML = open;
-  } else if (today.getDay() == 6 && time >= 8 && time < 20) {
+  } else if (today.getDay() == 6 && time >= 8 && time < 18) {
       display.innerHTML = open;
   }
   else {
