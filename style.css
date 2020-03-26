@@ -397,7 +397,6 @@ div.info {
 
 button.close {
     color: black;
-
 }
 footer {
   font-family: "Lato", sans-serif;
@@ -480,6 +479,7 @@ table {
   color:black;
   font-family: Helvetica, sans-serif;
   margin: 0 auto;
+  text-align: left;
 }
 td, th {
 }
