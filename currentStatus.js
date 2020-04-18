@@ -4,8 +4,8 @@ function status() {
       closed = "Sorry, we're currently closed.",
       display = document.getElementById('currentStatus'),
       time = today.getHours();
-  if (today.getDay() == 0 && time >= 9 && time < 16) {
-      display.innerHTML = open;
+  if (today.getDay() == 0) {
+      display.innerHTML = closed;
   } else if (today.getDay() == 1 && time >= 8 && time < 18) {
       display.innerHTML = open;
   } else if (today.getDay() == 2 && time >= 8 && time < 18) {
