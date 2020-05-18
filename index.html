@@ -4,6 +4,8 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <meta name="description" content="Car-Mira's Deli Boothwyn, PA. Famous Sandwiches, hoagies and catering since 1975.">
@@ -15,259 +17,81 @@
   </head>
   <body>
     <header>
-        <div class="" id="head" style="">
-          <div id="myNav" class="overlay">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav();init()">&times;</a>
-            <div class="overlay-content">
-              <a href="index.html" onclick="closeNav()&init()">Home</a>
-              <a href="menu.pdf" onclick="closeNav()&init()">Menu</a>
-              <a href="index.html#hours" onclick="closeNav()&init()">Hours</a>
-              <a href="index.html#location" onclick="closeNav()&init()">Location</a>
-              <a href="tel:610-494-9799" onclick="closeNav()">610-494-9799</a>
-            </div>
-          </div>
-          <div id="menu">
-            <a href="index.html"><img src="images/headerlogo.png" class="logo"></a>
-            <span id="menu" style="cursor:pointer;" onclick="openNav()">&#9776;</span>
-          </div>
-          <script>
-            function openNav() {
-              document.getElementById("myNav").style.display = "block";
-              document.getElementById("*").style = "initial";
-            }
-              function closeNav() {
-                document.getElementById("myNav").style.display = "none";
-              }
-              function init() {
-                document.getElementById("*").style = "initial";
-              }
-          </script>
-          </div>
-  </header>
-  <main>
-    <div class="content" id="alert" style="">
-      <div style="max-width:800px;margin:0 auto;padding:10px;">
-        <h5>** Attention **</h5>
-        <p style="font-size:small;">Due to the COVID-19 response we are pursuing new ways to serve our customers and meet our high demand, while maintaining the health and quality assurance we offer. We appreciate your continued patronage and patience at this time. </p>
-        <hr>
-        <br>
-        <h1>Curbside Pickup Only</h1>
-        <p id="headerscript">To ensure the safety and wellness for our staff and community we will be <b>requiring telephone ordering and curbside pickup only</b>. <a href="tel:610-494-9799">Call now</a> for details.</p>
-        <br>
-        </p>
+    </header>
+    <nav>
+      <a href="index.html"><img src="images/headerlogo.png" class="logo" id="smlogo"><img src="images/headerlogo.png" class="logo" id="logo"></a>
+      <div class="topnav" id="myTopnav" style="display:inline-block;float:right;">
+        <a href="javascript:void(0);" class="icon" onclick="mobileNavigation()">
+          <i class="fa fa-bars"></i>
+        </a>
+        <a class="social" href="https://www.facebook.com/CarMirasDeli/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+        <a href="tel:6104949799">610-494-9799</a>
+        <a href="#location">Location</a>
+        <a href="#currentStatus">Hours</a>
+        <a href="menu_full.pdf">Menu</a>
       </div>
-      <div style="margin: 20px auto;width:100%;text-align:center;">
-        <a href="menu.pdf" class="buttonS1">Sandwich & Catering Menu</a><a href="deli_menu.pdf" class="buttonS1">Lunchmeat & Salad Menu</a>
-        <br>
-      </div>
-      <button class="close" onclick="closeDiv()">close</button>
-
       <script>
-      function closeDiv() {
-        var x = document.getElementById("alert");
-        if (x.style.display === "none") {
-          x.style.display = "block";
+      function mobileNavigation() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
         } else {
-          x.style.display = "none";
+          x.className = "topnav";
         }
       }
       </script>
-    </div>
-    <div class="content">
-       <div class="contentBox" id="box" style="margin:0 auto;height:500px;">
-         <div class="header-oval">
-           <img src="images/headerlogotrans2.png">
-         </div>
-         <script type="text/javascript">
-         var imgCount = 3;
-         var dir = 'images/';
-         var randomCount = Math.round(Math.random() * (imgCount - 1)) + 1;
-         var images = new Array
-                 images[1] = "deli.jpg",
-                 images[2] = "window.jpg",
-                 images[3] = "bar.jpg"
-         document.getElementById("box").style.backgroundImage = "url(" + dir + images[randomCount] + ")";
-         </script>
-         </div>
-
-     </div>
-    <div class="content" style="margin-top:;background-image: url('');">
-      <h1 style="margin-top:80px;">Car-Mira's Italian Delicatessen</h1>
-      <p id="headerscript" style="">Slicing the freshest and highest quality meats and cheeses, just how you like them for 45 years!</p>
-      <div style="margin: 80px auto;width:100%;text-align:center;">
-          <div class="enclosure">
-            <img class="vendor" src="http://thumanns.com/testlive/thumannslogo3.png">
-            <img class="vendor" src="https://www.glennon.org/wp-content/uploads/sites/2/2018/06/Dietz__Watson_distressed_logo-1000-300x179.png">
-            <img class="vendor" src="http://www.pizzascene.com/wp-content/uploads/boars_head_logo-300x245.png">
-            <img class="vendor" src="http://www.danielefoods.com/images/nav_logo.png">
+    </nav>
+    <main>
+        <script>
+        function closeDiv() {
+          var x = document.getElementById("alert");
+          if (x.style.display === "none") {
+            x.style.display = "block";
+          } else {
+            x.style.display = "none";
+          }
+        }
+        </script>
+        <div class="content-wrapper" style="background-image:url('images/bg.jpg');height:auto;">
+          <div class="inner-content-wrapper" style="padding:140px 0 140px 0;">
+            <img id="ovalLogo" src="images/ovallogo.png">
           </div>
-      </div>
-      </div>
-      <div class="content" style="margin: 10px auto;background-image:url('images/storefront.jpg');padding-bottom:80px;">
-        <div style="height:30px;" id="hours">
         </div>
-        <div class="info-block">
-          <div class="info">
-            <div class="inf-container">
-
-              <h1 class="">Hours</h1>
-              <script src="./currentStatus.js" charset="utf-8"></script>
-              <script>window.onload = status;</script>
-              <div id="currentStatus"></div>
-              <div id="open-hours"></div>
-              <br>
-              <a href="tel:610-494-9799" class="buttonS1">Call Now</a>
-              <p>Call for special holiday closures information.</p>
-
+        <div style="position:relative;display:block;"><button onclick="closeDiv()">COVID-19 Response Info</button></div>
+        <div id="alert" style="display:none;">
+          <p style="font-size:small;">Due to the COVID-19 response we are pursuing new ways to serve our customers and meet our high demand, while maintaining the health and quality assurance we offer. We appreciate your continued patronage and patience at this time. </p>
+          <p>To ensure the safety and wellness for our staff and community we will be temporarily <b>requiring telephone ordering and curbside pickup only</b>. <a href="tel:610-494-9799">Call now</a> for details.</p>
+        </div>
+        <div class="content-wrapper" style="background-color:#FF3838;height:auto;">
+          <div class="inner-content-wrapper" style="padding:160px 0 160px 0;">
+            <h1 style="color:white;font-family: 'Lobster', cursive;">Located in Boothwyn, Pennsylvania we have been slicing the finest meats and cheeses, just how you like them, for 45 years!</h1>
+            <br>
+            <a href="menu_full.pdf" class="buttonS2">View Menu</a>
+          </div>
+        </div>
+        <div id ="split" class="content-wrapper">
+          <div class="splitL-content-wrapper" style="background-image:url('images/deli.jpg');background-position:center;background-repeat: no-repeat;background-size:cover;">
+          </div>
+          <div class="splitR-content-wrapper" style="padding:5%;">
+            <div class="center">
+              <p class="split-content">Slicing fresh everyday... "Thick, thin or just right."</p><br>
             </div>
-
-            <script src="./open-hours.js" charset="utf-8"></script>
-            <script>
-              const hours = {
-                "Monday":     { start: 800, end: 1800 },
-                "Tuesday":    { start: 800, end: 1800 },
-                "Wednesday":  { start: 800, end: 1800 },
-                "Thursday":   { start: 800, end: 1800 },
-                "Friday":     { start: 800, end: 1800 },
-                "Saturday":   { start: 800, end: 1800 },
-                "Sunday":     {}
-              }
-              OpenHours.generateTime(hours)
-            </script>
           </div>
-          <br>
         </div>
-        <div style="height:30px;" id="location">
-        </div>
-        <div class="info-block">
-          <div class="info">
-            <div class="inf-container">
-              <h1>Location</h1>
-              <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3063.7260248652037!2d-75.4443806841906!3d39.835559979436844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6e5d3166613a9%3A0xc5f42b7caadd8444!2s3240%20Chichester%20Ave%2C%20Marcus%20Hook%2C%20PA%2019061!5e0!3m2!1sen!2sus!4v1582823729662!5m2!1sen!2sus" width="200" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe> -->
-              <ul class="inf" style="display:inline-block;">
-                <li class="inf">Willowbrook Shopping Center</li>
-                <li class="inf">3240 Chichester Ave <br>Boothwyn, PA</li>
-                <li class="inf"><a href="tel:610-494-9799">610-494-9799</a></li>
-              </ul>
-              <br>
-              <a href="https://goo.gl/maps/L3sKB4PUo332" class="buttonS1">Directions</a>
-            </div>
-            <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d3063.731796154875!2d-75.4453712!3d39.8354306!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x89c6e5d3092d2f0d%3A0x6b492252d0bf8850!2sCar-Mira&#39;s+Deli%2C+3240+Chichester+Ave%2C+Boothwyn%2C+PA+19061!3m2!1d39.835430599999995!2d-75.44318249999999!5e0!3m2!1sen!2sus!4v1562453820281!5m2!1sen!2sus" width="200" height="300" frameborder="0" style="display:none;border:1" allowfullscreen></iframe>
-          </div>
-      </div>
-    </div>
-    </div>
-    <div class="content" style="margin-top:10px;background-image: url('images/delibg.jpg');">
-      <h1 style="margin-top:80px;color:white;">Slicing Fresh Everyday</h1>
-      <p id="headerscript" style="color:white;">We serve only the finest meats, cheeses, salads, cooked homemade specials and fresh bread delivered daily.</p>
-      <div style="margin: 80px auto;width:100%;text-align:center;">
-        <a href="menu.pdf" class="buttonS1">Sandwich & Catering Menu</a><a href="deli_menu.pdf" class="buttonS1">Lunchmeat & Salad Menu</a>
-        <br>
-      </div>
-    </div>
-        <div class="content" style="margin-top:10px;background-image: url('images/chickenbg.jpg');">
-          <h1 style="margin-top:80px;color:white;">Famous Hoagies and Specialty Sandwiches</h1>
-          <p id="headerscript" style="color:white;">Signature Specialties and Classic Hoagies served everyday. Call now before we sell out of rolls!</p>
-          <div style="margin: 80px auto;width:100%;text-align:center;">
-            <a href="menu.pdf" class="buttonS1">Sandwich & Catering Menu</a><a href="deli_menu.pdf" class="buttonS1">Lunchmeat & Salad Menu</a>
+        <div id="location"class="content-wrapper" style="background-color:#FF3838;height:auto;">
+          <div class="inner-content-wrapper" style="padding:140px 0 140px 0;">
+            <h1 style="color:white;">3240 Chichester Ave.<br>Boothwyn, PA 19061</h1>
             <br>
+            <a href="https://goo.gl/maps/L3sKB4PUo332" class="buttonS2">Get Directions</a>
+            <div id="currentStatus"></div>
+            <script src="./currentStatus.js" charset="utf-8"></script>
+            <script>window.onload = status;</script>
+            <h1 style="padding: 40px;display:inline-block;color:white;font-family: monospace;">Mon-Sat<br>8am-6pm</h1>
+            <h1 style="padding: 40px;display:inline-block;color:white;font-family: monospace">Sunday<br>9am-3pm</h1>
           </div>
         </div>
-
-    <div id="catering" class="content" style="margin-top:10px;background-image: url('images/traybg.jpg');">
-      <h1 style="margin-top:80px;color:white;">Catering Selections</h1>
-      <p id="headerscript" style="color:white;">Serving any event our Catering Selections offer the finest quality items displayed and ready to eat. </p>
-      <div style="margin: 80px auto;width:100%;text-align:center;">
-        <a href="menu.pdf" class="buttonS1">Sandwich & Catering Menu</a><a href="deli_menu.pdf" class="buttonS1">Lunchmeat & Salad Menu</a>
-        <br>
-      </div>
-    </div>
-    <div id="onthego" class="content" style="margin-top:10px;background-image: url('images/spagbg.jpg');background-repeat: no-repeat;background-size: cover;background-position: center;">
-      <h1 style="margin-top:80px;color:white;">On-The-Go Dinner Specials</h1>
-      <p id="headerscript" style="color:white;">Hot meals ready to be served without all the hassle.</p>
-
-      <div style="margin: 80px auto;width:100%;text-align:center;">
-        <a href="menu.pdf" class="buttonS1">Sandwich & Catering Menu</a><a href="deli_menu.pdf" class="buttonS1">Lunchmeat & Salad Menu</a>
-        <br>
-<!--
-        <a href="menu.pdf"><img class="centered-shadow" src="images/onthego.png"></a>
--->
-      </div>
-    </div>
-    <!-- <div class="content" style="margin:10px auto;background-image: url('images/sm.png')">
-      <h1 style="margin-top:80px;color:white;">Like us on Facebook</h1>
-      <p id="headerscript" style="color:white;">Take a break from the news and cat pictures to get the latest updates and available daily specials!</p>
-
-      <div style="margin: 30px auto;width:100%;text-align:center;">
-<iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Ffacebook.com%2Fcarmirasdeli&width=159&layout=button_count&action=like&size=large&share=true&height=46&appId" width="159" height="46" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>      </div>
-    </div> -->
-    <!-- <div class="content" style="background-image: url('')">
-      <h1 style="margin-top:80px;">Gift Cards Available!</h1>
-      <p id="headerscript" style="">Give the gift of great food with a Car-Mira's Gift Card.</p>
-      <img class="centered" src="images/gift-card.png">
-    </div> -->
-    <!-- <div class="content" style="margin: 10px auto;background-image:url('images/storefrontblur.jpg');padding-bottom:80px;">
-      <div style="height:30px;" id="hours">
-      </div>
-      <div class="info-block">
-        <div class="info">
-          <div class="inf-container">
-
-            <h1 class="">Hours</h1>
-            <div id="open-hours"></div>
-            <br>
-            <a href="tel:610-494-9799" class="buttonS1">Call Now</a>
-            <p>Call for special holiday closures information.</p>
-
-          </div>
-          <script src="./open-hours.js" charset="utf-8"></script>
-          <script>
-            const hours = {
-              "Monday":     { start: 800, end: 1800 },
-              "Tuesday":    { start: 800, end: 1800 },
-              "Wednesday":  { start: 800, end: 1800 },
-              "Thursday":   { start: 800, end: 2000 },
-              "Friday":     { start: 800, end: 2000 },
-              "Saturday":   { start: 800, end: 2000 },
-              "Sunday":     { start: 900, end: 1600 }
-            }
-            OpenHours.generateTime(hours)
-          </script>
-        </div>
-        <br>
-      </div>
-      <div style="height:30px;" id="location">
-      </div>
-      <div class="info-block">
-        <div class="info">
-          <div class="inf-container">
-            <h1>Location</h1>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3063.7260248652037!2d-75.4443806841906!3d39.835559979436844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6e5d3166613a9%3A0xc5f42b7caadd8444!2s3240%20Chichester%20Ave%2C%20Marcus%20Hook%2C%20PA%2019061!5e0!3m2!1sen!2sus!4v1582823729662!5m2!1sen!2sus" width="200" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>            <ul id="inf" style="display:inline-block;">
-              <li id="inf">Willowbrook Shopping Center</li>
-              <li id="inf">3240 Chichester Ave <br>Boothwyn, PA</li>
-              <li id="inf"><a href="tel:610-494-9799">610-494-9799</a></li>
-            </ul>
-            <br>
-            <a href="https://goo.gl/maps/L3sKB4PUo332" class="buttonS1">Directions</a>
-          </div>
-          <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d3063.731796154875!2d-75.4453712!3d39.8354306!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x89c6e5d3092d2f0d%3A0x6b492252d0bf8850!2sCar-Mira&#39;s+Deli%2C+3240+Chichester+Ave%2C+Boothwyn%2C+PA+19061!3m2!1d39.835430599999995!2d-75.44318249999999!5e0!3m2!1sen!2sus!4v1562453820281!5m2!1sen!2sus" width="200" height="300" frameborder="0" style="display:none;border:1" allowfullscreen></iframe>
-        </div>
-    </div>
-  </div> -->
     </main>
-
   </body>
-  <!-- <div class="sm" id="smBox">
-    <a href="tel:610-494-9799"><svg id="sm" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-width="30" height="30"
-viewBox="0 0 172 172"
-style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><path d="M86,172c-47.49649,0 -86,-38.50351 -86,-86v0c0,-47.49649 38.50351,-86 86,-86v0c47.49649,0 86,38.50351 86,86v0c0,47.49649 -38.50351,86 -86,86z" fill="none"></path><path d="M86,168.56c-45.59663,0 -82.56,-36.96337 -82.56,-82.56v0c0,-45.59663 36.96337,-82.56 82.56,-82.56v0c45.59663,0 82.56,36.96337 82.56,82.56v0c0,45.59663 -36.96337,82.56 -82.56,82.56z" fill="none"></path><g fill="#ffffff"><path d="M121.69,102.5636c-2.32773,-1.36453 -5.18867,-1.33587 -7.50493,0.04013l-11.7304,6.98893c-2.62587,1.5652 -5.90533,1.38173 -8.31333,-0.4988c-4.1624,-3.2508 -10.86467,-8.7204 -16.69547,-14.5512c-5.8308,-5.8308 -11.3004,-12.53307 -14.5512,-16.69547c-1.88053,-2.408 -2.064,-5.68747 -0.4988,-8.31333l6.98893,-11.7304c1.38173,-2.31627 1.3932,-5.20013 0.02867,-7.52787l-17.21147,-29.40053c-1.6684,-2.84373 -4.98227,-4.24267 -8.1872,-3.4572c-3.1132,0.7568 -7.1552,2.60293 -11.39213,6.8456c-13.26693,13.26693 -20.3132,35.64413 29.57827,85.5356c49.89147,49.89147 72.26293,42.85093 85.5356,29.57827c4.2484,-4.2484 6.0888,-8.29613 6.85133,-11.41507c0.774,-3.1992 -0.602,-6.49013 -3.44,-8.1528c-7.0864,-4.1452 -22.37147,-13.09493 -29.45787,-17.24587z"></path></g></g></svg></a>
-    <a href="https://goo.gl/maps/L3sKB4PUo332" target="_blank"><svg id="sm" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-width="30" height="30"
-viewBox="0 0 172 172"
-style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M86,11.46667c-34.83,0 -63.06667,28.23667 -63.06667,63.06667c0,41.47493 41.0048,61.32947 46.14187,65.95053c5.246,4.71853 9.5804,15.29653 11.32907,21.2936c0.84853,2.91253 3.2336,4.386 5.59573,4.44907c2.36787,-0.0688 4.7472,-1.54227 5.59573,-4.44907c1.74867,-5.99707 6.08307,-16.56933 11.32907,-21.2936c5.13707,-4.62107 46.14187,-24.4756 46.14187,-65.95053c0,-34.83 -28.23667,-63.06667 -63.06667,-63.06667zM86,91.73333c-9.50013,0 -17.2,-7.69987 -17.2,-17.2c0,-9.50013 7.69987,-17.2 17.2,-17.2c9.50013,0 17.2,7.69987 17.2,17.2c0,9.50013 -7.69987,17.2 -17.2,17.2z"></path></g></g></svg></a>
-
-  </div> -->
   <footer>
     <div class="footer-wrapper">
       <div id="footer-container">
@@ -283,23 +107,12 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
           <li><a href="menu_pf.pdf">Printer Friendly PDF</a></li>
         </ul>
       </div>
-      <div id="footer-container">
-      <ul>Connect
-        <li><a href="https://www.facebook.com/CarMirasDeli/" target="_blank"><img class="connect" src="images/facebook.png"></a>
-            <a href="https://www.tripadvisor.com/Restaurant_Review-g52229-d421175-Reviews-Car_Mira_s_Deli-Boothwyn_Pennsylvania.html?m=19905" target="_blank"><img class="connect" src="images/tripadvisor.png"></a></li>
-      </ul>
-    </div>
     <div id="footer-container">
       <ul>Employment
         <li><a href="apply.html">Job Openings</a></li>
       </ul>
     </div>
-    <div>
-    <br>
-      <p style="font-size:small;">® 2019 Car-Mira's. All Rights reserved.</p>
-      <br>
-      <br>
-    </div>
+      <p style="font-size:small;">® 2019 car-mira's. all rights reserved.</p>
   </div>
 </footer>
 </html>
