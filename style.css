@@ -46,7 +46,12 @@ button.alertbtn {
   display: inline;
   float: none;
   font-size: 15px;
+  text-decoration: underline;
 }
+button.alertbtn:hover {
+  color:white;
+}
+
 
 .topnav a:hover {
 background-color: inherit;
