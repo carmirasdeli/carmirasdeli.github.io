@@ -5,7 +5,7 @@ function status() {
       display = document.getElementById('currentStatus'),
       time = today.getHours();
   if (today.getDay() == 0 && time >= 9 && time < 15) {
-      display.innerHTML = closed;
+      display.innerHTML = open;
   } else if (today.getDay() == 1 && time >= 8 && time < 18) {
       display.innerHTML = open;
   } else if (today.getDay() == 2 && time >= 8 && time < 18) {
