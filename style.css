@@ -235,10 +235,6 @@ footer a{
 }footer a:hover{
   color:blue;
 }
-.footerLogo {
-  width: 120px;
-  display: inline-block;
-}
 ul.inf {
   vertical-align: top;
   list-style: none;
@@ -285,7 +281,6 @@ button {
   footer {}
   footer ul{text-align:left;vertical-align:top;}
   #footer-container {display: block;width: 100%;}
-  .footerLogo {width: 100px;}
   .footer-wrapper {
     padding-left: 20px;
     width:100%;
