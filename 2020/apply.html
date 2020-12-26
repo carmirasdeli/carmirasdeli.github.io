@@ -12,19 +12,41 @@
     <meta name="keywords" content="hoagies, carmiras, car-miras, car-mira's, lunch meat, luncheon meat, cheese, sandwiches">
     <meta name="author" content="Brandon Marcelle, brandonmarcelle.com, car-miras inc">
     <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+
     <title>Car-Mira's Deli</title>
   </head>
   <body>
     <header>
-      <a href="index.html"><img src="images/logo.png" class="logo"></a>
     </header>
+    <nav>
+      <a href="index.html"><img src="images/headerlogo.png" class="logo" id="smlogo"><img src="images/headerlogo.png" class="logo" id="logo"></a>
+      <div class="topnav" id="myTopnav" style="display:inline-block;float:right;">
+        <a href="javascript:void(0);" class="icon" onclick="mobileNavigation()">
+          <i class="fa fa-bars"></i>
+        </a>
+        <a class="social" href="https://www.facebook.com/CarMirasDeli/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+        <a href="tel:6104949799">610-494-9799</a>
+        <a href="index.html#location">Location</a>
+        <a href="index.html#currentStatus">Hours</a>
+        <a href="menu.pdf">Menu</a>
+      </div>
+      <script>
+      function mobileNavigation() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+      </script>
+    </nav>
     <main>
-      <h1 style="font-family:sans-serif;color:white;">Deli Clerk</h1>
-      <div class="content" style="color:black;">
       <div class="content-wrapper">
-      <div style="padding:10px;max-width:800px;margin:0 auto;background-color:#f3f3f3;">
+      <div style="padding:10px;max-width:800px;margin:0 auto;">
+        <h2>Deli Clerk</h2>
         <h3>Job Summary</h3>
-        <p style="text-align:left;font-family:sans-serif;color:black;">This position represents an opportunity to be part of a team in a company serving its local community for over 44 years. We strive to offer the best customer experience and quality food available and maintain a lively and professional work environment. This position communicates effectively with customers, working the deli counter and works under operating shift manager and owners in a demanding, fast paced food service environment. </p>
+        <p style="text-align:left;">This position represents an opportunity to be part of a team in a company serving its local community for over 44 years. We strive to offer the best customer experience and quality food available and maintain a lively and professional work environment. This position is communicates effectively with customers, working the deli counter and works under operating shift manager and owners in a demanding, fast paced foodservice environment. </p>
         <h3>Job Responsibilities</h3>
         <ul>
         <li>Welcome and address customers in friendly and courteous manner.</li>
@@ -46,13 +68,31 @@
       </ul>
         <h3>Directions</h3>
         <p style="text-align:left;">Download and complete application form electronically. Attach form to email addressed to <a href="mailto:carmirasdeli+jobs@gmail.com?subject=Deli%20Clerk%20Job%20Application">carmirasdeli+jobs@gmail.com</a> or print and complete manually to drop off in person.</p>
-        <button><a href="Application.pdf">Apply Now</a></button>
+        <a href="Application.pdf" class="buttonS1">Apply Now</a>
       </div>
     </div>
-</div>
+
     </main>
   </body>
   <footer>
-      <p style="text-align: center;font-family: sans-serif;font-size:x-small;">® 2019 car-mira's. all rights reserved.</p>
+    <div class="footer-wrapper">
+      <div id="footer-container">
+        <ul>Car-Mira's Deli
+          <li><a href="https://goo.gl/maps/L3sKB4PUo332" target="_blank">3240 Chichester Ave <br>Boothwyn, PA</a></li>
+          <li><a href="tel:610-494-9799">610-494-9799</a></li>
+        </ul>
+      </div>
+      <div id="footer-container">
+        <ul>Menu
+          <li><a href="menu.pdf">Full Menu</a></li>
+        </ul>
+      </div>
+    <div id="footer-container">
+      <ul>Employment
+        <li><a href="apply.html">Job Openings</a></li>
+      </ul>
+    </div>
+      <p style="font-size:small;">® 2019 car-mira's. all rights reserved.</p>
+  </div>
 </footer>
 </html>
