@@ -196,10 +196,15 @@ button:hover {
   border: 2px solid #4CAF50;
 }
 footer {
-  margin: 300px auto;
+  position: relative;
   width:100%;
   text-align:center;
+  margin-top:200px;
 }
+footer a {
+  margin: 20px;
+}
+
 
 @media screen and (max-width:600px) {
   img.logo {width: 100%;}
@@ -215,6 +220,7 @@ footer {
   h1 {
     padding:0 10px;
   }
+  #ad {max-width:100%;border:none;}
 }
 @media screen and (max-width: 767px) {
   body {

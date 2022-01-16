@@ -14,21 +14,33 @@
   </head>
   <body>
     <header>
-      <img class="logo" src="images/logo.png" alt="Carmiras logo">
+      <img class="logo" src="images/headerlogo.png" alt="Carmiras logo" style="display:;">
     </header>
     <main>
+      <div style="position: relative;padding:10px;">
+        <video id="ad" controls width="700" style="border:solid;">
+            <source src="images/ad.mp4"
+                    type="video/mp4">
+            Sorry, your browser doesn't support embedded videos.
+        </video>
+      </div>
         <div class="content">
           <h1><a href="tel:6104949799">610-494-9799</a></h1>
-          <h3 id="hoursAlert" style="display:none;background-color:lightblue;padding:20px 5px 20px 5px;"></h3>
+          <h3 id="hoursAlert" style="display:none;background-color:lightblue;padding:20px 5px 20px 5px;">MESSAGE HERE</h3>
           <div id="currentStatus" style="display:;"></div>
           <script src="./currentStatus.js" charset="utf-8"></script>
           <script>window.onload = status;</script>
-        <h2>Sunday<br>9AM - 3PM</h2>
-        <h2>Mon-Sat<br>8AM - 7PM</h2>
-          <h1><a href="menu.pdf">Menu</a></h1>
-          <h1><a href="papermenu.pdf">Paper Menu</a></h1>
-          <h1><a href="https://goo.gl/maps/L3sKB4PUo332">Directions</a></h1>
-          <h1><a href="apply.html">Employment</a></h1>
+          <div>
+            <h2>Sunday<br>9AM - 3PM</h2>
+            <h2>Mon-Sat<br>8AM - 7PM</h2>
+          </div>
+
+          <div>
+            <h1><a href="menu.pdf">Menu</a></h1>
+            <h1><a href="papermenu.pdf">Paper Menu</a></h1>
+            <h1><a href="https://goo.gl/maps/L3sKB4PUo332">Directions</a></h1>
+            <h1><a href="apply.html">Employment</a></h1>
+          </div>
       </div>
         <div class="links">
           <a href="https://www.facebook.com/CarMirasDeli/" target="_blank"><img class="links" src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Facebook_logo_%28square%29.png" alt=""></a>
