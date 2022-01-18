@@ -50,6 +50,34 @@
       <p style="text-align:left;">Download and complete application form electronically. Attach form in email to us  <a  style="color:blue;"href="mailto:carmirasdeli+jobs@gmail.com?subject=Deli%20Clerk%20Job%20Application">HERE</a> or print and complete manually to drop off in person.</p>
       <button><a href="Application.pdf">Application</a></button>
         <hr>
+        <h3>Quick Application</h3>
+        <p style="text-align:left;">Fill out this form to kick-start the application process. You may be asked to fill out a complete application in person.</p>
+        <div style="">
+          <form action="mailto:brandon@brandonmarcelle.com" enctype="text/plain" method="post" id="appform">
+            <label for="fname">First name: *</label><br>
+            <input type="text" id="fname" name="fname" required><br>
+            <label for="lname">Last name: *</label><br>
+            <input type="text" id="lname" name="lname" required><br>
+            <label for="phone">Phone: xxx-xxx-xxxx *</label><br>
+            <input type="tel" name="phone_number" id="phone_number" pattern="^\d{3}-\d{3}-\d{4}$" required="required"><br>
+            <label for="email">Email: *</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="email">Skills:</label><br>
+            <textarea rows="5" style="width:100%;" id="skills" name="skills" form="appform"></textarea><br>
+            <p style="font-weight:bold;">Certification and Training:</p>
+            <input type="checkbox" id="exp" name="exp" value="experience">
+            <label for="vehicle3"> No formal experience, but willing to learn</label><br>
+            <input type="checkbox" id="noexp" name="noexp" value="noexperience">
+            <label for="vehicle3"> I have food service experience</label><br>
+            <input type="checkbox" id="servSafe" name="servSafe" value="servSafe">
+            <label for="vehicle1"> ServSafe Food Handler Certification</label><br>
+            <input type="checkbox" id="servSafeMan" name="servSafeMan" value="servSafeMan">
+            <label for="vehicle2"> ServSafe Manager Certification</label><br><br>
+            <label for="email">Work History:</label><br>
+            <textarea rows="5" style="width:100%;" id="history" name="work_history" form="appform"></textarea>
+            <br>
+            <input type="submit" value="Submit"><br>
+          </form>
         </div>
       </div>
 
