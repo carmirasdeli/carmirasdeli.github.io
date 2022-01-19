@@ -58,12 +58,16 @@
             <input type="text" id="fname" name="first_name" required><br>
             <label for="lname">Last name: *</label><br>
             <input type="text" id="lname" name="last_name" required><br>
+
+            <p style="font-weight:bold;">Have you ever been employed by this organization in the past?</p>
+            <input type="radio" id="html" name="previous_employee" value="yes">
+            <label for="yes">Yes</label><br>
+            <input type="radio" id="no" name="previous_employee" value="no">
+            <label for="no">No</label><br><br>
             <label for="phone">Phone: *</label><small> Format: 0123456789</small><br>
             <input type="tel" name="phone_number" id="phone_number" pattern="^\d{10}$" required="required"><br>
             <label for="email">Email: *</label><br>
             <input type="email" id="email" name="email" required><br>
-            <label for="skills">Skills:</label><br>
-            <textarea rows="5" style="width:100%;" id="skills" name="skills" form="appform"></textarea><br>
             <p style="font-weight:bold;">Certification and Training:</p>
             <input type="checkbox" id="exp" name="experience" value="no experience">
             <label for="exp"> No formal experience, but willing to learn</label><br>
@@ -73,11 +77,13 @@
             <label for="exp"> ServSafe Food Handler Certification</label><br>
             <input type="checkbox" id="servSafeMan" name="certification" value="servSafe Manager Certification">
             <label for="vehicle2"> ServSafe Manager Certification</label><br><br>
-            <label for="email">Work History:</label><br>
+            <label for="skills">Skills:</label><br>
+            <textarea rows="5" style="width:100%;" id="skills" name="skills" form="appform"></textarea><br>
+            <label for="email">Employment History:</label><br>
             <textarea rows="5" style="width:100%;" id="history" name="work_history" form="appform"></textarea>
             <br>
             <input type="submit" value="Submit"><br>
-            <small>*Submit will trigger email application to open. No information is stored on this or any webserver. </small>
+            <small>*Submit will trigger email application to open. No information is stored on this websever. </small>
 <br>
           </form>
         </div>
