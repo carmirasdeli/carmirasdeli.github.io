@@ -48,24 +48,31 @@ a:visited {
 header {
   margin: 0;
   padding: 0;
+  height: 10vh;
 }
-
+.headeralert {
+  background: #f85032;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #e73827, #f85032);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #e73827, #f85032); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  position:fixed;
+  display:block;
+  margin:0 auto;
+  text-align:center;
+  width:100%;
+  color:white;
+  box-shadow: 0px 10px 8px #888888;
+  z-index: 150;
+}
+#alert {
+  font-size: 20px;
+}
 img.logo {
   max-width: 600px;
   display: block;
   margin: 0 auto;
   padding: 10px;
 }
-img.album {
-  max-width: 600px;
-  display: block;
-  margin: 0 auto;
-  padding: 20px;
-}
-div.gallery {
-  margin: 0 auto;
-  max-width:900px;
-}
+
 img.banner {
   width: 70%;
   margin: 40px auto 120px auto;
@@ -200,6 +207,17 @@ button:hover {
   color: black;
   border: 2px solid #4CAF50;
 }
+button.alertbtn {
+  border:0;
+  background-color: inherit;
+  display: inline;
+  float: none;
+  font-size: 30px;
+  text-decoration: ;
+}
+button.alertbtn:hover {
+  color:white;
+}
 small {
   display: flex;
   text-align: left;
@@ -261,4 +279,8 @@ footer a {
     background-size:auto;
     background-attachment: scroll;
   }
+  #ad {max-width:100%;border:none;}
+  h2 {display: block;}
+  button.alertbtn {  font-size: 3.5vw;}
+  #alert {font-size: 2.8vw;}
 }

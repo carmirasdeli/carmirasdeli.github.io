@@ -1,26 +1,26 @@
-
 function status() {
-  var today = new Date(),
+  var today = new Date().getDay(),
+      time = new Date().getHours(),
       open = "We're currently open!",
-      closed = "We're currently closed.",
+      closed = "Sorry, we're closed.",
       display = document.getElementById('currentStatus');
-
-  if (today.getDay() == 0 && today.getHours() >= 9 && today.getHours() < 15) {
+    if (today == 0 && time >= 9 && time < 15) {
       display.innerHTML = open;
-  } else if (today.getDay() == 1 && today.getHours() >= 8 && today.getHours() < 19) {
+  } else if (today == 1) {
+      display.innerHTML = closed;
+  } else if (today == 2 && time >= 10 && time < 19) {
       display.innerHTML = open;
-  } else if (today.getDay() == 2 && today.getHours() >= 8 && today.getHours() < 19) {
+  } else if (today == 3 && time >= 10 && time < 19) {
       display.innerHTML = open;
-  } else if (today.getDay() == 3 && today.getHours() >= 8 && today.getHours() < 19) {
+  } else if (today == 4 && time >= 10 && time < 19) {
       display.innerHTML = open;
-  } else if (today.getDay() == 4 && today.getHours() >= 8 && today.getHours() < 19) {
+  } else if (today == 5 && time >= 10 && time < 19) {
       display.innerHTML = open;
-  } else if (today.getDay() == 5 && today.getHours() >= 8 && today.getHours() < 19) {
+  } else if (today == 6 && time >= 10 && time < 19) {
       display.innerHTML = open;
-  } else if (today.getDay() == 6 && today.getHours() >= 8 && today.getHours() < 19) {
+  } else if (today == 6 && time >= 10 && time < 19) {
       display.innerHTML = open;
-  }
-  else {
+  } else {
       display.innerHTML = closed;
   }
 }
