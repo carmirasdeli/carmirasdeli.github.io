@@ -79,7 +79,7 @@ img.logo {
   padding: 10px;
 }
 .content-wrapper {
-  background-attachment: fixed;
+  /*background-attachment: fixed;*/
   background-size:cover;
   background-position: center;
   background-repeat: no-repeat;
