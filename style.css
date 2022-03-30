@@ -81,6 +81,13 @@ img.logo {
   margin: 0 auto;
   padding: 10px;
 }
+img.tagline {
+  width: auto;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+}
 .content-wrapper {
   background-attachment: fixed;
   background-size:cover;
