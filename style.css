@@ -352,4 +352,5 @@ footer a {
 }
 @media screen and (max-width: 900px) {
   .navigation h1 {display: block;}
+  .content-wrapper {background-attachment: scroll;}
 }
