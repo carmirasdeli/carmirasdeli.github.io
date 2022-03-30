@@ -1,7 +1,7 @@
 body, html {
   margin:0 auto;
   font-family: sans-serif;
-  color: white;
+  color: white; /*light theme*/
   background-attachment:fixed;
   /*-image: url('images/headerimage.jpg');*/
   background-size: cover;
@@ -14,7 +14,7 @@ body, html {
   font-weight:200;
 }
 body {
-  background: white;
+  background: white;  /* fallback for old browsers */
 }
 body:before{
   content: "";
@@ -88,7 +88,7 @@ img.tagline {
 .content-wrapper {
   background-attachment: fixed;
   background-size:cover;
-  background-position: center;
+  background-position:  bottom;
   background-repeat: no-repeat;
   display: block;
   height: inherit;
