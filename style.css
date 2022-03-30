@@ -2,7 +2,6 @@ body, html {
   margin:0 auto;
   font-family: sans-serif;
   color: #343a40; /*light theme*/
-  color: white;
   background-attachment:fixed;
   /*-image: url('images/headerimage.jpg');*/
   background-size: cover;
