@@ -78,6 +78,13 @@ img.logo {
   margin: 0 auto;
   padding: 10px;
 }
+img.ve {
+  max-width: 300px;
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+}
+
 img.tagline {
   width: auto;
   height: auto;
