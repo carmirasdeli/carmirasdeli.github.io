@@ -1,8 +1,8 @@
 function status() {
   var today = new Date().getDay(),
       time = new Date().getHours(),
-      open = "We're currently open!",
-      closed = "Sorry, we're closed.",
+      open = "Now Open!",
+      closed = "Closed now.",
       display = document.getElementById('currentStatus');
     if (today == 0 && time >= 9 && time < 15) {
       display.innerHTML = open;
