@@ -26,7 +26,9 @@ body:before{
   transition-delay: inherit;
   font-family: sans-serif;
 }
-
+i.fa {
+  font-size: 30px;
+}
 nav {
   height: auto;
   z-index: 150;
@@ -48,6 +50,7 @@ nav {
   text-decoration: none;
   font-size: 17px;
 }
+
 svg {
   padding-top: 5px;
 }
@@ -66,10 +69,13 @@ button.alertbtn:hover {
 
 .topnav a:hover {
 background-color: inherit;
-color: #E3D8C4;
+color: #ff6c6c;
 }
 .topnav .icon {
 display: none;
+}
+.topnav .icon:hover {
+  color:black;
 }
 body, html {
   color: black;
@@ -333,7 +339,6 @@ button {
      font-size: 20px;
    }
    .topnav a {
-     font-size: 20px;
    }
    .social {}
  }
