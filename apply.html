@@ -4,25 +4,62 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <meta name="description" content="Car-Mira's Deli Boothwyn, PA. Famous Sandwiches, hoagies and catering since 1975.">
-    <meta name="keywords" content="hoagies, carmiras, car-miras, car-mira's, lunch meat, luncheon meat, cheese, sandwiches">
-    <meta name="author" content="Brandon Marcelle, brandonmarcelle.com, car-miras inc">
+    <meta name="description" content="Horror Ink. Curated List of Maccabre Artists in Fine Art, Print and Tattoo.">
+    <meta name="keywords" content="horror tattoo ink halloween ">
+    <meta name="author" content="Brandon Marcelle, brandonmarcelle.com, horror ink">
     <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
-    <title>Car-Mira's Deli</title>
+    <title>Car-Mira's Italian Delicatessen</title>
   </head>
   <body>
-    <header>
-      <a href="index.html"><img src="images/headerlogo.png" class="logo"></a>
-    </header>
+    <nav>
+      <div style="padding:20px;max-width:1200px;margin:0 auto;">
+        <div id="currentStatus"></div>
+        <div style="text-align:right;letter-spacing:-1px;">
+          Monday Closed<br>
+          Tues thru Sat 10AM - 7PM<br>
+          Sunday      9AM - 3PM
+        </div>
+      <a href="index.html"><img src="images/smallLogo.png" class="logo" id="smlogo"><img src="images/headerlogo.png" class="logo" id="logo"></a>
+      <div class="topnav" id="myTopnav" style="display:inline;float:right;">
+        <a href="javascript:void(0);" class="icon" onclick="mobileNavigation()">
+          <i class="fa fa-bars"></i>
+        </a>
+        <a href="tel:6104949799">610-494-9799</a>
+        <a href="index.html#onlineOrdering">Online Ordering</a>
+        <a href="index.html#location">Location</a>
+        <a href="menu.pdf">Menu</a>
+        <div id="currentStatus"></div>
+
+      </div>
+      <script>
+      function mobileNavigation() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+      </script>
+      <script src="./currentStatus.js" charset="utf-8"></script>
+      <script>window.onload = status;</script>
+    </div>
+    </nav>
     <main>
-      <h1 style="font-family:sans-serif;color:white;">Deli Clerk</h1>
+      <div class="content-wrapper" style="background-color:#ff6c6c;height:auto;">
+        <div class="inner-content-wrapper" style="padding:160px 0 160px 0;">
+          <h1 style="color:white">Deli Clerk Application</h1>
+          <br>
+        </div>
+      </div>
       <div class="content" style="color:black;">
       <div class="content-wrapper">
-      <div style="padding:10px;max-width:800px;margin:0 auto;background-color:#f3f3f3;">
+      <div style="padding:10px;max-width:800px;margin:0 auto;background-color:;">
         <h3>Job Summary</h3>
         <p style="text-align:left;font-family:sans-serif;color:black;">This position represents an opportunity to be part of a team in a company serving its local community for over 46 years. We strive to offer the best customer experience and quality food available and maintain a lively and professional work environment. This position communicates effectively with customers, working the deli counter and works under operating shift manager and owners in a demanding, fast paced food service environment. </p>
         <h3>Job Responsibilities</h3>
@@ -47,8 +84,9 @@
       <hr>
 
       <h3>Full Application</h3>
-      <p style="text-align:left;">Download and complete application form electronically. Attach form in email to us  <a  style="color:blue;"href="mailto:carmirasdeli+jobs@gmail.com?subject=Deli%20Clerk%20Job%20Application">HERE</a>. <br><br>Or download, print and complete manually to drop off in person.</p>
-      <button><a href="Application.pdf">Application PDF</a></button><br>
+      <p style="text-align:left;">Download and complete application form electronically. Attach form in an  <a  style="color:blue;"href="mailto:carmirasdeli+jobs@gmail.com?subject=Deli%20Clerk%20Job%20Application">email</a>. <br><br>Or download, print and complete manually to drop off in person.</p>
+      <a href="Application.pdf" class="buttonS2">Application</a>
+      <br>
       <small>*DO NOT download this PDF on a shared or public device. No information is stored on this websever. </small>
 
         <hr>
@@ -84,7 +122,7 @@
             <textarea rows="5" style="width:100%;" id="history" name="work_history" form="appform"></textarea>
             <br>
             <input type="submit" value="Submit"><br>
-            <small>*DO NOT use this form on a shared or public device. Submit will trigger email application to open. No information is stored on this websever. </small>
+            <small>*DO NOT use this form on a shared or public device. Submit will trigger email application to open. No information is stored on this webserver. </small>
 <br>
           </form>
         </div>
@@ -93,10 +131,26 @@
     </div>
 
     </div>
-
     </main>
   </body>
   <footer>
-      <p style="text-align: center;font-family: sans-serif;font-size:x-small;">® 2022 car-mira's. all rights reserved.</p>
+    <div class="footer-wrapper">
+      <div id="footer-container">
+        <ul>Events
+          <li></li>
+        </ul>
+      </div>
+      <div id="footer-container">
+        <ul>Social Media
+          <li><a href="https://www.facebook.com/CarMirasDeli/">Facebook</a></li>
+        </ul>
+      </div>
+    <div id="footer-container">
+      <ul>Menu
+        <li><a href="papermenu.pdf">Paper Menu</a></li>
+      </ul>
+    </div>
+      <p style="font-size:small;">® 2022 Car-Mira's Inc All rights reserved</p>
+  </div>
 </footer>
 </html>
