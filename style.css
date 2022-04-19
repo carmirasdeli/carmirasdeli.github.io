@@ -213,6 +213,7 @@ h1 {
 	text-decoration:none;
   margin: 0 auto;
 }
+
 .buttonS2:hover {
 	background-color:white;
   color:black;
@@ -305,15 +306,16 @@ button {
   }
 }
  /* Navigation - Mobile */
- @media screen and (max-width: 940px) {
+
+
+ @media screen and (max-width: 840px) {
    .topnav a {display: none;padding: 10px;}
    .topnav a.icon {
      float: none;
      display: block;
+     font-size: 20px;
    }
  }
-
- @media screen and (max-width: 840px) {
    .topnav.responsive {position: relative;}
    .topnav.responsive .icon {
      float: none;
@@ -328,9 +330,14 @@ button {
      text-align: right;
      position: relative;
      width:100%;
+     font-size: 20px;
+   }
+   .topnav a {
+     font-size: 20px;
    }
    .social {}
  }
+
 /* top - Mobile Optimization */
 @media screen and (max-width: 840px) {
   #ovalLogo {width:90vw;}
