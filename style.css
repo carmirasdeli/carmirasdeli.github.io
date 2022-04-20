@@ -1,0 +1,362 @@
+body, html {
+  margin:0 auto;
+  font-family: sans-serif;
+  color: white; /*light theme*/
+  background-attachment:fixed;
+  /*-image: url('images/headerimage.jpg');*/
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-weight: bolder;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+  font-style: normal;
+  font-weight:200;
+}
+body {
+  background: white;  /* fallback for old browsers */
+}
+body:before{
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  background: url(images/bg.jpg) no-repeat center left;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  z-index: -10;
+}
+* {
+  box-sizing: border-box;
+  transition-property: inherit;
+  transition-duration: inherit;
+  transition-timing-function: inherit;
+  transition-delay: inherit;
+}
+a:visited {
+  color:inherit;
+}
+header {
+  margin: 0;
+  padding: 0;
+  height: ;
+}
+.headeralert {
+  background: #7F7FD5;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  position:fixed;
+  /*display:block;*/
+  display: block;
+  margin:0 auto;
+  text-align:center;
+  width:100%;
+  color:white;
+  box-shadow: 0px 10px 8px #888888;
+  z-index: 150;
+}
+#alert {
+  font-size: 20px;
+}
+.headeralert p {
+  padding:20px;
+}
+.ad {
+  display: none;
+}
+nav {
+
+}
+img.logo {
+  max-width: 600px;
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+}
+img.ve {
+  display: block;
+  margin: 0 auto;
+  height: 384px;
+}
+
+img.tagline {
+  width: auto;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+}
+.content-wrapper {
+  background-attachment: fixed;
+  background-size:cover;
+  background-position:  bottom;
+  background-repeat: no-repeat;
+  display: block;
+  height: inherit;
+  width: 100%;
+  display: flex;
+  height: auto;
+}
+div.split {
+  background-color: blue;
+  height: 384px;
+}
+.inner-content-wrapper {
+  width:80%;
+  margin:0 auto;
+  text-align: center;
+}
+#inner-logo {
+  width:40vw;
+}
+img.banner {
+  width: 70%;
+  margin: 40px auto 120px auto;
+  display: block;
+  padding: 1px;
+  background: linear-gradient(to bottom right, gray,white);
+  border-radius: 5px;
+  -webkit-box-shadow: 5px 5px 20px 0 rgba(0,0,0,.2);
+  box-shadow: 5px 5px 20px 0 rgba(0,0,0,.2);
+}
+main {
+  margin: 0 auto;
+  text-align:center;
+}
+svg {
+  margin:5px;
+  padding:;
+}
+svg:hover {
+
+}
+
+}
+div.content {
+  margin: auto 40px;
+  text-align: left;
+  max-width: 100%;
+  font-size: 35px;
+}
+form {
+  text-align: left;
+}
+
+div.links {
+  text-align:center;
+  z-index: 150;
+  display: block;
+  position: fixed;
+  bottom: 0;
+  margin: 10px;
+}
+img.links {
+  width: 40px;
+  box-sizing: content-box;
+  display: block;
+  margin: 10px 10px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: -webkit-sticky;
+  position: sticky;
+  top:0;
+}
+li{
+  text-align: left;
+}
+p {
+  text-align:left;
+}
+div.content a {
+  text-decoration: none;
+  color:inherit;
+}
+
+
+.topnav a:hover {
+background-color: #ddd;
+color: black;
+}
+
+.active {
+background-color: #4CAF50;
+color: white;
+}
+
+h1.header-caption {
+  letter-spacing: -1px;
+  color:white;
+  font-size: 25px;
+  padding:60px 0px 0px 0px;
+  font-weight: bold;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.navigation h1 {
+  display: inline;
+  padding-left: 30px;
+  letter-spacing: 1px;
+  font-family: sans-serif;
+  font-stretch: condensed;
+  -webkit-text-stroke: 1px white;
+  color: white;
+  text-shadow:
+      3px 3px 0 #000,
+    -1px -1px 0 #000,
+     1px -1px 0 #000,
+     -1px 1px 0 #000,
+      1px 1px 0 #000;
+}
+h1 {
+  letter-spacing: 1px;
+  font-family: sans-serif;
+  font-stretch: condensed;
+  -webkit-text-stroke: 1px white;
+  color: white;
+  text-shadow:
+      3px 3px 0 #000,
+    -1px -1px 0 #000,
+     1px -1px 0 #000,
+     -1px 1px 0 #000,
+      1px 1px 0 #000;
+}
+h2 {
+  font-family: sans-serif;
+  color:black;
+  display:inline-block;
+  padding:0 15px;
+  text-align: center;
+}
+h3 {
+  font-family: serif;
+  padding:0 15px;
+  text-align: left;
+}
+h3.quote {
+  font-weight: 100;
+  font-size: 40px;
+  font-family: sans-serif;
+  display:inline;
+  padding:0 15px;
+  text-align: center;
+}
+div#currentStatus{
+  color:black;
+  font-family: sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+}
+button {
+  background-color: #4CAF50; /* Green */
+  border: 2px solid white;
+  color: white;
+  padding: 16px 32px;
+  text-align: left;
+  text-decoration: none;
+  display: flex;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+button:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid #4CAF50;
+}
+button.alertbtn {
+  border:0;
+  background-color: inherit;
+  display: inline;
+  float: none;
+  font-size: 30px;
+  text-decoration: ;
+}
+button.alertbtn:hover {
+  color:white;
+}
+small {
+  display: flex;
+  text-align: left;
+}
+footer {
+  position: relative;
+  width:100%;
+  text-align:center;
+  margin-top:200px;
+}
+label{
+  font-weight: bold;
+}
+input[type="submit"]{
+  background-color: #4CAF50; /* Green */
+  border: 2px solid white;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid #4CAF50;
+}
+label[for="exp"]{
+  font-weight: normal;
+}
+
+footer a {
+  margin: 20px;
+}
+
+
+@media screen and (max-width:600px) {
+  img.logo {width: 100%;}
+  img.album {width: 100%;}
+
+  body {
+    background-size:contain;
+    background-attachment: scroll;
+  }
+  img.banner {
+    width: 100%;
+  }
+  h1 {
+    padding:0 10px;
+  }
+  #ad {max-width:100%;border:none;}
+}
+@media screen and (max-width: 767px) {
+  body {
+    background-size:auto;
+    background-attachment: scroll;
+  }
+  #ad {max-width:100%;border:none;}
+  h2 {display: block;}
+  button.alertbtn {  font-size: 3.5vw;}
+  #alert {font-size: 2.8vw;}
+  #inner-logo {width:80%;}
+
+}
+@media screen and (max-width: 900px) {
+  .navigation h1 {display: block;}
+  .content-wrapper {background-attachment: scroll;}
+}
