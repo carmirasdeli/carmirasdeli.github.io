@@ -1,70 +1,169 @@
 <!DOCTYPE html>
-<html oncontextmenu="return false" onmousedown="return false">
+<html oncontextmenu="return false" ondragstart="return false" >
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Orelega+One&display=swap" rel="stylesheet">    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <meta name="description" content="Car-Mira's Deli Boothwyn, PA. Famous Sandwiches, hoagies and catering since 1975.">
-    <meta name="keywords" content="hoagies, carmiras, car-miras, car-mira's, lunch meat, luncheon meat, cheese, sandwiches">
-    <meta name="author" content="Brandon Marcelle, brandonmarcelle.com, car-miras inc">
+    <meta name="description" content="Car-Mira's Deli Boothwyn Pennsylvania">
+    <meta name="keywords" content="Deli Hoagies Sandwiches">
+    <meta name="author" content="Brandon Marcelle, brandonmarcelle.com">
     <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
-    <link rel="stylesheet" href="style.css">
     <title>Car-Mira's Italian Delicatessen</title>
   </head>
   <body>
-    <header>
-      <!--
-      <div class="headeralert" style="display:none;"><button class="alertbtn" onclick="topAlert()">⚠ Closed Wednesday April 20th</button>
-        <div id="alert" style="display:none;max-width:800px;margin:0 auto;text-align:center;">
-          <img class="ve" src="images/ve.png" alt="" style="display:;">
-          <p style="text-align:center;padding:10px;"><p>To celebrate the life and memory of our Owner, Mother, Grandmother, leader and friend, Vincetta Mirasola.</p>
-        </div>
+    <nav>
+      <a href="index.html"><img src="images/headerlogo.png" class="logo" id="smlogo"><img src="images/headerlogo.png" class="logo" id="logo"></a>
+      <div class="topnav" id="myTopnav" style="display:inline;float:right;">
+        <a href="javascript:void(0);" class="icon" onclick="mobileNavigation()">
+          <i class="fa fa-bars"></i>
+        </a>
+        <a id="number" href="tel:6104949799">610-494-9799</a>
+        <a href="menu.pdf">Menu</a>
+        <a><div id="currentStatus"></div></a>
       </div>
-    -->
-    <a href="index.html"><img src="images/headerlogo.png" class="logo"></a>
-    </header>
-    <main>
       <script>
-      function topAlert() {
-        var x = document.getElementById("alert");
-        if (x.style.display === "none") {
-          x.style.display = "block";
+      function mobileNavigation() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
         } else {
-          x.style.display = "none";
+          x.className = "topnav";
         }
       }
       </script>
-      <div class="ad" style="position: relative;padding:10px;">
-        <video id="ad" controls width="700" style="border:solid;">
-            <source src="media/ad_lowres.mp4"
-                    type="video/mp4">
-            Sorry, your browser doesn't support embedded videos.
-        </video>
-      </div>
-      <div class="content-wrapper" style="background-image:url('images/bg1.jpg');height:300px;">
-      </div>
-        <div class="content">
-          <div id="currentStatus"></div>
-          <script src="./currentStatus.js" charset="utf-8"></script>
-          <script>window.onload = status;</script>
-          <div>
-            <h2>Monday<br>Closed</h2>
-            <h2>Tue - Sat<br>10AM - 7PM</h2>
-            <h2>Sunday<br>9AM - 3PM</h2>
+      <script src="./currentStatus.js" charset="utf-8"></script>
+      <script>window.onload = status;</script>
+    </div>
+    </nav>
+    <main>
+        <div class="content-wrapper" style="background-image:url('images/bg1.jpg');">
+          <div class="inner-content-wrapper" style="padding:150px 0 150px 0;height:auto;">
+            <h1 id="headerText">Slicing fresh everyday, "Thick, thin, or just right!"</h1>
+            <h1 id="headerSubText"style="padding-top:20px;">Since 1975</h1>
           </div>
-          <div>
-            <h1><a href="tel:6104949799">610-494-9799</a></h1>
-            <h1><a href="menu.pdf">Menu</a></h1>
-            <h1><a href="papermenu.pdf">Paper Menu</a></h1>
-            <h1><a href="https://goo.gl/maps/L3sKB4PUo332">Directions</a></h1>
-            <h1><a href="apply.html">Employment</a></h1>
-          </div>
-      </div>
-        <div class="links">
-          <a href="https://www.facebook.com/CarMirasDeli/" target="_blank"><img class="links" src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Facebook_logo_%28square%29.png" alt=""></a>
         </div>
+        <div class="content-wrapper" style="">
+          <div class="inner-content-wrapper" style="padding:160px 0 160px 0;">
+            <h1 style="color:black;">Family owned and operated we've been serving the best meats and cheeses for over 45 years!</h1>
+            <br>
+            <a href="menu.pdf" class="buttonS2">View Menu</a>
+          </div>
+        </div>
+        <!--
+        <div id="onlineOrdering" class="content-wrapper" style="">
+        <div id="split" class="content-wrapper">
+          <div class="inner-content-wrapper" style="padding:160px 0 160px 0;">
+            <div class="splitL-content-wrapper" style="">
+              <div class="center">
+                <img  id="split_image" src="images/onlinebanner.png">
+              </div>
+            </div>
+            <div class="splitR-content-wrapper" style="">
+              <div class="center">
+              <p class="split-content">Online ordering currently unavailable.</p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  -->
+    <div class="content-wrapper" style="background-image:url('https://www.securedgenetworks.com/hubfs/how-to-get-started-using-wifi-rtls.jpg#keepProtocol');">
+      <div class="inner-content-wrapper" style="padding:150px 0 150px 0;height:auto;">
+        <h1 id="headerSubText" style="font-size:5em;">Bring us on the road!</h1>
+        <h1 style="color:white;">Wrap any of our hoagies to "travel" and take us with you.</h1>
+        <h1 style="color:black;padding-top:20px;"id="headerSubText">#carmirasdeli @carmirasdeli<h1>
+      </div>
+    </div>
+    <!--
+        <div id="location" class="content-wrapper" style="background-color:#ff6c6c;height:auto;">
+          <div class="inner-content-wrapper" style="padding:140px 0 140px 0;">
+            <img id="split_image" src="images/location.png" style=""><br>
+            <br>
+            <p class="caption" style="color:white;">Willowbrook Shopping center<br>3240 Chichester Avenue<br>Boothwyn PA 19061</p>
+            <a href="https://goo.gl/maps/L3sKB4PUo332" class="buttonS1">Get Directions</a>
+          </div>
+        </div>
+      -->
+        <!--
+        <div id ="split" class="content-wrapper" style="display:none;">
+          <div class="inner-content-wrapper" style="padding:160px 0 160px 0;">
+          <div class="splitL-content-wrapper" style="">
+            <div class="center">
+              <p class="split-content">Support your favorite Deli on the go!</p>
+            </div>
+          </div>
+          <div class="splitR-content-wrapper" style="padding:5%;">
+            <div class="center">
+              <img id="split_image" src="images/merch.png" style="">
+            </div>
+          </div>
+        </div>
+      </div>
+    -->
+      <!--
+      <div id="Employment"class="content-wrapper" style="height:auto;">
+        <div class="inner-content-wrapper" style="padding:140px 0 140px 0;">
+          <div class="image_container"></div>
+          <h1 style="color:black;">Employment Opportunities</h1>
+          <p class="caption">We are always seeking hardworking individuals, seeking growth in a fast paced service environment. Full and Part time postitions available.</p>
+          <br>
+          <a href="apply.html" class="buttonS2">Apply Now</a>
+        </div>
+      </div>
+    -->
+      <div class="links">
+        <a href="https://www.facebook.com/CarMirasDeli/" target="_blank"><img class="links" src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Facebook_logo_%28square%29.png" alt=""></a>
+        <a href="" target="_blank"><img class="links" src="" alt=""></a>
+      </div>
     </main>
-    <footer>
-        <p style="text-align: center;font-family: sans-serif;font-size:x-small;">® 2021 car-mira's. all rights reserved.<a href="http://www.brandonmarcelle.com" target="_blank" style="text-decoration: none;margin:5px;letter-spacing:2px;">bran</a></p>
-  </footer>
   </body>
+  <footer>
+    <div class="footer-wrapper">
+      <div id="footer-container">
+          <ul>Hours
+          <table>
+            <colgroup>
+              <col span="1" style="width: 50%;">
+              <col span="1" style="width: 50%;">
+            </colgroup>
+            <tr>
+              <td>Monday</td>
+              <td>Closed</td>
+            </tr>
+            <tr>
+              <td>Tu - Sat</td>
+              <td>10am-7pm</td>
+            </tr>
+            <tr>
+              <td>Sunday</td>
+              <td>9am-3pm</td>
+            </tr>
+          </table>
+        </ul>
+      </div>
+      <div id="footer-container">
+        <ul>Location
+          <li>Willowbrook Shopping Center</li>
+          <li>3240 Chichester Avenue</li>
+          <li><a href="https://goo.gl/maps/L3sKB4PUo332">Directions</a></li>
+        </ul>
+      </div>
+    <div id="footer-container">
+      <ul>Menu
+        <li><a href="papermenu.pdf">Paper Menu</a></li>
+      </ul>
+    </div>
+    <div id="footer-container">
+      <ul>Job Opportunities
+        <li><a href="apply.html">Apply now</a></li>
+      </ul>
+    </div>
+  </div>
+  <p style="font-size:small;margin:0 auto;text-align:center;">® 2022 Car-Mira's Inc All rights reserved</p>
+
+</footer>
 </html>
