@@ -175,15 +175,19 @@ main {
   letter-spacing: -2px;
 }
 #headerText {
-font-family: 'Orelega One', cursive;
 color:white;
 letter-spacing: normal;
-text-align: left;
+text-align: center;
+font-weight: bold;
+letter-spacing: -3px;
+font-size: 4em;
 }
 #headerSubText {
-font-family: 'Bebas Neue', cursive;
-color:white;
-width: auto;
+  width: auto;
+  color:white;
+  font-weight: 100;
+  font-size: 1.5em;
+  text-align: center;
 }
 table {
   text-align: left;
