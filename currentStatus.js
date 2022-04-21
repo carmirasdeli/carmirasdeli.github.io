@@ -11,17 +11,23 @@ function status() {
   } else if (today == 1) {
       display.innerHTML = closed;
   } else if (today == 2 && time >= 10 && time < 19) {
-      display.innerHTML = open;
+      display.innerHTML = open,
+      color.style.color = "green";
   } else if (today == 3 && time >= 10 && time < 19) {
-      display.innerHTML = open;
+      display.innerHTML = open,
+      color.style.color = "green";
   } else if (today == 4 && time >= 10 && time < 19) {
-      display.innerHTML = open;
+      display.innerHTML = open,
+      color.style.color = "green";
   } else if (today == 5 && time >= 10 && time < 19) {
-      display.innerHTML = open;
+      display.innerHTML = open,
+      color.style.color = "green";
   } else if (today == 6 && time >= 10 && time < 19) {
-      display.innerHTML = open;
+      display.innerHTML = open,
+      color.style.color = "green";
   } else if (today == 6 && time >= 10 && time < 19) {
-      display.innerHTML = open;
+      display.innerHTML = open,
+      color.style.color = "green";
   } else {
       display.innerHTML = closed,
       color.style.color = "red";
