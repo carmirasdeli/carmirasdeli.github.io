@@ -1,11 +1,13 @@
 function status() {
   var today = new Date().getDay(),
       time = new Date().getHours(),
-      open = "Now open!",
+      open = "Now Open!",
       closed = "Closed now.",
-      display = document.getElementById('currentStatus');
+      display = document.getElementById('currentStatus'),
+      color = document.getElementById("currentStatus");
     if (today == 0 && time >= 9 && time < 15) {
-      display.innerHTML = open;
+      display.innerHTML = open,
+      color.style.color = "green";
   } else if (today == 1) {
       display.innerHTML = closed;
   } else if (today == 2 && time >= 10 && time < 19) {
@@ -21,6 +23,7 @@ function status() {
   } else if (today == 6 && time >= 10 && time < 19) {
       display.innerHTML = open;
   } else {
-      display.innerHTML = closed;
+      display.innerHTML = closed,
+      color.style.color = "red";
   }
 }
