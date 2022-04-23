@@ -66,7 +66,11 @@ img.links {
   display: block;
   margin: 10px 10px;
 }
-
+a.forms {
+  padding: 40px;
+  display: block;
+  font-size: 1.4em;
+}
 .topnav a {
   float: right;
   display: inline-block;
@@ -158,8 +162,6 @@ main {
   background-size:cover;
   background-position: center;
   background-repeat: no-repeat;
-  display: block;
-  height: inherit;
   width: 100%;
   display: flex;
   height: auto;
