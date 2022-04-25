@@ -3,10 +3,7 @@
   <head>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Orelega+One&display=swap" rel="stylesheet">    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <meta name="description" content="Car-Mira's Deli Boothwyn Pennsylvania">
     <meta name="keywords" content="Deli Hoagies Sandwiches">
@@ -15,6 +12,10 @@
     <title>Car-Mira's Italian Delicatessen</title>
   </head>
   <body>
+    <script src="./currentStatus.js" charset="utf-8"></script>
+    <script src="./auth.js" charset="utf-8"></script>
+    <script src="./mobileNavigation.js" charset="utf-8"></script>
+    <script>window.onload = status;</script>
     <nav>
       <a href="index.html"><img src="images/headerlogo.png" class="logo" id="smlogo"><img src="images/headerlogo.png" class="logo" id="logo"></a>
       <div class="topnav" id="myTopnav" style="display:inline;float:right;">
@@ -23,20 +24,8 @@
         </a>
         <a id="number" href="tel:6104949799">610-494-9799</a>
         <a href="menu.pdf">Menu</a>
-        <a href="#hours"><div id="currentStatus"></div></a>
+        <a href="#hours"><div id="currentStatus" style="display:inline;"></div></a>
       </div>
-      <script>
-      function mobileNavigation() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-          x.className += " responsive";
-        } else {
-          x.className = "topnav";
-        }
-      }
-      </script>
-      <script src="./currentStatus.js" charset="utf-8"></script>
-      <script>window.onload = status;</script>
     </div>
     </nav>
     <main>

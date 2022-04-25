@@ -3,29 +3,19 @@
   <head>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <meta name="description" content="Car-Mira's Deli Boothwyn Pennsylvania">
     <meta name="keywords" content="Deli Hoagies Sandwiches">
     <meta name="author" content="Brandon Marcelle, brandonmarcelle.com">
     <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
     <title>Car-Mira's Italian Delicatessen - Internal Forms</title>
-    <script>
-    function auth() {
-      let pass = "pass";
-      let id = prompt("User ID:");
-      let authenticate = prompt("Password");
-      if (authenticate == pass && id == "admin") {
-        document.getElementById("internal").style.display = "block";
-        document.getElementById("logoutbutton").style.display = "block";
-        document.getElementById("loginbutton").style.display = "none";
-
-      } else {
-          document.getElementById("deny").style.display = "block";
-      }
-    }
-    </script>
   </head>
   <body>
+    <script src="./currentStatus.js" charset="utf-8"></script>
+    <script src="./auth.js" charset="utf-8"></script>
+    <script src="./mobileNavigation.js" charset="utf-8"></script>
+    <script>window.onload = status;</script>
     <nav>
       <a href="index.html"><img src="images/headerlogo.png" class="logo" id="smlogo"><img src="images/headerlogo.png" class="logo" id="logo"></a>
       <div class="topnav" id="myTopnav" style="display:inline;float:right;">
@@ -36,19 +26,6 @@
         <a href="menu.pdf">Menu</a>
         <a><div id="currentStatus"></div></a>
       </div>
-      <script>
-      function mobileNavigation() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-          x.className += " responsive";
-        } else {
-          x.className = "topnav";
-        }
-      }
-      </script>
-      <script src="./currentStatus.js" charset="utf-8"></script>
-      <script>window.onload = status;</script>
-      <!--<script>window.onload = auth;</script>-->
     </div>
     </nav>
     <main>
@@ -58,7 +35,7 @@
         </div>
           <div class="content" style="color:black;">
             <button id="loginbutton" onclick="auth()" style="float:right;">Login</button>
-            <button id="logoutbutton" onClick="window.location.reload();" style="float:right;display:none;">Logout</button>
+            <button id="logoutbutton" onclick="logout()" style="float:right;display:none;">Logout</button>
             <div class="content-wrapper" id="internal" style="display:none;">
               <div style="padding:10px;max-width:800px;margin:0 auto;">
                 <a href="forms/Application.pdf" class="forms">Application</a><br>
