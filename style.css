@@ -143,15 +143,17 @@ p.caption {
   margin:0 auto;
   position:relative;
 }
-
+.formbutton {
+  width:100px;
+  height: 30px;
+}
 .inf-container {
   margin: 0 auto;
   padding:10px;
 }
 
-/*div#currentStatus{
-  color:gray;
-}*/
+div#currentStatus{
+}
 main {
   margin:0 auto;
   display: block;
