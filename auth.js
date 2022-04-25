@@ -8,6 +8,6 @@ function auth() {
     document.getElementById("loginbutton").style.display = "none";
 
   } else {
-      document.getElementById("deny").style.display = "block";
+      alert("User ID for Password failed")
   }
 }
