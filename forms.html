@@ -9,6 +9,27 @@
     <meta name="author" content="Brandon Marcelle, brandonmarcelle.com">
     <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
     <title>Car-Mira's Italian Delicatessen - Internal Forms</title>
+    <script>
+    function auth() {
+      let pass = "pass";
+      let id = prompt("User ID:");
+      let authenticate = prompt("Password");
+      if (authenticate == pass && id == "admin") {
+        alert("Password Accepted.");
+        document.getElementById("internal").style.display = "block";
+        document.getElementById("logoutbutton").style.display = "block";
+        document.getElementById("loginbutton").style.display = "none";
+
+      } else {
+          document.getElementById("deny").style.display = "block";
+      }
+    }
+    function logout() {
+      document.getElementById("internal").style.display = "none";
+      document.getElementById("logoutbutton").style.display = "none";
+      document.getElementById("loginbutton").style.display = "block";
+    }
+    </script>
   </head>
   <body>
     <nav>
@@ -33,77 +54,29 @@
       </script>
       <script src="./currentStatus.js" charset="utf-8"></script>
       <script>window.onload = status;</script>
+      <!--<script>window.onload = auth;</script>-->
     </div>
     </nav>
     <main>
         <div class="content-wrapper" style="background-color:#ff6c6c;">
-          <div class="inner-content-wrapper" style="padding:150px 0 150px 0;height:auto;">
-            <h1 id="headerText">Forms</h1>
-            <h1 id="headerSubText" style="padding-top:20px;font-size:3em;">Printable Stationary</h1>
-          </div>
+            <h1 id="headerText">Internal Forms</h1>
+            <br>
         </div>
           <div class="content" style="color:black;">
-            <div class="content-wrapper">
+            <button id="loginbutton" onclick="auth()" style="float:right;">Login</button>
+            <button id="logoutbutton" onclick="logout()" style="float:right;display:none;">Logout</button>
+            <div class="content-wrapper" id="internal" style="display:none;">
               <div style="padding:10px;max-width:800px;margin:0 auto;">
                 <a href="forms/Application.pdf" class="forms">Application</a><br>
                 <a href="forms/business_card.pdf" class="forms">Business Cards</a><br>
                 <a href="forms/order_form.pdf" class="forms">Order Forms</a><br>
-
-
-
             </div>
           </div>
         </div>
+        <div id="deny" class="content" style="color:black;display:none;padding:40px;">
+          Access denied.
         </div>
-      <div class="links">
-        <a href="https://www.facebook.com/CarMirasDeli/" target="_blank"><img class="links" src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Facebook_logo_%28square%29.png" alt=""></a>
-        <a href="" target="_blank"><img class="links" src="" alt=""></a>
-      </div>
+        </div>
     </main>
   </body>
-  <footer>
-    <div class="footer-wrapper">
-      <div id="footer-container">
-          <ul>Hours
-          <table>
-            <colgroup>
-              <col span="1" style="width: 50%;">
-              <col span="1" style="width: 50%;">
-            </colgroup>
-            <tr>
-              <td>Monday</td>
-              <td>Closed</td>
-            </tr>
-            <tr>
-              <td>Tu - Sat</td>
-              <td>10am-7pm</td>
-            </tr>
-            <tr>
-              <td>Sunday</td>
-              <td>9am-3pm</td>
-            </tr>
-          </table>
-        </ul>
-      </div>
-      <div id="footer-container">
-        <ul>Location
-          <li>Willowbrook Shopping Center</li>
-          <li>3240 Chichester Avenue</li>
-          <li><a href="https://goo.gl/maps/L3sKB4PUo332">Directions</a></li>
-        </ul>
-      </div>
-    <div id="footer-container">
-      <ul>Menu
-        <li><a href="papermenu.pdf">Paper Menu</a></li>
-      </ul>
-    </div>
-    <div id="footer-container">
-      <ul>Job Opportunities
-        <li><a href="apply.html">Apply now</a></li>
-      </ul>
-    </div>
-  </div>
-  <p style="font-size:small;margin:0 auto;text-align:center;">® 2022 Car-Mira's Inc All rights reserved</p>
-
-</footer>
 </html>
