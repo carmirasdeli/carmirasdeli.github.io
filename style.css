@@ -271,7 +271,7 @@ h1 {
   font-weight: bold;
 	padding:25px 40px;
 	text-decoration:none;
-  margin: 0 auto;
+  margin: 10px auto;
 }
 
 .buttonS2:hover {
@@ -356,10 +356,10 @@ button {
     width:100%;
   }
   nav {height: 114px;}
+  .buttonS2 {width: 90%;}
+
 }
- /* Navigation - Mobile */
-#hours {
-}
+
 
  @media screen and (max-width: 730px) {
    .topnav a {display: none;padding:10px;}
