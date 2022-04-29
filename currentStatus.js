@@ -26,9 +26,6 @@ function status() {
   } else if (today == 6 && time >= 8 && time < 19) {
       display.innerHTML = open,
       color.style.color = "green";
-  } else if (today == 6 && time >= 8 && time < 19) {
-      display.innerHTML = open,
-      color.style.color = "green";
   } else {
       display.innerHTML = closed,
       document.getElementById("currentStatus").style.color = "red";
