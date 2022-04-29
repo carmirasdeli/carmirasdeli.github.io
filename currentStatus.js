@@ -8,25 +8,25 @@ function status() {
     if (today == 0 && time >= 9 && time < 15) {
       display.innerHTML = open,
       color.style.color = "green";
-  } else if (today == 1) {
-    document.getElementById("currentStatus").style.color = "red",
-      display.innerHTML = closed;
-  } else if (today == 2 && time >= 10 && time < 19) {
+    } else if (today == 1 && time >= 8 && time < 19) {
+      color.style.color = "green";
+      display.innerHTML = open,
+  } else if (today == 2 && time >= 8 && time < 19) {
       display.innerHTML = open,
       color.style.color = "green";
-  } else if (today == 3 && time >= 10 && time < 19) {
+  } else if (today == 3 && time >= 8 && time < 19) {
       display.innerHTML = open,
       color.style.color = "green";
-  } else if (today == 4 && time >= 10 && time < 19) {
+  } else if (today == 4 && time >= 8 && time < 19) {
       display.innerHTML = open,
       color.style.color = "green";
-  } else if (today == 5 && time >= 10 && time < 19) {
+  } else if (today == 5 && time >= 8 && time < 19) {
       display.innerHTML = open,
       color.style.color = "green";
-  } else if (today == 6 && time >= 10 && time < 19) {
+  } else if (today == 6 && time >= 8 && time < 19) {
       display.innerHTML = open,
       color.style.color = "green";
-  } else if (today == 6 && time >= 10 && time < 19) {
+  } else if (today == 6 && time >= 8 && time < 19) {
       display.innerHTML = open,
       color.style.color = "green";
   } else {
