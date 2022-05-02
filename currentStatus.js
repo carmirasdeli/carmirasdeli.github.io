@@ -8,9 +8,9 @@ function status() {
     if (today == 0 && time >= 9 && time < 15) {
       display.innerHTML = open,
       color.style.color = "green";
-    } else if (today == 1 && time >= 8 && time < 19) {
-      color.style.color = "green",
-      display.innerHTML = open;
+    } else if (today == 1) {
+      color.style.color = "red",
+      display.innerHTML = closed;
   } else if (today == 2 && time >= 8 && time < 19) {
       display.innerHTML = open,
       color.style.color = "green";
