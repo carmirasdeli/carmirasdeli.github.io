@@ -23,7 +23,7 @@ function status() {
   } else if (today == 5 && time >= 8 && time < 19) {
       display.innerHTML = open,
       color.style.color = "green";
-  } else if (today == 6 && time >= 8 && time < 19) {
+  } else if (today == 6 && time >= 9 && time < 15) {
       display.innerHTML = open,
       color.style.color = "green";
   } else {
