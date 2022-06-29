@@ -16,6 +16,24 @@
     <script src="./mobileNavigation.js" charset="utf-8"></script>
     <script src="./currentStatus.js" charset="utf-8"></script>
     <script>window.onload = status;</script>
+    <header>
+      <div class="headeralert" style="display:;"><button class="btn" onclick="topAlert()">⚠ New Summer hours</button>
+        <div id="alert" style="display:none;max-width:800px;margin:0 auto;text-align:center;">
+          <p style="text-align:center;padding:10px;"><p>We will be open abbreviated hours on Saturdays during Summer.<br><br> Monday - Closed<br> Tue - Fri 8 AM - 7 PM<br> Sat - Sun 9 AM - 3 PM. <br><br>We are always hiring and looking for <i>fresh meat</i>... pun intended. <a href="apply.html">Apply here!</a></p>
+
+        </div>
+      </div>
+      <script>
+      function topAlert() {
+        var x = document.getElementById("alert");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+      </script>
+    </header>
     <nav>
       <a href="index.html"><img src="images/headerlogo.png" class="logo" id="smlogo"><img src="images/headerlogo.png" class="logo" id="logo"></a>
       <div class="topnav" id="myTopnav" style="display:inline;float:right;">
@@ -124,11 +142,11 @@
               <td>Closed</td>
             </tr>
             <tr>
-              <td>Tu - Sat</td>
+              <td>Tu - Fri</td>
               <td>8am-7pm</td>
             </tr>
             <tr>
-              <td>Sunday</td>
+              <td>Sat - Sun</td>
               <td>9am-3pm</td>
             </tr>
           </table>

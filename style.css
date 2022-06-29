@@ -86,6 +86,12 @@ a.forms {
 svg {
   padding-top: 5px;
 }
+button.btn {
+  padding:10px;
+  border-radius: 10px;
+  background-color: green;
+  color:white;
+}
 button.alertbtn {
   border:0;
   background-color: inherit;
