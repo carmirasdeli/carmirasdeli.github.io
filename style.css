@@ -129,6 +129,9 @@ body, html {
   text-align: left;
   font-weight: 400;
 }
+#headerAlertClose {
+  padding:10px;
+}
 body {
   background-color: white;
 }
