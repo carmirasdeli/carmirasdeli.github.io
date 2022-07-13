@@ -214,28 +214,39 @@ th, td {
 }
 
 .splitL-content-wrapper {
+  background: url("https://images.unsplash.com/photo-1584799580661-53b7c6b99430?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80") no-repeat center left;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
   width:50%;
-  float:left;
-  padding: 40px;
+  text-align: center;
+  display: inline-flex;
+  margin:5px;
 }
 .splitR-content-wrapper {
+  background-color: #ff6c6c;
+  height: 300px;
   width:50%;
-  float: right;
-  padding: 40px;
+  text-align: center;
+  display: inline-flex;
+  margin:5px;
 }
 #split_image {
   max-width:400px;
 }
 #split {
   background-image:url('');
-  min-height:500px;
 }
 
-.center {
+div.center {
   display: flex;
   justify-content: center;
   align-items: center;
   height: auto;
+  width: 100%;
 }
 p.split-content {
   letter-spacing: 2px;
@@ -408,8 +419,8 @@ button {
 /* top - Mobile Optimization */
 @media screen and (max-width: 840px) {
   #ovalLogo {width:90vw;}
-  .splitL-content-wrapper {float: none;display: block;text-align: center;width: 100%;}
-  .splitR-content-wrapper {float: none;display: block;text-align: center;width: 100%;}
-  #split_image {width: 200px;}
+  .splitL-content-wrapper {display: flex;width: 100%;}
+  .splitR-content-wrapper {display: flex;width: 100%;}
+  #split {display:block;}
   #footer-container {display: block;width: 100%;}
 }
