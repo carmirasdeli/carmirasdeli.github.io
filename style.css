@@ -137,7 +137,10 @@ div.headeralert {
 body {
   background-color: white;
 }
-#smlogo {display: none;}
+#smlogo {
+  display: none;
+  height:70px;
+}
 #logo {
   height:70px;
 }
@@ -148,6 +151,8 @@ body {
 
 p.caption {
   font-size: 1.3em;
+}
+p {
 }
 #map {
   width:290px;
@@ -212,9 +217,12 @@ table {
 th, td {
   color:black;
 }
-
+.split_link{
+  color:inherit;
+  text-decoration: none;
+}
 .splitL-content-wrapper {
-  background: url("https://images.unsplash.com/photo-1584799580661-53b7c6b99430?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80") no-repeat center left;
+  background: url("https://images.unsplash.com/photo-1611764197743-702a4d01463b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2565&q=80") no-repeat center left;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -224,15 +232,22 @@ th, td {
   width:50%;
   text-align: center;
   display: inline-flex;
-  margin:5px;
+  margin:10px 5px 10px 10px;
 }
 .splitR-content-wrapper {
+  background: url("https://images.unsplash.com/photo-1514516870926-20598973e480?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2247&q=80") no-repeat center left;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+
   background-color: #ff6c6c;
   height: 300px;
   width:50%;
   text-align: center;
   display: inline-flex;
-  margin:5px;
+  margin:10px 10px 10px 5px;
 }
 #split_image {
   max-width:400px;
@@ -369,7 +384,8 @@ button {
 
 /* Footer Mobile  */
 @media screen and (max-width: 450px) {
-  #logo {position: absolute;}
+  #logo {display:; position: absolute;}/*display:non; to show smallLogo*/
+  #smlogo {position: absolute;display:;}/*display:block; to show smallLogo*/
   footer {}
   footer ul{text-align:left;vertical-align:top;}
   #footer-container {display: block;width: 100%;}
@@ -419,8 +435,8 @@ button {
 /* top - Mobile Optimization */
 @media screen and (max-width: 840px) {
   #ovalLogo {width:90vw;}
-  .splitL-content-wrapper {display: flex;width: 100%;}
-  .splitR-content-wrapper {display: flex;width: 100%;}
-  #split {display:block;}
+  .splitL-content-wrapper {display: flex;width: 100%;margin:0 0 20px 0;}
+  .splitR-content-wrapper {display: flex;width: 100%;margin:0;}
+  #split {display:block;padding:20px;}
   #footer-container {display: block;width: 100%;}
 }

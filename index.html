@@ -17,7 +17,7 @@
     <script src="./currentStatus.js" charset="utf-8"></script>
     <script>window.onload = status;</script>
     <header>
-      <div class="headeralert" style="display:;"><a id="headerAlertClose"onclick="topAlert();removebt()"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></a>
+      <div class="headeralert" style="display:none;"><a id="headerAlertClose"onclick="topAlert();removebt()"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></a>
         <div id="alert" style="display:;max-width:800px;margin:0 auto;text-align:center;">
           <p style="text-align:center;padding:10px;">We will be open abbreviated hours on Saturdays during Summer.<br><br> Monday - Closed<br> Tue - Fri 8 AM - 7 PM<br> Sat - Sun 9 AM - 3 PM. <br><br>We are always hiring and looking for <i>fresh meat</i>... pun intended. <a href="apply.html">Apply here!</a></p>
         </div>
@@ -44,7 +44,7 @@
       </script>
     </header>
     <nav>
-      <a href="index.html"><img src="images/headerlogo.png" class="logo" id="smlogo"><img src="images/headerlogo.png" class="logo" id="logo"></a>
+      <a href="index.html"><img src="images/smallLogo.png" class="logo" id="smlogo"><img src="images/headerlogo.png" class="logo" id="logo"></a>
       <div class="topnav" id="myTopnav" style="display:inline;float:right;">
         <a href="javascript:void(0);" class="icon" onclick="mobileNavigation()">
           <i class="fa fa-bars"></i>
@@ -56,14 +56,13 @@
     </div>
     </nav>
     <main>
-        <div class="content-wrapper" style="background-image:url('images/bg1.jpg');">
+        <div class="content-wrapper" style="background-image:url('images/bg1.jpg');height:100vh;">
           <div class="inner-content-wrapper" style="padding:20vh 0 20vh 0;height:auto;">
-            <h1 id="headerText">Slicing fresh everyday, "Thick, thin, or just right!"</h1>
-            <h1 id="headerSubText"style="padding-top:20px;">SINCE 1975</h1>
           </div>
         </div>
         <div class="content-wrapper" style="">
           <div class="inner-content-wrapper" style="padding:15vh 0 15vh 0;">
+            <h1 id="headerText" style="color:black;">Slicing fresh everyday, "Thick, thin, or just right!" <br>Since 1975</h1>
             <h1 style="color:black;">Family owned and operated we've been serving the best meats and cheeses for over 45 years!</h1>
             <br>
             <a href="menu.pdf" class="buttonS2">View Menu</a>
@@ -74,12 +73,12 @@
                 <div id="split" class="content-wrapper" style="">
                     <div class="splitL-content-wrapper" style="height:600px;">
                       <div class="center">
-                        <h1 id="headerText" style="">SKIP THE LINE</h1>
+                        <h1 id="headerText" style=""><a class="split_link" href="charcuterie.html">Italian Charcuterie</a></h1>
                       </div>
                     </div>
                     <div class="splitR-content-wrapper" style="height:600px;">
                       <div class="center">
-                        <h1 id="headerText" style="">Seasonal Specials</h1>
+                        <h1 id="headerText" style=""><a class="split_link" href="dinnerspecials.html">Daily Dinner Specials</a></h1>
                       </div>
                   </div>
               </div>
