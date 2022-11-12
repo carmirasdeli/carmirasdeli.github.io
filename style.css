@@ -21,7 +21,7 @@ body:before{
 
 * {
   /*border:solid;*/
-  box-sizing: border-box;
+  box-sizing: border-box;r
   transition-property: inherit;
   transition-duration: inherit;
   transition-timing-function: inherit;
@@ -36,13 +36,12 @@ i.fa {
 nav {
   height: inherit;
   z-index: 150;
-  position: fixed:
   margin:10px auto;
   padding:20px;
 }
 .topnav {
   overflow: hidden;
-  margin: 0 auto;
+  margin: 0 auto;e
 }
 .image_container {
   background-image:url('https://www.westminsterchristian.org/wp-content/uploads/2019/06/Employment-Opportunities-2-1.jpg');
@@ -65,6 +64,10 @@ img.links {
   box-sizing: content-box;
   display: block;
   margin: 10px 10px;
+}
+img.menu {
+  width: 100px;
+  float:right;
 }
 a.forms {
   padding: 40px;
@@ -122,6 +125,10 @@ body, html {
   width: 100%;
   overflow-x: hidden;
 }
+
+header {
+}
+
 div.headeralert {
   background-color: #fefefe;
 }
@@ -151,6 +158,11 @@ body {
 
 p.caption {
   font-size: 1.3em;
+}
+p.caption_left_align {
+  font-size: 1.3em;
+  text-align: left;
+  max-width: 800px;
 }
 p {
 }
@@ -277,6 +289,30 @@ h1 {
   font-size:1.9em;
   color:black;
 }
+h2 {
+  margin: 0;
+  font-size:2em;
+  color:black;
+  letter-spacing: 3px;
+  font-weight: 10;
+}
+h2.menu_title {
+  margin: 0;
+  font-size:2em;
+  color:white;
+  letter-spacing: 3px;
+  font-weight: 10;
+  background-color: #ff6c6c;
+  width: 100%;
+  padding: 10px;
+}
+h3 {
+  margin: 0;
+  font-size:1.3em;
+  color:black;
+  letter-spacing: 3px;
+  font-weight: 10;
+}
 .buttonS1 {
   border:solid 2px white;
 	display:inline-block;
@@ -318,7 +354,15 @@ h1 {
 .buttonS2:active {
 	position:relative;
 }
-
+.menu_container {
+  padding:10px;margin:20px auto; 2px;max-width: 600px; border;:
+}
+.menu_description {
+  text-align:left;font-family:sans-serif;color:black;
+}
+.menu_item {
+  border:solid .5px black;border-radius: 5px;margin:10px auto;padding:10px;background-color: white;
+}
 button.simpleButton {
   padding: none;
   background-color:inherit;
@@ -381,7 +425,7 @@ button {
   margin: 10px;
 }
 
-/* Footer Mobile  */
+
 @media screen and (max-width: 450px) {
   #logo {display:; position: absolute;}/*display:non; to show smallLogo*/
   #smlogo {position: absolute;display:;}/*display:block; to show smallLogo*/
@@ -394,8 +438,6 @@ button {
   }
   nav {height: 114px;}
   .buttonS2 {width: 90%;}
-  #headerText {font-size: 2em;}
-
 }
 
 
@@ -431,6 +473,7 @@ button {
   .inner-content-wrapper h1 {margin:20px;}
   i.fa {padding-top: 10px;}
   #headerText {font-size: 3em;}
+  h2 {font-size: 2em;}
  }
 
 /* top - Mobile Optimization */
