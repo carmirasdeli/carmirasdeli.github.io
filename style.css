@@ -354,6 +354,28 @@ h3 {
 .buttonS2:active {
 	position:relative;
 }
+.buttonS3 {
+  /*border: 1px solid white;*/
+  border-radius: 3px;
+	display:inline-block;
+	cursor:pointer;
+	color:white;
+  letter-spacing: 2px;
+	font-size:15px;
+  font-weight: bold;
+	padding:25px 40px;
+	text-decoration:none;
+  margin: 10px auto;
+}
+
+.buttonS3:hover {
+	background-color:white;
+  color:black;
+  transition: .2s;
+}
+.buttonS3:active {
+	position:relative;
+}
 .menu_container {
   padding:10px;margin:20px auto; 2px;max-width: 600px; border;:
 }
@@ -474,6 +496,7 @@ button {
   i.fa {padding-top: 10px;}
   #headerText {font-size: 3em;}
   h2 {font-size: 2em;}
+  .buttonS3 {width: 100%;}
  }
 
 /* top - Mobile Optimization */
