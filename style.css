@@ -229,6 +229,12 @@ table {
 th, td {
   color:black;
 }
+table.index {
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: normal;
+  margin:0 auto;
+}
 .split_link{
   color:inherit;
   text-decoration: none;
@@ -412,7 +418,7 @@ footer {
   display: block;
   width:100%;
   border-top: 1px solid #F0F0F0;
-  min-height: 100px;
+  min-height: 100vh;
 }
 .footer-wrapper {
   margin: 0;
@@ -421,11 +427,11 @@ footer {
   color:gray;
 }
 #footer-container {
-  margin:0 auto;
+  margin:40px;
   display: inline-block;
-  vertical-align:top;
+  vertical-align:bottom;
   width: 230px;
-  height: 130px;
+  height: auto;
 }
 footer a{
   color:#ff6c6c;

@@ -2,7 +2,7 @@ function status() {
   var today = new Date().getDay(),
       time = new Date().getHours(),
       open = "Now Open!",
-      closed = "Closed now",
+      closed = "Sorry, We're closed.",
       display = document.getElementById('currentStatus'),
       color = document.getElementById('currentStatus');
     if (today == 0 && time >= 9 && time < 15) {
