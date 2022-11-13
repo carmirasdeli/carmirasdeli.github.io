@@ -10,7 +10,7 @@ body:before{
   width: 100%;
   height: 100%;
   background-color: white;
-  background: url("images/bg.jpg") no-repeat center left;
+  background: url("images/bg3.jpg") no-repeat center left;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -353,6 +353,23 @@ h3 {
 }
 .buttonS2:active {
 	position:relative;
+}
+span.bs2 {
+  border:solid 2px black;
+  display:inline-block;
+  cursor:pointer;
+  color:black;
+  letter-spacing: 2px;
+  font-size:15px;
+  font-weight: bold;
+  padding:25px 40px;
+  text-decoration:none;
+  margin: 10px auto;
+}
+span.bs2:hover {
+	background-color:white;
+  color:black;
+  transition: .2s;
 }
 .buttonS3 {
   /*border: 1px solid white;*/
