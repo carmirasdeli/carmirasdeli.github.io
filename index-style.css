@@ -208,7 +208,6 @@ table.index {
   text-decoration: none;
 }
 .splitL-content-wrapper {
-  background-color:;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -220,7 +219,6 @@ table.index {
   display: inline-flex;}
 
 .splitR-content-wrapper {
-  background-color: #ffb66c;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
