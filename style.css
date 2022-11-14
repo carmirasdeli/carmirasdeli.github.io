@@ -426,7 +426,7 @@ footer {
   text-align: center;
   color:gray;
 }
-#footer-container {
+.footer-container {
   margin:40px;
   display: inline-block;
   vertical-align:bottom;
@@ -476,13 +476,16 @@ button {
   #smlogo {position: absolute;display:;}/*display:block; to show smallLogo*/
   footer {}
   footer ul{text-align:left;vertical-align:top;}
-  #footer-container {display: block;width: 100%;}
+  .footer-container {display: block;width: 100%;}
   .footer-wrapper {
     padding-left: 20px;
     width:100%;
   }
   nav {height: 114px;}
-  .buttonS2 {width: 90%;}
+  .buttonS1 {width: 100%;}
+  .buttonS2 {width: 100%;}
+  .buttonS3 {width: 100%;}
+
 }
 
 
@@ -528,5 +531,5 @@ button {
   .splitL-content-wrapper {display: flex;width: 100%;margin:0 0 20px 0;}
   .splitR-content-wrapper {display: flex;width: 100%;margin:0;}
   #split {display:block;padding:20px;}
-  #footer-container {display: block;width: 100%;}
+  .footer-container {display: block;width: 100%;}
 }
