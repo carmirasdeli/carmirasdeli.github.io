@@ -171,8 +171,8 @@ main {
 
 .inner-content-wrapper h1 {
   font-weight: 100;
-  font-size: 40px;
-  letter-spacing: -2px;
+  font-size: 2em;
+  letter-spacing:;
 }
 #headerText {
 color:white;
@@ -208,18 +208,16 @@ table.index {
   text-decoration: none;
 }
 .splitL-content-wrapper {
-  background-color: red;
+  background-color:;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   background-position: center;
-  height: 300px;
+  height: 400px;
   width:50%;
   text-align: center;
-  display: inline-flex;
-  margin:10px 5px 10px 10px;
-}
+  display: inline-flex;}
 
 .splitR-content-wrapper {
   background-color: #ffb66c;
@@ -228,11 +226,10 @@ table.index {
   -o-background-size: cover;
   background-size: cover;
   background-position: center;
-  height: 300px;
+  height: 400px;
   width:50%;
   text-align: center;
   display: inline-flex;
-  margin:10px 10px 10px 5px;
 }
 #split_image {
   max-width:400px;
@@ -394,7 +391,7 @@ footer {
   text-align: center;
   color:gray;
 }
-#footer-container {
+.footer-container {
   margin:40px;
   display: inline-block;
   vertical-align:bottom;
@@ -437,27 +434,32 @@ footer li a{
 button {
   margin: 10px;
 }
-
+img.featured {width:inherit;}
+#chicken {background:url('images/icc.png');background-size:contain;background-repeat: no-repeat;background-position: center;}
 
 @media screen and (max-width: 450px) {
   footer {}
   footer ul{text-align:left;vertical-align:top;}
-  #footer-container {display: block;width: 100%;}
+  .footer-container {display: block;width: 100%;}
   .footer-wrapper {
     padding-left: 20px;
     width:100%;
   }
+  .buttonS1 {width: 90%;}
   .buttonS2 {width: 90%;}
-  #headerText {font-size: 2em;}
+  .buttonS3 {width: 90%;}
+  #headerText {font-size: 2.5em;}
   h1 {font-size:1em;}
+  .inner-content-wrapper h1 {font-size:1em; letter-spacing: normal;}
 }
 
 
 /* top - Mobile Optimization */
 @media screen and (max-width: 840px) {
   #ovalLogo {width:90vw;}
-  .splitL-content-wrapper {display: flex;width: 100%;margin:0 0 20px 0;}
-  .splitR-content-wrapper {display: flex;width: 100%;margin:0;}
+  .splitL-content-wrapper {display: flex;width: 100%;margin:0;height: 200px;}
+  .splitR-content-wrapper {display: block;width: 100%;}
   #split {display:block;padding:20px;}
-  #footer-container {display: block;width: 100%;}
+  #chicken {background-size: cover;background-position: center;margin: auto;align-items: center;}
+  .footer-container {display: block;width: 100%;}
 }
