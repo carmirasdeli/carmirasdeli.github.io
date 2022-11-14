@@ -435,7 +435,7 @@ button {
   margin: 10px;
 }
 img.featured {width:inherit;}
-#chicken {background:url('images/icc.png');background-size:contain;background-repeat: no-repeat;background-position: center;}
+#chicken {background:url('images/icc.PNG');background-size:contain;background-repeat: no-repeat;background-position: center;}
 
 @media screen and (max-width: 450px) {
   footer {}
