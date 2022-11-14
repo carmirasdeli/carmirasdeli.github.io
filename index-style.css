@@ -38,7 +38,7 @@ div.navigation {
 }
 div.navigation a {
   margin:20px;
-  color:purple;
+  color:;
   top:0;
   display: inline-flex;
   float:right;
@@ -165,7 +165,7 @@ main {
   height: auto;
 }
 .inner-content-wrapper {
-  margin:0 auto;
+  margin:auto;
   text-align: center;
 }
 

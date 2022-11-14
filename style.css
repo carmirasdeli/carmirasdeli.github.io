@@ -110,7 +110,7 @@ button.alertbtn:hover {
 
 .topnav a:hover {
 background-color: inherit;
-color: #ff6c6c;
+color: red;
 }
 .topnav .icon {
 display: none;
@@ -240,7 +240,7 @@ table.index {
   text-decoration: none;
 }
 .splitL-content-wrapper {
-  background-color: #ff6c6c;
+  background-color: red;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -308,7 +308,7 @@ h2.menu_title {
   color:white;
   letter-spacing: 3px;
   font-weight: 10;
-  background-color: #ff6c6c;
+  background-color: red;
   width: 100%;
   padding: 10px;
 }
@@ -434,7 +434,7 @@ footer {
   height: auto;
 }
 footer a{
-  color:#ff6c6c;
+  color:red;
 }footer a:hover{
   color:blue;
 }
@@ -443,7 +443,7 @@ ul.inf {
   list-style: none;
   list-style-type: none;
   text-align: left;
-  color:#ff6c6c;
+  color:red;
   /*text-shadow: 2px 2px 4px black;*/
 }
 footer ul {
@@ -451,7 +451,7 @@ footer ul {
   font-size: 20px;
   font-weight:lighter;
   list-style:none;
-  color: #ff6c6c;
+  color: red;
   text-align: left;
   padding-left: 0;
   letter-spacing: normal;
