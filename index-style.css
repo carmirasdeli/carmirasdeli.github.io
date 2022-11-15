@@ -181,13 +181,15 @@ text-align: center;
 font-weight: bold;
 letter-spacing: -3px;
 font-size: 3em;
+font-family:sans-serif;
 }
 #headerSubText {
   width: auto;
   color:white;
-  font-weight: 100;
+  font-weight: lighter;
   font-size: 1.5em;
   text-align: center;
+  font-family:monospace;
 }
 table {
   text-align: left;
@@ -262,14 +264,14 @@ h2 {
   margin: 0;
   font-size:2em;
   color:black;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   font-weight: 10;
 }
 h2.menu_title {
   margin: 0;
   font-size:2em;
   color:white;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   font-weight: 10;
   background-color: red;
   width: 100%;
@@ -283,10 +285,11 @@ h3 {
   font-weight: 10;
 }
 .buttonS1 {
+  background-color:white;
   border:solid 2px white;
 	display:inline-block;
 	cursor:pointer;
-	color:white;
+  color:black;
   letter-spacing: 2px;
 	font-size:16px;
   font-weight: bold;
@@ -295,8 +298,8 @@ h3 {
   margin: 0 auto;
 }
 .buttonS1:hover {
-	background-color:white;
-  color:black;
+	background-color:inherit;
+  color:white;
   transition: .2s;
 }
 .buttonS1:active {
@@ -458,6 +461,6 @@ img.featured {width:inherit;}
   .splitL-content-wrapper {display: flex;width: 100%;margin:0;height: 200px;}
   .splitR-content-wrapper {display: block;width: 100%;}
   #split {display:block;padding:20px;}
-  #chicken {background-size: cover;background-position: center;margin: auto;align-items: center;}
+  #chicken {background-size: cover;background-position: center;margin: auto;align-items: center;padding: 0;}
   .footer-container {display: block;width: 100%;}
 }
