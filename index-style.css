@@ -183,6 +183,13 @@ letter-spacing: -3px;
 font-size: 3em;
 font-family:sans-serif;
 }
+h1.headertext-variable {
+letter-spacing: normal;
+font-weight: bold;
+letter-spacing: -3px;
+font-size: 3em;
+font-family:sans-serif;
+}
 #headerSubText {
   width: auto;
   color:white;
@@ -449,9 +456,14 @@ img.featured {width:inherit;}
   .buttonS1 {width: 90%;}
   .buttonS2 {width: 90%;}
   .buttonS3 {width: 90%;}
-  #headerText {font-size: 2.5em;}
+  #headerText {font-size:3em;}
+  #sub-headerText {display: none;}
   h1 {font-size:1em;}
   .inner-content-wrapper h1 {font-size:1em; letter-spacing: normal;}
+  h1.headertext-variable {font-size:4em;}
+  #featured-item1 {text-align: right;}
+  #featured-item2 {text-align: left;}
+
 }
 
 
@@ -460,7 +472,7 @@ img.featured {width:inherit;}
   #ovalLogo {width:90vw;}
   .splitL-content-wrapper {display: flex;width: 100%;margin:0;height: 200px;}
   .splitR-content-wrapper {display: block;width: 100%;}
-  #split {display:block;padding:20px;}
+  #split {display:block;padding:5px;}
   #chicken {background-size: cover;background-position: center;margin: auto;align-items: center;padding: 0;}
   .footer-container {display: block;width: 100%;}
 }
