@@ -1,86 +1,62 @@
 <!DOCTYPE html>
 <html oncontextmenu="return false" ondragstart="return false" >
   <head>
-    <link rel="stylesheet" type="text/css" href="index-style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <meta name="description" content="Car-Mira's Deli Boothwyn Pennsylvania. Famous Hoagies and Catering since 1975.">
+    <meta name="description" content="Car-Mira's Deli Boothwyn Pennsylvania">
     <meta name="keywords" content="Deli Hoagies Sandwiches">
     <meta name="author" content="Brandon Marcelle, brandonmarcelle.com">
     <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
     <title>Car-Mira's Italian Delicatessen</title>
   </head>
   <body>
-    <script src="./currentStatus.js" charset="utf-8"></script>
-    <script>window.onload = status;</script>
-    <header>
-      <div class="navigation">
-        <img src="images/headerlogo_sticker.png" class="logo" id="logo">
+    <nav>
+      <a href="index.html"><img src="images/headerlogo.png" class="logo" id="smlogo"><img src="images/headerlogo_sticker.png" class="logo" id="logo"></a>
+      <div class="topnav" id="myTopnav" style="display:inline;float:right;">
+        <a href="javascript:void(0);" class="icon" onclick="mobileNavigation()">
+          <i class="fa fa-bars"></i>
+        </a>
+        <a id="number" href="tel:6104949799">610-494-9799</a>
+        <a href="menu.pdf">Menu</a>
+        <a href="#hours">Hours</a>
+        <a href="#location">Location</a>
+        <a href="#hours"><div id="currentStatus" style="display:inline;"></div></a>
       </div>
-    </header>
-    <main style="">
-        <div class="content-wrapper" style="background-image:url('images/deli.jpg');min-height:600px;margin-top:71px;background-attachment:;">
-          <div class="inner-content-wrapper" style="width:100%;background-color:;">
-            <h1 id="headerText" style=";">Slicing Fresh Since 1975!</h1>
-            <br>
-            <h1 id="headerSubText" style="color:white;">Willowbrook Shopping Center</h1>
-            <h1 id="headerSubText" style="color:white;">3240 Chichester Avenue</h1>
-            <h1 id="headerSubText" style="color:white;">Boothwyn PA 19061</h1>
-
-            <h1 id="headerText" style="margin:20px;"><a href="tel:6104949799" style="color:white;text-decoration:none;">610-494-9799</a></h1>
-
-            <br>
-            <br>
-            <a href="menu.pdf" class="buttonS1">View Menu</a>
-          </div>
+      <script>
+      function mobileNavigation() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+      </script>
+      <script src="./currentStatus.js" charset="utf-8"></script>
+      <script>window.onload = status;</script>
+    </nav>
+    <main>
+<!--Top Menu Navigation--------------------------------------------->
+      <div class="content-wrapper" id="hoagiebar" style="background-color:red;background-image:url('images/bg1.jpg');">
+        <div class="inner-content-wrapper" style="padding:150px 0 150px 0;height:auto;">
+          <h1 id="headerText">A Family Tradition since 1975.</h1>
+          <br>
+          <a href="menu.pdf" class="buttonS1">Download Menu</a>
         </div>
-        <div class="content-wrapper" style="background-color:white;min-height:800px;">
-          <div class="inner-content-wrapper">
-            <div style="margin:auto;width:100%;padding:20px;"><img class="featured" src="images/blt.png"></div>
-            <!--<img class="featured" src="images/blt.png" style="height:300px;">-->
-            <h1 class="headertext-variable" id="featured-item1" style="color:red;">Classic Sandwiches</h1>
-            <h1 id="sub-headerText" style="color:black;">The best hoagies make the best sandwiches.</h1>
+      </div>
 
-            <p class="caption"></p>
-          </div>
-        </div>
-        <div class="content-wrapper" style="background-image:url('');min-height:800px;">
-          <div class="inner-content-wrapper">
-            <h1 id="headerText" style="color:black;">We're looking for fresh meat!</h1>
-            <h1 style="">Join our team today.</h1>
-            <p class="caption">We are always seeking hardworking individuals, seeking growth in a fast paced service environment. Full and Part time postitions available.</p>
-            <a href="apply.html" class="buttonS2">Apply Now!</a>
-          </div>
-        </div>
-
-
-        <!-- ---------------------------------------------------------------------------->
-                <div class="content-wrapper" style="background-color:white;">
-                  <div id="split" class="content-wrapper" style="">
-                    <div class="splitL-content-wrapper" id="caption"style="">
-                        <div class="center">
-                          <h1 class="headertext-variable" id="featured-item2" style="color:green;">Make it <i>Italian Style.</i></h1>
-                        </div>
-                      </div>
-                      <div class="splitR-content-wrapper" id="chicken">
-                    </div>
-                </div>
-              </div>
-        <!--------------------------------------------------------------------------------->
-        <div class="content-wrapper" style="background-image:url('images/wall.jpg');min-height:800px;">
-          <div class="inner-content-wrapper">
-            <h1 id="headerText" style="color:black;">News and Events</h1>
-            <h1 style=""></h1>
-            <p class="caption">We have been serving the community for over 47 years! That's a lot of events.</p>
-            <a href="news.html" class="buttonS2">News and Events</a>
-          </div>
-        </div>
+      <div class="links">
+        <a href="https://www.facebook.com/CarMirasDeli/" target="_blank"><img class="links" src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Facebook_logo_%28square%29.png" alt=""></a>
+        <a href="" target="_blank"><img class="links" src="" alt=""></a>
+      </div>
     </main>
   </body>
   <footer>
     <div class="footer-wrapper" id="hours">
       <div class="footer-container">
-          <ul><div id="currentStatus" style="display:inline;"></div>
+          <ul>Hours
           <table>
             <colgroup>
               <col span="1" style="width: 50%;">
@@ -117,7 +93,7 @@
           </table>
         </ul>
       </div>
-      <div class="footer-container">
+      <div class="footer-container" id="location">
         <ul>Location
           <li>Willowbrook Shopping Center</li>
           <li>3240 Chichester Avenue</li>
@@ -135,15 +111,5 @@
         <li><a href="apply.html">Apply now</a></li>
       </ul>
     </div>
-    <div class="footer-container">
-      <ul>Site Map
-        <li><a href="index.html">Index</a></li>
-        <li><a href="menu.html">Menu</a></li>
-        <li><a href="apply.html">Apply now</a></li>
-        <li><a href="internal.html">Documents</a></li>
-      </ul>
-    </div>
   </div>
-  <p style="font-size:small;margin: auto;text-align:center;bottom:0;">® 2022 Car-Mira's Inc All rights reserved</p>
-</footer>
 </html>
