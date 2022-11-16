@@ -93,6 +93,13 @@ a.forms {
 svg {
   padding-top: 5px;
 }
+#hoagiebar {
+    border-top: 1px solid #F0F0F0;
+}
+#social {
+  margin: 10px;
+  display: flex;
+}
 button.btn {
   padding:10px;
   border-radius: 10px;
@@ -427,23 +434,22 @@ button.simpleButton {
 }
 footer {
   background-color: white;
-  display: block;
   width:100%;
   border-top: 1px solid #F0F0F0;
-  min-height: 100vh;
+  border-bottom: 1px solid #F0F0F0;
+
 }
 .footer-wrapper {
-  margin: 0;
-  padding:45px 45px 0 45px;
-  text-align: center;
+  display: flex;
+  margin:auto;
   color:gray;
 }
 .footer-container {
-  margin:40px;
+  display: flex;
   display: inline-block;
-  vertical-align:bottom;
-  width: 230px;
-  height: auto;
+  vertical-align:top;
+  width: 25%;
+  padding:20px;
 }
 footer a{
   color:red;
@@ -557,5 +563,6 @@ div.content-login {
   .splitL-content-wrapper {display: flex;width: 100%;margin:0 0 20px 0;}
   .splitR-content-wrapper {display: flex;width: 100%;margin:0;}
   #split {display:block;padding:20px;}
-  .footer-container {display: block;width: 100%;}
+  .footer-container {width: 100%;}
+  .footer-wrapper {display: block;}
 }
