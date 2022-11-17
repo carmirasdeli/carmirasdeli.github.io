@@ -2,7 +2,7 @@ function status() {
   var today = new Date().getDay(),
       time = new Date().getHours(),
       open = "Now Open!",
-      closed = "Sorry, We're closed.",
+      closed = "Now Closed.",
       display = document.getElementById('currentStatus'),
       color = document.getElementById('currentStatus');
     if (today == 0 && time >= 9 && time < 15) {
@@ -28,6 +28,6 @@ function status() {
       color.style.color = "green";
   } else {
       display.innerHTML = closed,
-      document.getElementById("currentStatus").style.color = "red";
+      document.getElementById("currentStatus").style.color = "#da0000";
   }
 }
