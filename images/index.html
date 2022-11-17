@@ -13,7 +13,7 @@
   </head>
   <body>
     <nav>
-      <a href="index.html"><img src="images/headerlogo.png" class="logo" id="smlogo"><img src="images/headerlogo_sticker.png" class="logo" id="logo"></a>
+      <a href="index.html"><img src="images/headerlogo.png" class="logo" id="smlogo"><img src="images/headerlogo.png" class="logo" id="logo"></a>
       <div class="topnav" id="myTopnav" style="display:inline;float:right;">
         <a href="javascript:void(0);" class="icon" onclick="mobileNavigation()">
           <i class="fa fa-bars"></i>
@@ -22,7 +22,7 @@
         <a href="menu.pdf">Menu</a>
         <a href="#hours">Hours</a>
         <a href="#location">Location</a>
-        <a href="#hours"><div id="currentStatus" style="display:inline;"></div></a>
+        <a href="#hours"></a>
       </div>
       <script>
       function mobileNavigation() {
@@ -39,77 +39,56 @@
     </nav>
     <main>
 <!--Top Menu Navigation--------------------------------------------->
-      <div class="content-wrapper" id="hoagiebar" style="background-color:;background-image:url('images/delisepia.jpg');">
-        <div class="inner-content-wrapper" style="padding:150px 0 150px 0;height:auto;">
+      <div class="content-wrapper" id="hoagiebar" style="background-color:;background-image:url('images/deli.jpg');">
+        <div class="inner-content-wrapper" style="padding:200px 0 200px 0;height:auto;">
           <h1 id="headerText">A Family Tradition since 1975.</h1>
           <br>
           <a href="menu.pdf" class="buttonS1">Download Menu</a>
         </div>
       </div>
-
-      <div class="links">
-        <a href="https://www.facebook.com/CarMirasDeli/" target="_blank"><img class="links" src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Facebook_logo_%28square%29.png" alt=""></a>
-        <a href="" target="_blank"><img class="links" src="" alt=""></a>
-      </div>
     </main>
   </body>
-  <footer>
-    <div class="footer-wrapper" id="hours">
-      <div class="footer-container">
-          <ul>Hours
-          <table>
-            <colgroup>
-              <col span="1" style="width: 50%;">
-              <col span="1" style="width: 50%;">
-            </colgroup>
-            <tr>
-              <td>Monday</td>
-              <td>Closed</td>
-            </tr>
-            <tr>
-              <td>Tuesday</td>
-              <td>8am - 7pm</td>
-            </tr>
-            <tr>
-              <td>Wednesday</td>
-              <td>8am - 7pm</td>
-            </tr>
-            <tr>
-              <td>Thursday</td>
-              <td>8am - 7pm</td>
-            </tr>
-            <tr>
-              <td>Friday</td>
-              <td>8am - 7pm</td>
-            </tr>
-            <tr>
-              <td>Saturday</td>
-              <td>9am - 3pm</td>
-            </tr>
-            <tr>
-              <td>Sunday</td>
-              <td>9am - 3pm</td>
-            </tr>
-          </table>
-        </ul>
-      </div>
-      <div class="footer-container" id="location">
-        <ul>Location
-          <li>Willowbrook Shopping Center</li>
-          <li>3240 Chichester Avenue</li>
-          <li><a href="https://goo.gl/maps/L3sKB4PUo332">Directions</a></li>
-        </ul>
-      </div>
-    <div class="footer-container">
-      <ul><a href="menu.html">Menu</a>
-        <li><a href="menu.pdf">Menu PDF</a></li>
-        <li><a href="papermenu.pdf">Paper Menu PDF</a></li>
-      </ul>
+<footer class="footer-distributed">
+  <div class="footer-left">
+    <h3>Car-Mira's <span>Deli</span></h3>
+    <p class="footer-links">
+      <a href="#">Menu</a>
+      ·
+      <a href="#">Hours</a>
+      ·
+      <a href="#">Location</a>
+      ·
+      <a href="#">Apply</a>
+    </p>
+    <p class="footer-company-name">Car-Mira's Deli &copy; 2021</p>
+  </div>
+  <div class="footer-center">
+    <div>
+      <a href="https://goo.gl/maps/L3sKB4PUo332"><i class="fa fa-map-marker"></i></a>
+      <p><span>3240 Chichester Avenue</span> Boothwyn Pennsylvania</p>
     </div>
-    <div class="footer-container">
-      <ul>Job Opportunities
-        <li><a href="apply.html">Apply now</a></li>
-      </ul>
+  <div>
+    <i class="fa fa-phone"></i>
+    <p>+1 6104949799</p>
+  </div>
+  <div>
+    <i class="fa fa-envelope"></i>
+    <p><a href="mailto:carmirasdeli@gmail.com">carmirasdeli@gmail.com
+    </a></p>
+  </div>
+  </div>
+  <div class="footer-right">
+    <p class="footer-company-about">
+      <span>Hours</span>
+      Monday Closed <br>
+      Tuesday - Friday 8AM - 7PM <br>
+      Saturday, Sunday 9AM - 3PM
+    </p>
+      <div id="currentStatus"></div>
+    <div class="footer-icons">
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-linkedin"></i></a>
     </div>
   </div>
+ </footer>
 </html>
