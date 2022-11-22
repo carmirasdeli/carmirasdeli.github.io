@@ -69,9 +69,11 @@ img.links {
   margin: 10px 10px;
 }
 img.menu {
-  margin: auto;
+  margin: 20px auto;
   height: inherit;
   text-align: center;
+  width:90%;
+box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 a.forms {
   padding: 40px;
@@ -82,13 +84,14 @@ a.forms {
   float: right;
   display: inline-block;
   color: #33383b;
-  font-weight: bold;
+  font-weight:bold;
   text-align: center;
   padding: 22px 16px;
   text-decoration: none;
   font-size: 20px;
   letter-spacing: -1px;
 }
+
 
 #hoagiebar {
     border-top: 1px solid #F0F0F0;
