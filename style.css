@@ -203,8 +203,11 @@ main {
   width: 100%;
   max-width: 1000px;
   height: auto;
-  margin: 80px auto 0 auto;
+  margin: 80px auto;
   padding:0 10px;
+}
+.content-post-text {
+  padding: 5px;
 }
 .content-wrapper {
   background-size:cover;
@@ -232,7 +235,7 @@ main {
   font-size: 40px;
   letter-spacing: -2px;
 }
-#content-post-title {
+.content-post-title {
 letter-spacing: normal;
 text-align: left;
 font-weight: bold;
@@ -240,7 +243,7 @@ font-size: 3em;
 max-width:1000px;
 margin:0 auto;
 }
-#content-post-title-sub {
+.content-post-title-sub {
 letter-spacing: normal;
 font-weight:200;
 text-align: left;
