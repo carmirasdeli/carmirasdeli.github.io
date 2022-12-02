@@ -200,7 +200,6 @@ main {
   z-index: 149;
 }
 .content-post {
-  border:solid red 5px;
   width: 100%;
   max-width: 1000px;
   height: auto;
