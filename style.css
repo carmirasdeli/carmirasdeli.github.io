@@ -199,6 +199,14 @@ main {
   width: 100%;
   z-index: 149;
 }
+.content-post {
+  border:solid red 5px;
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  margin: 80px auto 0 auto;
+  padding:0 10px;
+}
 .content-wrapper {
   background-size:cover;
   background-position: center;
@@ -225,6 +233,23 @@ main {
   font-size: 40px;
   letter-spacing: -2px;
 }
+#content-post-title {
+letter-spacing: normal;
+text-align: left;
+font-weight: bold;
+font-size: 3em;
+max-width:1000px;
+margin:0 auto;
+}
+#content-post-title-sub {
+letter-spacing: normal;
+font-weight:200;
+text-align: left;
+font-size: 1em;
+max-width:1000px;
+margin:0 auto;
+}
+
 #headerText {
 color:white;
 letter-spacing: normal;
@@ -232,7 +257,8 @@ text-align: center;
 font-weight: bold;
 letter-spacing: -3px;
 font-size: 4em;
-font-family: 'Birthstone', cursive;}
+font-family: 'Birthstone', cursive;
+}
 #headerSubText {
   width: auto;
   color:white;
