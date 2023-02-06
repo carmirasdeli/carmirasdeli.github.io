@@ -73,7 +73,13 @@ img.menu {
   height: inherit;
   text-align: center;
   width:90%;
-  box-shadow: 1px 2px 3px 4px rgba(20,20,20,0.4);
+  box-shadow: 1px 5px 5px 5px rgba(20,20,20,0.3);
+}
+img.featured {
+  margin: 20px auto;
+  height: inherit;
+  text-align: center;
+  width:90%;
 }
 a.forms {
   padding: 40px;
@@ -135,7 +141,9 @@ body, html {
   width: 100%;
   overflow-x: hidden;
 }
-
+# {
+  display: none;
+}
 header {
 }
 
@@ -245,6 +253,16 @@ max-width:1000px;
 margin:0 auto;
 font-family: 'Birthstone', cursive;
 }
+.content-post-title-2 {
+  letter-spacing: normal;
+  text-align: center;
+  font-weight: bold;
+  font-size: 4em;
+  max-width:1000px;
+  margin:0 auto;
+  padding:50px 10px;
+  letter-spacing: -3px;
+  }
 .content-post-title-sub {
 letter-spacing: normal;
 font-weight:200;
@@ -410,6 +428,28 @@ h3 {
   transition: .2s;
 }
 .buttonS2:active {
+	position:relative;
+}
+.buttonS3 {
+  border:solid 2px black;
+	display:inline-block;
+	cursor:pointer;
+	color:black;
+  letter-spacing: 2px;
+	font-size:15px;
+  font-weight: bold;
+	padding:25px 40px;
+	text-decoration:none;
+  margin: 10px auto;
+  background-color: black;
+}
+
+.buttonS3:hover {
+	background-color:white;
+  color:black;
+  transition: .2s;
+}
+.buttonS3:active {
 	position:relative;
 }
 span.bs2 {
