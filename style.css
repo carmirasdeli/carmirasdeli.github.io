@@ -73,7 +73,6 @@ img.menu {
   height: inherit;
   text-align: center;
   width:90%;
-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 a.forms {
   padding: 40px;
@@ -228,6 +227,7 @@ main {
 .inner-content-wrapper {
   margin:0 auto;
   text-align: center;
+
 }
 
 .inner-content-wrapper h1 {
@@ -237,16 +237,17 @@ main {
 }
 .content-post-title {
 letter-spacing: normal;
-text-align: left;
+text-align: center;
 font-weight: bold;
-font-size: 3em;
+font-size: 4em;
 max-width:1000px;
 margin:0 auto;
+font-family: 'Birthstone', cursive;
 }
 .content-post-title-sub {
 letter-spacing: normal;
 font-weight:200;
-text-align: left;
+text-align: center;
 font-size: 1em;
 max-width:1000px;
 margin:0 auto;
@@ -450,7 +451,7 @@ span.bs2:hover {
 	position:relative;
 }
 .menu_container {
-  padding:10px;margin:20px auto; 2px;max-width: 600px; border;:
+  padding:10px;margin:20px auto; 2px;max-width: 600px;
 }
 .menu_description {
   text-align:left;font-family:sans-serif;color:black;
