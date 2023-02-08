@@ -470,6 +470,28 @@ h3 {
 .buttonS4:active {
 	position:relative;
 }
+.buttonS5 {
+  background-color: white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  border: solid;
+	display:inline-block;
+	cursor:pointer;
+	color:rgb(255, 0, 0);
+  letter-spacing: 2px;
+	font-size:15px;
+  font-weight: bold;
+	padding:25px 40px;
+	text-decoration:none;
+  margin: 10px auto;
+}
+
+.buttonS5:hover {
+  color:rgb(255, 0, 0);
+  transition: .3s;
+}
+.buttonS5:active {
+	position:relative;
+}
 svg {
   vertical-align: middle;
 }
