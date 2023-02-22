@@ -14,121 +14,36 @@
     <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
     <title>Car-Mira's Italian Delicatessen</title>
   </head>
-  <body>
-    <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v15.0" nonce="xSQffW6Q"></script>
-    <nav>
-      <a href="index.html"><img src="images/headerlogo.png" class="logo" id="smlogo"><img src="images/headerlogo.png" class="logo" id="logo"></a>
-      <div class="topnav" id="myTopnav" style="display:inline;float:right;">
-        <a href="javascript:void(0);" class="icon" onclick="mobileNavigation()">
-          <i class="fa fa-bars"></i>
-        </a>
-        <a id="number" href="tel:6104949799">610-494-9799</a>
-        <a href="menu.html">Menu</a>
-        <a href="#hours">Hours</a>
-        <a href="#location">Location</a>
-        <a href="#hours"></a>
-      </div>
-      <script>
-      function mobileNavigation() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-          x.className += " responsive";
-        } else {
-          x.className = "topnav";
-        }
-      }
-      </script>
-      <script src="./currentStatus.js" charset="utf-8"></script>
-      <script>window.onload = status;</script>
-    </nav>
-    <main>
+  <body style="background-image: url(images/bg3.jpg);">  
+    <script src="./currentStatus.js" charset="utf-8"></script>
+    <script>window.onload = status;</script>
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+    
+      <label for="navi-toggle" class="navigation__button">
+          <span class="navigation__icon">&nbsp;</span>
+      </label>
+    
+      <div class="navigation__background">&nbsp;</div>
+    
+      <nav class="navigation__nav">
+          <ul class="navigation__list">
+            <li class="navigation__item"><a href="index.html" class="navigation__link">About</a></li>
+            <li class="navigation__item"><a href="menu.html" class="navigation__link">Menu</a></li>
+              <li class="navigation__item"><a href="hours.html" class="navigation__link">Hours</a></li>
+              <li class="navigation__item"><a href="location.html" class="navigation__link">Location</a></li>
+              <li class="navigation__item"><a href="apply.html" class="navigation__link">Apply</a></li>
+              </ul>
+      </nav>
+    </div>
+    <div style="width:80%; text-align: center;">
 
-<!--Top Menu Navigation-------------------------------------------->
-      <div class="content-wrapper" id="hoagiebar" style="background-image:url('images/wall2.jpg');">
-        <div class="inner-content-wrapper" style="padding:300px 0 300px 0;height:auto;">
-          <!--<h1 id="headerText">A Family Tradition since 1975.</h1>-->
-          <br>
-          <!--<a href="menu.html" class="buttonS3">View Menu</a>
-          <br>
-          <a href="menu.html" class="buttonS5">SUPER BOWL ORDER DEADLINE <br> <br> Thursday Feb. 9th</a>-->
-
-        </div>
-      </div>
-      <div class="content-wrapper" style="background-image:url(images/delibw.jpg);background-attachment: fixed;">
-        <div class="content-post" style=>
-          <h1 class="content-post-title-2">Slicing Fresh "Thick, thin or just right" since 1975!</h1>
-          <div class="inner-content-wrapper">
-            <a href="menu.html" class="buttonS3">View Menu</a>
-          </div>
-        </div>
-      </div>
-      <div class="content-wrapper" style="background-color:white;">
-        <div class="content-post" style="background-image:url();">
-          <h1 class="content-post-title">Our Story</h1>
-          <h1 class="content-post-title-sub"></h1>
-          <div class="content-post-text">
-            <p style="padding:5px;">
-              Our Family has been serving Delaware County, slicing the freshest meats and cheesees and finest Hoagies, for over 47 years!  
-            </p>
-            <p style="padding:5px;">
-              Car-Mira's derived from our founding families 2 combined surnames; Carmilingo and Mirasola, Operating under the Mirasola family for 3 generations starting when Vincetta Mirasola opened its doors in 1975!
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="content-wrapper">
-        <div class="content-post" style=>
-          <h1 class="content-post-title-2">Fresh Rolls and Breads Delivered Everyday</h1>
-          <div class="inner-content-wrapper">
-            <img src="images/rolls.png" class="featured">
-          </div>
-        </div>
-      </div>
-
-    </main>
+        <img src="images/headerlogo.png" style="width:100%;">
+      <h1>
+        Willowbrook Shopping Center<br>3240 Chichester Avenue<br><br>        <div id="currentStatus" style="font-weight: bolder;"></div><br>
+        610-494-9799<br>
+      </h1>
+    </div>
+    
   </body>
-<footer class="footer-distributed">
-  <div class="footer-left">
-    <h3>Car-Mira's <span>Delicatessen</span></h3>
-    <p class="footer-links">
-      <a href="menu.html">Menu</a>
-      ·
-      <a href="#hours">Hours</a>
-      ·
-      <a href="#location">Location</a>
-      ·
-      <a href="apply.html">Apply</a>
-    </p>
-    <p class="footer-company-name">Car-Mira's Deli &copy; 2021</p>
-  </div>
-  <div class="footer-center" id="location">
-    <div>
-      <a href="https://goo.gl/maps/L3sKB4PUo332"><i class="fa fa-map-marker"></i></a>
-      <p><span>3240 Chichester Avenue</span> Boothwyn Pennsylvania</p>
-    </div>
-  <div>
-    <i class="fa fa-phone"></i>
-    <p>+1 6104949799</p>
-  </div>
-  <div>
-    <i class="fa fa-envelope"></i>
-    <p><a href="mailto:carmirasdeli@gmail.com">carmirasdeli@gmail.com
-    </a></p>
-  </div>
-  </div>
-  <div class="footer-right" id="hours">
-    <p class="footer-company-about">
-      <span>Hours</span>
-      Monday Closed <br>
-      Tuesday - Friday 8AM - 7PM <br>
-      Saturday, Sunday 9AM - 3PM
-    </p>
-      <div id="currentStatus"></div>
-    <div class="footer-icons">
-      <a href="https://www.facebook.com/CarMirasDeli/"><i class="fa fa-facebook"></i></a>
-      <a href="#"><i class="fa fa-linkedin"></i></a>
-    </div>
-  </div>
- </footer>
 </html>
