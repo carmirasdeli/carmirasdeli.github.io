@@ -30,6 +30,9 @@ body {
   align-items: center;
   justify-content: center;
 }
+svg {
+  margin:0 5px;
+}
 .center {
   display: flex;
   align-items: center;
@@ -153,4 +156,25 @@ body {
 .navigation__checkbox:checked + .navigation__button .navigation__icon::after {
   top: 0;
   transform: rotate(-135deg);
+}
+table.GeneratedTable {
+  width: 100%;
+  background-color: #ffffff;
+  border-collapse: collapse;
+  border-width: 2px;
+  border-color: #000000;
+  border-style: solid;
+  color: #000000;
+}
+
+table.GeneratedTable td, table.GeneratedTable th {
+  border-width: 2px;
+  border-color: #000000;
+  border-style: solid;
+  padding: 3px;
+}
+
+table.GeneratedTable thead {
+  background-color: #ed0808;
+  color:white;
 }
