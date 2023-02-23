@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+@import url(https://fonts.googleapis.com/css2?family=Gloock&family=Rubik+Mono+One&display=swap);
 *,
 *::after,
 *::before {
@@ -158,23 +159,39 @@ svg {
   transform: rotate(-135deg);
 }
 table.GeneratedTable {
-  width: 100%;
-  background-color: #ffffff;
   border-collapse: collapse;
-  border-width: 2px;
-  border-color: #000000;
-  border-style: solid;
-  color: #000000;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  width:100%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+#currentStatus {
+  font-family: 'Rubik Mono One', sans-serif;
+  font-size: 1.2em;
+}
+table.GeneratedTable th,
+table.GeneratedTable td {
+    padding: 12px 15px;
 }
 
-table.GeneratedTable td, table.GeneratedTable th {
-  border-width: 2px;
-  border-color: #000000;
-  border-style: solid;
-  padding: 3px;
-}
-
-table.GeneratedTable thead {
+table.GeneratedTable thead tr {
   background-color: #ed0808;
-  color:white;
+  color: #ffffff;
+  text-align: left;
+}
+table.GeneratedTable tbody tr {
+  background-color: white;
+  border-bottom: thin solid #dddddd;
+}
+
+table.GeneratedTable tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+table.GeneratedTable tbody tr:last-of-type {
+  border-bottom: 2px solid #ed0808;
+}
+table.GeneratedTable tbody tr.active-row {
+  font-weight: bold;
+  color: #ed0808;
 }
