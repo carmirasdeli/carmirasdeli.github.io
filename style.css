@@ -45,11 +45,11 @@ svg {
 }
 .navigation__button {
   background-color: #fff;
-  height: 7rem;
-  width: 7rem;
+  height: 6rem;
+  width: 6rem;
   position: fixed;
-  top: 3rem;
-  right: 3rem;
+  top: 2rem;
+  right: 2rem;
   border-radius: 50%;
   z-index: 2000;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
@@ -57,12 +57,12 @@ svg {
   cursor: pointer;
 }
 .navigation__background {
-  height: 6rem;
-  width: 6rem;
+  height: 5rem;
+  width: 5rem;
   border-radius: 50%;
   position: fixed;
-  top: 3.5rem;
-  right: 3.5rem;
+  top: 2.5rem;
+  right: 2.5rem;
   background-image: radial-gradient(#ed0808, #f4035b);
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
@@ -92,9 +92,9 @@ svg {
 }
 .navigation__link:link, .navigation__link:visited {
   display: inline-block;
-  font-size: 3rem;
+  font-size: 2.3rem;
   font-weight: 300;
-  padding: 1rem 2rem;
+  padding: .5rem 1rem;
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
@@ -121,7 +121,7 @@ svg {
 }
 .navigation__icon {
   position: relative;
-  margin-top: 3.5rem;
+  margin-top: 3rem;
 }
 .navigation__icon, .navigation__icon::before, .navigation__icon::after {
   width: 3rem;
@@ -158,6 +158,10 @@ svg {
   top: 0;
   transform: rotate(-135deg);
 }
+#currentStatus {
+  font-family: 'Rubik Mono One', sans-serif;
+  font-size: 1.2em;
+}
 table.GeneratedTable {
   border-collapse: collapse;
   font-size: 0.9em;
@@ -165,10 +169,7 @@ table.GeneratedTable {
   width:100%;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
-#currentStatus {
-  font-family: 'Rubik Mono One', sans-serif;
-  font-size: 1.2em;
-}
+
 table.GeneratedTable th,
 table.GeneratedTable td {
     padding: 12px 15px;
