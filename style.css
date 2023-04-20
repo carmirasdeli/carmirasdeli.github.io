@@ -207,3 +207,13 @@ table.GeneratedTable tbody tr.active-row {
   font-weight: bold;
   color: #ed0808;
 }
+div.apply-online {
+  margin: 180px auto 0 auto;
+  width: 90%;
+  max-width: 500px;
+  padding: 50px 30px 20px;
+  background: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
