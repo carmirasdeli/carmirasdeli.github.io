@@ -16,9 +16,23 @@ h1 {
   line-height: 1;
 }
 h1.menu {
-  line-height: 1;
+  text-decoration: none;
+  font-size: 32px;
   text-align: center;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  font-weight: 100;
 }
+a.menu {
+  text-decoration: none;
+  color:red;
+  font-weight: 100;
+  color:white;
+}
+
 body {
   background-repeat: no-repeat;
   background-size: cover;
@@ -36,7 +50,7 @@ body {
   justify-content: center;
 }
 div.menu-thumbnail {
-  height: 6em;
+  height: 100px;
   width: 100%;
   border-radius:20px;
   box-shadow: .3rem 1rem 1rem rgba(0, 0, 0, 0.3);
