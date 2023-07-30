@@ -28,9 +28,8 @@ h1.menu {
 }
 a.menu {
   text-decoration: none;
-  color:red;
   font-weight: 100;
-  color:white;
+  color:#ed0808;
 }
 
 body {
@@ -55,6 +54,7 @@ div.menu-thumbnail {
   border-radius:20px;
   box-shadow: .3rem 1rem 1rem rgba(0, 0, 0, 0.3);
   background-size: cover;
+  border:solid #ed0808;
 }
 svg {
   margin:0 5px;
