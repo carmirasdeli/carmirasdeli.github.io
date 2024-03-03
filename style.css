@@ -13,6 +13,7 @@ div #open-hours{
 }
 div #open-hours table {
   margin: 0 auto;
+  font-size: medium;
 }
 div #open-hours table td{
   padding:0px 12px;
