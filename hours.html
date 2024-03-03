@@ -11,7 +11,7 @@
     <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
     <title>Car-Mira's Italian Delicatessen - Hours</title>
   </head>
-  <body style="background-image: url(images/bg3.jpg);">  
+  <body style="background-image: url(images/bgmain.jpg);">  
     <script src="./currentStatus.js" charset="utf-8"></script>
     <script>window.onload = status;</script>
     <div class="navigation">
@@ -28,60 +28,37 @@
             <li class="navigation__item"><a href="index.html" class="navigation__link">About</a></li>
             <li class="navigation__item"><a href="menu.html" class="navigation__link">Menu</a></li>
             <li class="navigation__item"><a href="https://carmirasdeli.hrpos.heartland.us/menu" class="navigation__link">Order Online</a></li>
-              <li class="navigation__item"><a href="hours.html" class="navigation__link">Hours</a></li>
-              <li class="navigation__item"><a href="location.html" class="navigation__link">Location</a></li>
+              <li class="navigation__item"><a href="https://carmiras.printify.me/products" class="navigation__link">Shop</a></li>
               <li class="navigation__item"><a href="apply.html" class="navigation__link">Apply</a></li>
               </ul>
       </nav>
     </div>
-
-    <div style="width:80%;">
-    <div id="currentStatus" style="font-weight: bolder;"></div>
-      <!--<div style="font-weight: bolder;">Currently Closed for Memorial Day weekend.</div>   -->     
-      <br>
-      <table class="GeneratedTable">
-          <thead>
-            <tr>
-              <th>Day</th>
-              <th>Hours</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Monday</td>
-              <td>Closed</td>
-            </tr>
-            <tr>
-              <td>Tuesday</td>
-              <td>8AM - 7PM</td>
-            </tr>
-            <tr>
-              <td>Wednesday</td>
-              <td>8AM - 7PM</td>
-            </tr>
-            <tr>
-              <td>Thursday</td>
-              <td>8AM - 7PM</td>
-            </tr>
-            <tr>
-              <td>Friday</td>
-              <td>8AM - 7PM</td>
-            </tr>
-            <tr>
-              <td>Saturday</td>
-              <td>9AM - 3PM</td>
-            </tr>
-            <tr>
-              <td>Sunday</td>
-              <td>9AM - 3PM</td>
-            </tr>
-          </tbody>
-        </table>
+    <div style="width:90%; text-align: center;margin:0 auto;max-width: 800px;background-color: white;padding:20px;">
+      <div id="currentStatus"></div>
+      <div id="open-hours"></div>
+      <script src="./open-hours.js" charset="utf-8"></script>
+      <script>
+        const hours = {
+          "Monday":     {},
+          "Tuesday":    { start: 800, end: 1900 },
+          "Wednesday":  { start: 800, end: 1900 },
+          "Thursday":   { start: 800, end: 1900 },
+          "Friday":     { start: 800, end: 1900 },
+          "Saturday":   { start: 900, end: 1500 },
+          "Sunday":     { start: 900, end: 1500 }
+        }
+        OpenHours.generateTime(hours)
+      </script>
+      <br><br>
+        <a href="https://goo.gl/maps/p8k2dFKenX2zcDKa6"><img src="images/map.png" style="width:100%;border-radius:20px;box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);"></a>
         <br>
-        <a href="holidayhours.html" style="font-size:smaller;">Special Holiday Hours</a>
-    </div>
+        <br>
+            Willowbrook Shopping Center<br>3240 Chichester Avenue<br>Boothwyn PA 19061 <br><br>610-494-9799<br>
+          <br>
+          <a href="https://goo.gl/maps/p8k2dFKenX2zcDKa6">Directions</a>
+  </div>
   </body>
   <footer style="width:90%;height:50px;position:fixed;bottom:10px;text-align:center;font-size: 8px;">
-    carmirasdeli.com ® 2023 | <a href="https://brandonmarcelle.com">Admin</a>
+    carmirasdeli.com ® 2024 | <a href="https://brandonmarcelle.com">Admin</a>
 </footer>
 </html>
