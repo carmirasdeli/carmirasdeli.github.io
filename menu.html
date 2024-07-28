@@ -11,10 +11,13 @@
     <meta name="description" content="Car-Mira's Deli Boothwyn Pennsylvania">
     <meta name="keywords" content="Deli Hoagies Sandwiches">
     <meta name="author" content="Brandon Marcelle, brandonmarcelle.com">
-    <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
-    <title>Car-Mira's Italian Delicatessen - Menu</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>Car-Mira's Italian Delicatessen - Apply</title>
   </head>
-  <body style="background-image: url(images/wall.png);">  
+  <body style="background-image: url(images/bgmain.jpg); display: block;background-size: cover;background-attachment:fixed;">  
     <script src="./currentStatus.js" charset="utf-8"></script>
     <script>window.onload = status;</script>
     <div class="navigation">
@@ -27,24 +30,55 @@
       <div class="navigation__background">&nbsp;</div>
     
       <nav class="navigation__nav">
-          <ul class="navigation__list">
-            <li class="navigation__item"><a href="index.html" class="navigation__link">About</a></li>
-            <li class="navigation__item"><a href="menu.html" class="navigation__link">Menu</a></li>
-            <li class="navigation__item"><a href="https://carmirasdeli.hrpos.heartland.us/menu" class="navigation__link">Order Online</a></li>
-              <li class="navigation__item"><a href="https://carmiras.printify.me/products" class="navigation__link">Shop</a></li>
-              <li class="navigation__item"><a href="apply.html" class="navigation__link">Apply</a></li>
-              </ul>
-      </nav>
+        <ul class="navigation__list">
+          <li class="navigation__item"><a href="index.html" class="navigation__link">About</a></li>
+          <li class="navigation__item"><a href="menu.html" class="navigation__link">Menu</a></li>
+          <li class="navigation__item"><a href="https://carmirasdeli.hrpos.heartland.us/menu" class="navigation__link">Order Online</a></li>
+          <li class="navigation__item"><a href="https://carmiras.printify.me/products" class="navigation__link">Shop</a></li>
+          <li class="navigation__item"><a href="apply.html" class="navigation__link">Apply</a></li>
+
+        </ul>
+    </nav>
     </div>
-    <div style="width:80%;">
-      <a href="menu.pdf" class="menu"><div class="menu-thumbnail"><h1 class="menu">Full Menu</h1><br></div></a><br>
-        <a href="papermenu.pdf" class="menu"><div class="menu-thumbnail"><h1 class="menu">Paper Menu</h1></div></a><br>
-        <a href="https://carmirasdeli.hrpos.heartland.us/menu" class="menu"><div class="menu-thumbnail"><h1 class="menu">Order Online</h1></div></a>
-  
+      <div style="width:90%; text-align: center;margin:0 auto;top:20%;max-width: 800px;">
+        <img src="images/headerlogo_with_info_sticker.png" style="width:100%;margin-top:140px;margin-bottom:40px;">
+        <div style="padding:20px;">
+        </div>
+    </div>
+    <main>
+      <div class="content" style="text-align: center;">
+      <button onclick="location.href='menu.pdf';" class="button-6" role="button">Full Menu</button><br><br>
+      <button onclick="location.href='papermenu.pdf';" class="button-6" role="button">Print Menu</button><br>
+
+      <br>
+      <button onclick="location.href='https://carmirasdeli.hrpos.heartland.us/menu';" class="button-6" role="button" style="background-color: #f0f0f0;">Order Online</button><br>
+
+
+
+      </div>
+    </main>
+  </body>
+
+  <footer>
+    <div class="footer">
+    <div class="row">
+    <a href="#"><i class="fa fa-facebook"></i></a>
+    <a href="#"><i class="fa fa-instagram"></i></a>
     </div>
     
-  </body>
-  <footer style="width:90%;height:50px;position:fixed;bottom:10px;text-align:center;font-size: 8px;">
-    carmirasdeli.com ® 2024 | <a href="https://brandonmarcelle.com">Admin</a>
-</footer>
+    <div class="row">
+    <ul>
+    <li><a href="#">Call Now</a></li>
+    <li><a href="#">Order Online</a></li>
+    <li><a href="#">View Menu</a></li>
+    <li><a href="#">Merch</a></li>
+    <li><a href="#">Apply</a></li>
+    </ul>
+    </div>
+    
+    <div class="row">
+    CARMIRAS Copyright © 2024 Car Miras Deli Inc - All rights reserved || Designed By: brandonmarcelle
+    </div>
+    </div>
+    </footer>
 </html>

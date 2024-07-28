@@ -11,10 +11,10 @@
     <meta name="description" content="Car-Mira's Deli Boothwyn Pennsylvania">
     <meta name="keywords" content="Deli Hoagies Sandwiches">
     <meta name="author" content="Brandon Marcelle, brandonmarcelle.com">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-    <link rel="manifest" href="images/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <title>Car-Mira's Italian Delicatessen</title>
   </head>
   <body style="background-image: url(images/bgmain.jpg); display: block;background-size: cover;background-attachment:fixed;">  
@@ -41,14 +41,17 @@
     </nav>
     </div>
       <div style="width:90%; text-align: center;margin:0 auto;top:20%;max-width: 800px;">
-        <img src="images/headerlogo_with_info.png" style="width:100%;margin-top:140px;margin-bottom:40px;">
+        <img src="images/headerlogo_with_info_sticker.png" style="width:100%;margin-top:140px;margin-bottom:40px;">
         <div style="padding:20px;">
         </div>
     </div>
-    <div style="width:100%; text-align: center;margin:0 auto;top:20%;">
+    <main>
+      <div class="content" style="text-align: center;">
       <h1>Welcome to Car-Mira's Deli</h1><br>
       <button onclick="location.href='menu.pdf';" class="button-6" role="button">View Menu</button>  <button onclick="location.href='https://carmirasdeli.hrpos.heartland.us/menu';" class="button-6" role="button" style="background-color: #f0f0f0;">Order Online</button>
       <br><br>
+      <img src="images/tray.png" style="max-width:300px;width:100%;">
+
       <div style="padding:20px;">
         <div id="currentStatus"></div>
         <div id="open-hours"></div>
@@ -65,14 +68,33 @@
           }
           OpenHours.generateTime(hours)
         </script>
-        <!--<a href="https://goo.gl/maps/p8k2dFKenX2zcDKa6">Directions</a>-->
         </div>
         <a href="https://goo.gl/maps/p8k2dFKenX2zcDKa6">Directions</a>
         <br><br>
-    </div>
+      </div>
+    </main>
   </body>
 
   <footer>
-    carmirasdeli.com ® 2024 | <a href="https://brandonmarcelle.com/linked">Admin</a>
-</footer>
+    <div class="footer">
+    <div class="row">
+    <a href="#"><i class="fa fa-facebook"></i></a>
+    <a href="#"><i class="fa fa-instagram"></i></a>
+    </div>
+    
+    <div class="row">
+    <ul>
+    <li><a href="#">Call Now</a></li>
+    <li><a href="#">Order Online</a></li>
+    <li><a href="#">View Menu</a></li>
+    <li><a href="#">Merch</a></li>
+    <li><a href="#">Apply</a></li>
+    </ul>
+    </div>
+    
+    <div class="row">
+    CARMIRAS Copyright © 2024 Car Miras Deli Inc - All rights reserved || Designed By: brandonmarcelle
+    </div>
+    </div>
+    </footer>
 </html>
