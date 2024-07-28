@@ -20,12 +20,23 @@ div #open-hours table td{
 }
 
 main {
+  /*max-width: 1100px;*/
+  margin:0 auto;
+  background-color: white;;
+}
+.content {
   max-width: 1100px;
   margin:0 auto;
+  padding: 30px;
 }
-
 .container-apply {
-  background-color: white;padding:30px;box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);border-radius: 10px; border: solid 2px rgb(182, 182, 182);
+  /*
+  background-color: white;padding:30px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  border-radius: 10px; 
+  border: solid 2px rgb(182, 182, 182);
+  width: 80%;*/
+  margin:0 auto;
 }
 
 html {
