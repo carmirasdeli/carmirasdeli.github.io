@@ -14,9 +14,12 @@
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="shortcut icon" sizes="512x512" href="images/android-chrome-512x512.png">
+    <link rel="shortcut icon" sizes="192x192" href="images/android-chrome-192x192.png">
     <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="manifest" href="/site.webmanifest">
-    <title>Car-Mira's Italian Delicatessen - Apply</title>
+    <link rel="manifest" href="images/site.webmanifest">
+    <title>Car-Mira's Italian Delicatessen</title>
   </head>
   <body style="background-image: url(images/bgmain.jpg); display: block;background-size: cover;background-attachment:fixed;">  
     <script src="./currentStatus.js" charset="utf-8"></script>
@@ -42,15 +45,21 @@
     </nav>
     </div>
       <div style="width:90%; text-align: center;margin:0 auto;top:20%;max-width: 800px;">
-        <img src="images/headerlogo_with_info.png" style="width:100%;margin-top:140px;margin-bottom:40px;">
+        <img src="images/headerlogo_with_info.png" style="width:100%;margin-top:140px;margin-bottom:10px;">
+
         <div style="padding:20px;">
         </div>
     </div>
     <main>
       <div class="content-container">
+        <div class="content" style="text-align: center;">
 
-      <div class="content" style="text-align: center;">
-        <div id="currentStatus"></div>
+
+      <button onclick="location.href='menu.pdf';" class="button-6" role="button">View Menu</button>  <button onclick="location.href='https://carmirasdeli.hrpos.heartland.us/menu';" class="button-6" role="button" style="background-color: #f0f0f0;">Order Online</button>
+      <br><br>
+      <div id="currentStatus"></div>
+
+      <div style="padding:20px;">
         <div id="open-hours"></div>
         <script src="./open-hours.js" charset="utf-8"></script>
         <script>
@@ -65,14 +74,19 @@
           }
           OpenHours.generateTime(hours)
         </script>
+        </div>
+        <a href="https://goo.gl/maps/p8k2dFKenX2zcDKa6">Directions</a>
         <br><br>
-          <a href="https://goo.gl/maps/p8k2dFKenX2zcDKa6"><img src="images/map.png" style="width:100%;border-radius:20px;box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);"></a>
-          <br>
-          <br>
-              Willowbrook Shopping Center<br>3240 Chichester Avenue<br>Boothwyn PA 19061 <br><br>610-494-9799<br>
-            <br>
-            <a href="https://goo.gl/maps/p8k2dFKenX2zcDKa6">Directions</a>
       </div>
+      </div>
+      <div class="content-container" style="display: none;">
+        <a href="https://carmiras.printify.me/products">
+        <div class="content" style="text-align: center;">
+          <img src="images/shop.png" style="width:100%;">
+          <h3>Support your favorite deli. New Shirts available!</h3>
+
+        </div>
+        </a>
       </div>
     </main>
   </body>
@@ -80,17 +94,17 @@
   <footer>
     <div class="footer">
     <div class="row">
-    <a href="#"><i class="fa fa-facebook"></i></a>
-    <a href="#"><i class="fa fa-instagram"></i></a>
+    <a href="https://facebook.com/carmirasdeli"><i class="fa fa-facebook"></i></a>
+    <a href="https://instagram.com/carmirasdeli"><i class="fa fa-instagram"></i></a>
     </div>
     
     <div class="row">
     <ul>
-    <li><a href="#">Call Now</a></li>
-    <li><a href="#">Order Online</a></li>
-    <li><a href="#">View Menu</a></li>
-    <li><a href="#">Merch</a></li>
-    <li><a href="#">Apply</a></li>
+    <li><a href="tel:6104949799">Call Now</a></li>
+    <li><a href="https://carmirasdeli.hrpos.heartland.us/menu">Order Online</a></li>
+    <li><a href="menu.html">View Menu</a></li>
+    <li><a href="https://carmiras.printify.me/products"">Merch</a></li>
+    <li><a href="apply.html">Apply</a></li>
     </ul>
     </div>
     
