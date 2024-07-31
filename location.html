@@ -3,15 +3,25 @@
   <head>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Birthstone&family=Dancing+Script&family=IM+Fell+DW+Pica+SC&family=IM+Fell+DW+Pica:ital@1&family=Limelight&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <meta name="description" content="Car-Mira's Deli Boothwyn Pennsylvania">
     <meta name="keywords" content="Deli Hoagies Sandwiches">
     <meta name="author" content="Brandon Marcelle, brandonmarcelle.com">
-    <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
-    <title>Car-Mira's Italian Delicatessen - Hours</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="shortcut icon" sizes="512x512" href="images/android-chrome-512x512.png">
+    <link rel="shortcut icon" sizes="192x192" href="images/android-chrome-192x192.png">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="manifest" href="images/site.webmanifest">
+    <title>Car-Mira's Italian Delicatessen</title>
   </head>
-  <body style="background-image: url(images/bgmain.jpg);">  
+  <body style="background-image: url(images/bgmain.jpg); display: block;background-size: cover;background-attachment:fixed;">  
     <script src="./currentStatus.js" charset="utf-8"></script>
     <script>window.onload = status;</script>
     <div class="navigation">
@@ -24,37 +34,63 @@
       <div class="navigation__background">&nbsp;</div>
     
       <nav class="navigation__nav">
-          <ul class="navigation__list">
-            <li class="navigation__item"><a href="index.html" class="navigation__link">About</a></li>
-            <li class="navigation__item"><a href="menu.html" class="navigation__link">Menu</a></li>
-            <li class="navigation__item"><a href="https://carmirasdeli.hrpos.heartland.us/menu" class="navigation__link">Order Online</a></li>
-              <li class="navigation__item"><a href="https://carmiras.printify.me/products" class="navigation__link">Shop</a></li>
-              <li class="navigation__item"><a href="apply.html" class="navigation__link">Apply</a></li>
-              </ul>
-      </nav>
+        <ul class="navigation__list">
+          <li class="navigation__item"><a href="index.html" class="navigation__link">About</a></li>
+          <li class="navigation__item"><a href="menu.html" class="navigation__link">Menu</a></li>
+          <li class="navigation__item"><a href="https://carmirasdeli.hrpos.heartland.us/menu" class="navigation__link">Order Online</a></li>
+          <li class="navigation__item"><a href="https://carmiras.printify.me/products" class="navigation__link">Shop</a></li>
+          <li class="navigation__item"><a href="apply.html" class="navigation__link">Apply</a></li>
+
+        </ul>
+    </nav>
     </div>
-    <div style="width:90%; text-align: center;margin:0 auto;max-width: 800px;background-color: white;padding:20px;">
-      <div id="currentStatus"></div>
-      <div id="open-hours"></div>
-      <script src="./open-hours.js" charset="utf-8"></script>
-      <script>
-        const hours = {
-          "Monday":     {},
-          "Tuesday":    { start: 800, end: 1900 },
-          "Wednesday":  { start: 800, end: 1900 },
-          "Thursday":   { start: 800, end: 1900 },
-          "Friday":     { start: 800, end: 1900 },
-          "Saturday":   { start: 900, end: 1500 },
-          "Sunday":     { start: 900, end: 1500 }
-        }
-        OpenHours.generateTime(hours)
-      </script>
+      <div style="width:90%; text-align: center;margin:0 auto;top:20%;max-width: 800px;">
+        <img src="images/headerlogo_with_info.png" style="width:100%;margin-top:140px;margin-bottom:10px;">
+
+        <div style="padding:20px;">
+        </div>
+    </div>
+    <main>
+      <div class="content-container">
+        <div class="content" style="text-align: center;">
+
+
+      <button onclick="location.href='menu.pdf';" class="button-6" role="button">View Menu</button>  <button onclick="location.href='https://carmirasdeli.hrpos.heartland.us/menu';" class="button-6" role="button" style="background-color: #f0f0f0;">Order Online</button>
       <br><br>
-            Willowbrook Shopping Center<br>3240 Chichester Avenue<br>Boothwyn PA 19061 <br><br>610-494-9799<br>
-          <br>
-          <a href="https://goo.gl/maps/p8k2dFKenX2zcDKa6">Directions</a>
-  </div>
+      <div id="currentStatus"></div>
+
+      <div style="padding:20px;">
+        <div id="open-hours"></div>
+        <script src="./open-hours.js" charset="utf-8"></script>
+        <script>
+          const hours = {
+            "Monday":     {},
+            "Tuesday":    { start: 800, end: 1900 },
+            "Wednesday":  { start: 800, end: 1900 },
+            "Thursday":   { start: 800, end: 1900 },
+            "Friday":     { start: 800, end: 1900 },
+            "Saturday":   { start: 900, end: 1500 },
+            "Sunday":     { start: 900, end: 1500 }
+          }
+          OpenHours.generateTime(hours)
+        </script>
+        </div>
+        <a href="https://goo.gl/maps/p8k2dFKenX2zcDKa6">Directions</a>
+        <br><br>
+      </div>
+      </div>
+      <div class="content-container" style="display: none;">
+        <a href="https://carmiras.printify.me/products">
+        <div class="content" style="text-align: center;">
+          <img src="images/shop.png" style="width:100%;">
+          <h3>Support your favorite deli. New Shirts available!</h3>
+
+        </div>
+        </a>
+      </div>
+    </main>
   </body>
+
   <footer>
     <div class="footer">
     <div class="row">
