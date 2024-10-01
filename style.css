@@ -13,7 +13,6 @@ body {
 	position: relative;
 	.logo {
 		margin: 0 auto;
-		margin-bottom: 5vw;
 		max-width: 300px;
 		/*background: rgba(255, 255, 255, 0.8);*/
 		/*backdrop-filter: blur(10px);*/
