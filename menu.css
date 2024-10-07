@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css?family=Bree+Serif|Poppins|Source+Sans+Pro|Montserrat:400,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  background: url("./images/wall.png");
+  background-position: right;
+  background-repeat: none;
+  background-size: cover;
+  backdrop-filter: blur(15px);
+}
+body {
+}
+img.logo {
+  width: 240px;
+  margin:auto;
+}
+.container {
+    margin:0 auto;
+    width:100%;
+    text-align: center;
+}
+#navbar-container {
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  width:100%;
+  background-color: whitesmoke;
+  padding:10px;
+}
+#navbar {
+  max-width: 1200px;
+  margin:0 auto;
+}
+
+#navbar a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: sans-serif;
+   letter-spacing: 1px;
+}
+#menu {
+  float: left;
+  color: black;
+  font-weight: 200;
+}
+#order {
+  float: right;
+  color: green;
+  font-weight: 500;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+#order:hover {
+  background-color:#cbf9ff;
+}
+
+  background-color: #ffffff;
+}
+#navbar a:hover {
+  color:rgb(214, 214, 214);
+}
+
+#navbar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+.menucontainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5em;
+}
+
+.menu {
+  font-family: sans-serif;
+  font-size: 12px;
+}
+
+.menu-group-heading {
+  padding-bottom: 1em;
+  border-bottom: 2px solid #ccc;
+  margin:20px 0;
+}
+
+.menu-group {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5em;
+  padding: 1.5em 0;
+}
+
+.menu-item {
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    padding: 8px;
+  border-radius: 5px;
+}
+
+.menu-item-img {
+  width: 80px;
+  height: 80px;
+  flex-shrink: 0;
+  object-fit: cover;
+  margin-right: 1.5em;
+  border-radius: 5px;
+}
+
+.menu-item-text {
+  flex-grow: 1;
+}
+
+.menu-item-heading {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.menu-item-name {
+  width: 100px;;
+}
+
+.menu-item-desc {
+  line-height: 1.6;
+}
+
+@media screen and (min-width: 992px) {
+  .menu {
+    font-size: 14px;
+  }
+
+  .menu-group {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .menu-item-img {
+    width: 125px;
+    height: 125px;
+
+  }
+  
+}
+.menu-item-price {
+  font-size: small;
+}
+@media (max-width: 400px) {
+	.menu-item-img {
+    display: none;
+	  }
+}
