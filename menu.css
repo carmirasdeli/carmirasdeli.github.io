@@ -18,6 +18,28 @@ img.logo {
   width: 240px;
   margin:auto;
 }
+
+#hoagies {
+  background: url("./images/italian.PNG");
+  background-position: center;
+  background-repeat:no-repeat;
+  background-size: cover;
+  height: 300px;
+}
+#sandwiches {
+  background: url("./images/club.png");
+  background-position: center;
+  background-repeat:no-repeat;
+  background-size: cover;
+  height: 300px;
+}
+#trays {
+  background: url("./images/deli.png");
+  background-position: center;
+  background-repeat:no-repeat;
+  background-size: cover;
+  height: 300px;
+}
 .container {
     margin:0 auto;
     width:100%;
