@@ -7,10 +7,10 @@
 }
 header {
   background: url("./images/wall.png");
-  background-position: right;
+  background-position: center;
   background-repeat: none;
   background-size: cover;
-  backdrop-filter: blur(15px);
+
 }
 body {
   font-family: Raleway, serif;
@@ -37,6 +37,7 @@ img.logo {
   text-decoration: none;
   will-change: color, text-shadow, font-size;
   transition: ease all 0.3s;
+  border-bottom: 1px solid #0000007f;
 }
 #navbar {
   max-width: 1200px;
