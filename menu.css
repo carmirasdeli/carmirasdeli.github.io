@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Bree+Serif|Poppins|Source+Sans+Pro|Montserrat:400,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
 
 * {
   margin: 0;
@@ -13,32 +13,12 @@ header {
   backdrop-filter: blur(15px);
 }
 body {
+  font-family: Raleway, serif;
+
 }
 img.logo {
   width: 240px;
   margin:auto;
-}
-
-#hoagies {
-  background: url("./images/italian.PNG");
-  background-position: center;
-  background-repeat:no-repeat;
-  background-size: cover;
-  height: 300px;
-}
-#sandwiches {
-  background: url("./images/club.png");
-  background-position: center;
-  background-repeat:no-repeat;
-  background-size: cover;
-  height: 300px;
-}
-#trays {
-  background: url("./images/deli.png");
-  background-position: center;
-  background-repeat:no-repeat;
-  background-size: cover;
-  height: 300px;
 }
 .container {
     margin:0 auto;
@@ -50,8 +30,13 @@ img.logo {
   top: 0;
   overflow: hidden;
   width:100%;
-  background-color: whitesmoke;
   padding:10px;
+  backdrop-filter: blur(15px);
+  box-shadow: 1px 1px 0 0 rgba(255, 255, 255, 0.8) inset,
+    3px 5px 10px 0 rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  will-change: color, text-shadow, font-size;
+  transition: ease all 0.3s;
 }
 #navbar {
   max-width: 1200px;
@@ -63,14 +48,14 @@ img.logo {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 17px;
   font-family: sans-serif;
    letter-spacing: 1px;
 }
 #menu {
   float: left;
   color: black;
-  font-weight: 200;
+  font-weight: normal;
 }
 #order {
   float: right;
@@ -92,6 +77,27 @@ img.logo {
 #navbar a.active {
   background-color: #04AA6D;
   color: white;
+}
+#hoagies {
+  background: url("./images/italian.PNG");
+  background-position: center;
+  background-repeat:no-repeat;
+  background-size: cover;
+  height: 300px;
+}
+#sandwiches {
+  background: url("./images/club.png");
+  background-position: center;
+  background-repeat:no-repeat;
+  background-size: cover;
+  height: 300px;
+}
+#trays {
+  background: url("./images/deli.png");
+  background-position: center;
+  background-repeat:no-repeat;
+  background-size: cover;
+  height: 300px;
 }
 .menucontainer {
   max-width: 1200px;
