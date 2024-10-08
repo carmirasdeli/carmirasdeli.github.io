@@ -78,7 +78,7 @@ img.logo {
   background-color: #04AA6D;
   color: white;
 }
-#hoagies {
+#Hoagiebar {
   background: url("./images/italian.PNG");
   background-position: center;
   background-repeat:no-repeat;
@@ -92,7 +92,14 @@ img.logo {
   background-size: cover;
   height: 300px;
 }
-#trays {
+#Catering {
+  background: url("./images/tray.png");
+  background-position: center;
+  background-repeat:no-repeat;
+  background-size: cover;
+  height: 300px;
+}
+#Deli {
   background: url("./images/deli.png");
   background-position: center;
   background-repeat:no-repeat;
