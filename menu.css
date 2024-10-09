@@ -59,14 +59,9 @@ img.logo {
 }
 #order {
   float: right;
-  color: green;
-  font-weight: 500;
-  border-radius: 50%;
-  background-color: #ffffff;
+
 }
-#order:hover {
-  background-color:#cbf9ff;
-}
+
 
   background-color: #ffffff;
 }
